@@ -46,6 +46,19 @@ In your `tsconfig.json` or `jsconfig.json` add the following:
 }
 ```
 
+## Status
+
+This package is currently a work in progress. The rules are being developed and tested, and we welcome contributions from the community.
+
+### Implemented Rules
+
+- [x] `noLeakedConditionalRendering`: Prevents problematic leaked values from being rendered.
+- [ ] ...
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
 ## Acknowledgements
 
 We extend our gratitude to:
