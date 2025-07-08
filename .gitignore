@@ -7,6 +7,8 @@ dist/
 out/
 build
 docs/internals/
+packages/*/docs/
+packages/*/*/docs/
 
 # Editor
 .vim/
