@@ -3,22 +3,25 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "dprint.dprint"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescript]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
   "editor.codeActionsOnSave": {
-    "source.formatting": "explicit",
     "source.fixAll": "never",
     "source.fixAll.eslint": "never",
+    "source.formatting": "explicit",
     "source.organizeImports": "never"
   },
+  "eslint.enable": false,
   "files.exclude": {
-    "**/.zed": true,
-    "*.bundled_*.mjs": true
+    "*.bundled_*.mjs": true,
+    "**/.zed": true
   },
+  "mdx.server.enable": true,
   "npm.packageManager": "pnpm",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "nxConsole.generateAiAgentRules": true
 }
