@@ -1,37 +1,38 @@
 {
   "extends": [
-    "@tsconfig/strictest/tsconfig.json",
-    "@tsconfig/bun/tsconfig.json"
+    "@local/configs/tsconfig.base.json",
+    "@tsconfig/node22/tsconfig.json"
   ],
   "compilerOptions": {
-    "target": "ES2022",
+    "lib": [
+      "DOM"
+    ],
     "module": "ESNext",
     "moduleDetection": "force",
-    "types": [
-      "bun",
-      "tsl/patches"
-    ],
-    "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "erasableSyntaxOnly": true,
-    "noEmit": true,
+    "skipLibCheck": true,
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true,
-    "useUnknownInCatchVariables": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "plugins": [{ "name": "tsl/plugin" }]
+    "erasableSyntaxOnly": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "exactOptionalPropertyTypes": true,
+    "noEmit": true,
+    "types": [
+      "@types/node"
+    ]
   },
-  "exclude": [
-    "node_modules",
-    "**/dist",
-    "test/fixtures"
-  ],
   "include": [
-    "src",
-    "scripts"
+    "."
+  ],
+  "exclude": [
+    "apps",
+    "examples",
+    "node_modules",
+    "packages/*/dist",
+    "packages/*/src",
+    "packages/*/*/dist",
+    "packages/*/*/src"
   ]
 }

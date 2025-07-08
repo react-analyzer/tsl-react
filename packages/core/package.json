@@ -1,0 +1,57 @@
+{
+  "name": "@react-analyzer/core",
+  "version": "0.0.1-next.0",
+  "description": "React Analyzer utility module for static analysis of React core APIs and patterns.",
+  "homepage": "https://github.com/Rel1cx/react-analyzer",
+  "bugs": {
+    "url": "https://github.com/Rel1cx/react-analyzer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rel1cx/react-analyzer.git",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
+  "author": "Rel1cx<dokimondex@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "./package.json"
+  ],
+  "scripts": {
+    "build": "tsup --dts-resolve",
+    "build:docs": "typedoc",
+    "lint:publish": "publint",
+    "lint:ts": "tsl",
+    "publish": "pnpm run build && pnpm run lint:publish"
+  },
+  "dependencies": {
+    "@react-analyzer/eff": "workspace:*",
+    "@react-analyzer/kit": "workspace:*",
+    "ts-pattern": "^5.7.1"
+  },
+  "devDependencies": {
+    "@local/configs": "workspace:*",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^24.0.10",
+    "tsup": "^8.5.0",
+    "type-fest": "^4.41.0"
+  },
+  "peerDependencies": {
+    "ts-api-utils": "^2.1.0",
+    "tsl": "^1.0.18",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "bun": ">=1.2.18",
+    "node": ">=22.17.0"
+  }
+}

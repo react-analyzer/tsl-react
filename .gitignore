@@ -5,8 +5,8 @@ node_modules/
 # Build
 dist/
 out/
-build/
-docs/
+build
+docs/internals/
 
 # Editor
 .vim/
@@ -43,5 +43,9 @@ stats.html
 *.tgz
 .tsup
 
+
+
 .nx/cache
 .nx/workspace-data
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md

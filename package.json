@@ -1,15 +1,16 @@
 {
-  "name": "@react-analyzer/tsl",
-  "version": "0.0.5",
-  "description": "Bring the same linting functionality that https://eslint-react.xyz has to the TypeScript LSP.",
+  "name": "@react-analyzer/monorepo",
+  "version": "0.0.1-next.0",
+  "private": true,
+  "description": "Monorepo for tsl-react-[x, dom, web-api, naming-convention].",
   "keywords": [
-    "typescript",
-    "tsl",
-    "linting",
-    "lsp",
     "react",
-    "react-analyzer",
-    "eslint-react"
+    "tsl",
+    "tsl-react",
+    "tsl-react-x",
+    "tsl-react-dom",
+    "tsl-react-web-api",
+    "tsl-react-naming-convention"
   ],
   "homepage": "https://github.com/react-analyzer/tsl",
   "bugs": {
@@ -17,59 +18,90 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-analyzer/tsl.git"
+    "url": "git@github.com:react-analyzer/tsl.git"
   },
   "license": "MIT",
   "author": "Rel1cx<dokimondex@gmail.com>",
-  "sideEffects": false,
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "dist",
-    "./package.json"
-  ],
   "scripts": {
-    "build": "tsup",
-    "build:docs": "typedoc",
+    "build": "pnpm run update:all && nx run-many -t build --projects=\"packages/**\"",
+    "build:all": "nx run-many -t build",
+    "build:docs": "nx run-many -t build:docs --projects=\"packages/**\" && pnpm run update:readme",
+    "build:pkgs": "pnpm -F \"./.pkgs/*\" run build",
+    "format:check": "dprint check",
     "format:write": "dprint fmt",
-    "lint:deps": "bun x skott -m file-tree -e .ts -s",
-    "lint:publish": "publint",
-    "lint:ts": "tsl",
-    "publish": "bun run build && bun run lint:publish",
-    "test": "bun test"
-  },
-  "dependencies": {
-    "compare-versions": "^6.1.1",
-    "get-tsconfig": "^4.10.1",
-    "ts-api-utils": "^2.1.0",
-    "ts-pattern": "^5.7.1"
+    "inspect:deps": "skott -e .ts",
+    "inspect:tsl-config": "tsl-config-inspector",
+    "lint": "pnpm run lint:deps && pnpm run lint:publish && pnpm run lint:ts && pnpm run lint:examples",
+    "lint:deps": "skott -m file-tree -e .ts -s",
+    "lint:examples": "pnpm m -F \"./examples/*\" run lint",
+    "lint:publish": "pnpm m run lint:publish",
+    "lint:spell": "cspell lint --relative --no-progress \"**\"",
+    "lint:ts": "pnpm m run lint:ts",
+    "prepare": "lefthook install && pnpm run build",
+    "sort:package-json": "pnpm m exec sort-package-json -q package.json && dprint fmt",
+    "test": "vitest run --logHeapUsage",
+    "update:all": "pnpm run update:version && pnpm run update:readme",
+    "update:readme": "tsx ./scripts/update-readme.ts",
+    "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
-    "@tsconfig/bun": "^1.0.8",
+    "@local/configs": "workspace:*",
+    "@local/tsl-local": "workspace:*",
+    "@swc/core": "^1.12.11",
+    "@tsconfig/node22": "^22.0.2",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/bun": "^1.2.18",
+    "@types/node": "^24.0.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "ansis": "^4.1.0",
+    "cspell": "^9.1.3",
     "dedent": "^1.6.0",
     "dprint": "^0.50.1",
+    "esbuild": "^0.25.6",
+    "jiti": "^2.4.2",
+    "lefthook": "^1.12.0",
+    "markdownlint": "^0.38.0",
+    "nx": "21.2.2",
     "publint": "^0.3.12",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "skott": "^0.35.4",
+    "tinyexec": "^1.0.1",
+    "tinyglobby": "^0.2.14",
+    "ts-pattern": "^5.7.1",
+    "tsl": "^1.0.18",
+    "tslib": "^2.8.1",
     "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "type-fest": "^4.41.0",
     "typedoc": "^0.28.7",
     "typedoc-plugin-markdown": "^4.7.0",
-    "typedoc-plugin-mdn-links": "^5.0.2",
-    "typescript": "^5.8.3"
+    "typedoc-plugin-mdn-links": "^5.0.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   },
-  "peerDependencies": {
-    "tsl": "^1.0.18",
-    "typescript": "^5.8.3"
-  },
-  "packageManager": "bun@1.2.18",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
-    "bun": ">=1.2.17",
-    "node": ">=20.19.0"
+    "node": ">=22.17.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "dprint",
+      "esbuild",
+      "lefthook",
+      "nx"
+    ],
+    "overrides": {
+      "@types/react": "^19.1.8",
+      "@types/react-dom": "^19.1.6",
+      "esbuild": "^0.25.6",
+      "react": "^19.1.0",
+      "react-dom": "^19.1.0",
+      "ts-api-utils": "^2.1.0",
+      "tslib": "^2.8.1",
+      "typescript": "^5.8.3"
+    }
   }
 }
