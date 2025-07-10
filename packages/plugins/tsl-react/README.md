@@ -2,6 +2,18 @@
 
 [![Version](https://img.shields.io/npm/v/tsl-react?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/tsl-react)
 
+- [Installation](#installation)
+- [Enabling rules](#enabling-rules)
+- [Specifying project-aware React configuration](#specifying-project-aware-react-configuration)
+- [Roadmap](#roadmap)
+  - [Port Local](#port-local)
+  - [Port Utility](#port-utility)
+  - [Port Core & Shared](#port-core--shared)
+  - [Port ESLint Plugins](#port-eslint-plugins)
+  - [Port ESLint Rules](#port-eslint-rules)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 (WIP) Bring the same linting functionality that [`eslint-react.xyz`](https://eslint-react.xyz) has to the TypeScript LSP.
 
 This package provides the rulesets from [`beta.eslint-react.xyz/docs/rules/overview`](https://beta.eslint-react.xyz/docs/rules/overview) as custom rules for the [ArnaudBarre/tsl](https://github.com/ArnaudBarre/tsl) linting tool.
@@ -46,9 +58,35 @@ In your `tsconfig.json` or `jsconfig.json` add the following:
 }
 ```
 
-## Status
+## Roadmap
 
-### Implemented Rules
+### Port Local
+
+- [x] `.pkgs/configs` to `.pkgs/configs`
+- [x] `.pkgs/eslint-plugin-local` to `.pkgs/tsl-local`
+
+### Port Utility
+
+- [x] `@eslint-react/eff` to `@react-analyzer/eff`
+- [ ] `@eslint-react/ast` to `@react-analyzer/ast`
+- [ ] `@eslint-react/var` to `@react-analyzer/var`
+- [ ] `@eslint-react/kit` to `@react-analyzer/kit`
+
+### Port Core & Shared
+
+- [ ] `@eslint-react/core` to `@react-analyzer/core`
+- [ ] `@eslint-react/shared` to `@react-analyzer/shared`
+
+### Port ESLint Plugins
+
+- [x] `@eslint-react/eslint-plugin` to `tsl-react`
+- [ ] `eslint-plugin-react-x` to `tsl-react-x`
+- [ ] `eslint-plugin-react-dom` to `tsl-react-dom`
+- [ ] `eslint-plugin-react-web-api` to `tsl-react-web-api`
+- [ ] `eslint-plugin-react-hooks-extra` to `tsl-react-hooks-extra`
+- [ ] `eslint-plugin-react-naming-convention` to `tsl-react-naming-convention`
+
+### Port ESLint Rules
 
 - [x] `noLeakedConditionalRendering`: Prevents problematic leaked values from being rendered.
 - [ ] ...
