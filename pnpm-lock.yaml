@@ -12,7 +12,7 @@ overrides:
   react-dom: ^19.1.0
   ts-api-utils: ^2.1.0
   tslib: ^2.8.1
-  typescript: ^5.8.3
+  typescript: beta
 
 importers:
 
@@ -89,13 +89,13 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
       tsx:
         specifier: ^4.20.3
         version: 4.20.3
@@ -104,16 +104,16 @@ importers:
         version: 4.41.0
       typedoc:
         specifier: ^0.28.7
-        version: 0.28.7(typescript@5.8.3)
+        version: 0.28.7(typescript@5.9.0-beta)
       typedoc-plugin-markdown:
         specifier: ^4.7.0
-        version: 4.7.0(typedoc@0.28.7(typescript@5.8.3))
+        version: 4.7.0(typedoc@0.28.7(typescript@5.9.0-beta))
       typedoc-plugin-mdn-links:
         specifier: ^5.0.3
-        version: 5.0.3(typedoc@0.28.7(typescript@5.8.3))
+        version: 5.0.3(typedoc@0.28.7(typescript@5.9.0-beta))
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
       vitest:
         specifier: ^3.2.4
         version: 3.2.4(@types/debug@4.1.12)(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
@@ -128,7 +128,7 @@ importers:
         version: 2.0.5
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
 
   .pkgs/tsl-local:
     dependencies:
@@ -152,10 +152,10 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
     devDependencies:
       '@local/configs':
         specifier: workspace:*
@@ -168,7 +168,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
 
   packages/core:
     dependencies:
@@ -180,16 +180,16 @@ importers:
         version: link:../utilities/kit
       ts-api-utils:
         specifier: ^2.1.0
-        version: 2.1.0(typescript@5.8.3)
+        version: 2.1.0(typescript@5.9.0-beta)
       ts-pattern:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
     devDependencies:
       '@local/configs':
         specifier: workspace:*
@@ -202,7 +202,7 @@ importers:
         version: 24.0.12
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -229,17 +229,17 @@ importers:
         version: 6.1.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
     devDependencies:
       '@local/configs':
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
 
   packages/shared:
     dependencies:
@@ -285,17 +285,17 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
     devDependencies:
       '@local/configs':
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
 
   packages/utilities/eff:
     devDependencies:
@@ -316,10 +316,10 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.8.3)
+        version: 1.0.20(typescript@5.9.0-beta)
       typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
+        specifier: beta
+        version: 5.9.0-beta
     devDependencies:
       '@local/configs':
         specifier: workspace:*
@@ -329,7 +329,7 @@ importers:
         version: 22.0.2
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -2258,7 +2258,7 @@ packages:
     resolution: {integrity: sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==}
     engines: {node: '>=18.12'}
     peerDependencies:
-      typescript: ^5.8.3
+      typescript: '>=4.8.4'
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
@@ -2274,7 +2274,7 @@ packages:
     resolution: {integrity: sha512-E4bKv1xzAh6IkeCtrokMTCDARyyKFTZJNhkio8ipD5pawCwzpYJVGEAGuFxm0MooklUm+3JqV1M0WJiOfv4F3Q==}
     hasBin: true
     peerDependencies:
-      typescript: ^5.8.3
+      typescript: ~5.8.3
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -2287,7 +2287,7 @@ packages:
       '@microsoft/api-extractor': ^7.36.0
       '@swc/core': ^1
       postcss: ^8.4.12
-      typescript: ^5.8.3
+      typescript: '>=4.5.0'
     peerDependenciesMeta:
       '@microsoft/api-extractor':
         optional: true
@@ -2323,10 +2323,15 @@ packages:
     engines: {node: '>= 18', pnpm: '>= 10'}
     hasBin: true
     peerDependencies:
-      typescript: ^5.8.3
+      typescript: 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x || 5.6.x || 5.7.x || 5.8.x
 
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  typescript@5.9.0-beta:
+    resolution: {integrity: sha512-p91qoTdwWKj9YEBYavmGiBn0DF4OBElzw4pW4oPbK4HeCfr/SDz9+yviVWshZXGvGvFCJ3AVQ+J7F1UZXc23QQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -4340,9 +4345,9 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-api-utils@2.1.0(typescript@5.8.3):
+  ts-api-utils@2.1.0(typescript@5.9.0-beta):
     dependencies:
-      typescript: 5.8.3
+      typescript: 5.9.0-beta
 
   ts-interface-checker@0.1.13: {}
 
@@ -4354,11 +4359,11 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsl@1.0.20(typescript@5.8.3):
+  tsl@1.0.20(typescript@5.9.0-beta):
     dependencies:
       esbuild: 0.25.6
-      ts-api-utils: 2.1.0(typescript@5.8.3)
-      typescript: 5.8.3
+      ts-api-utils: 2.1.0(typescript@5.9.0-beta)
+      typescript: 5.9.0-beta
 
   tslib@2.8.1: {}
 
@@ -4391,6 +4396,35 @@ snapshots:
       - tsx
       - yaml
 
+  tsup@8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0):
+    dependencies:
+      bundle-require: 5.1.0(esbuild@0.25.6)
+      cac: 6.7.14
+      chokidar: 4.0.3
+      consola: 3.4.2
+      debug: 4.4.1
+      esbuild: 0.25.6
+      fix-dts-default-cjs-exports: 1.0.1
+      joycon: 3.1.1
+      picocolors: 1.1.1
+      postcss-load-config: 6.0.1(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(yaml@2.8.0)
+      resolve-from: 5.0.0
+      rollup: 4.44.2
+      source-map: 0.8.0-beta.0
+      sucrase: 3.35.0
+      tinyexec: 0.3.2
+      tinyglobby: 0.2.14
+      tree-kill: 1.2.2
+    optionalDependencies:
+      '@swc/core': 1.12.11
+      postcss: 8.5.6
+      typescript: 5.9.0-beta
+    transitivePeerDependencies:
+      - jiti
+      - supports-color
+      - tsx
+      - yaml
+
   tsx@4.20.3:
     dependencies:
       esbuild: 0.25.6
@@ -4400,24 +4434,27 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typedoc-plugin-markdown@4.7.0(typedoc@0.28.7(typescript@5.8.3)):
+  typedoc-plugin-markdown@4.7.0(typedoc@0.28.7(typescript@5.9.0-beta)):
     dependencies:
-      typedoc: 0.28.7(typescript@5.8.3)
+      typedoc: 0.28.7(typescript@5.9.0-beta)
 
-  typedoc-plugin-mdn-links@5.0.3(typedoc@0.28.7(typescript@5.8.3)):
+  typedoc-plugin-mdn-links@5.0.3(typedoc@0.28.7(typescript@5.9.0-beta)):
     dependencies:
-      typedoc: 0.28.7(typescript@5.8.3)
+      typedoc: 0.28.7(typescript@5.9.0-beta)
 
-  typedoc@0.28.7(typescript@5.8.3):
+  typedoc@0.28.7(typescript@5.9.0-beta):
     dependencies:
       '@gerrit0/mini-shiki': 3.7.0
       lunr: 2.3.9
       markdown-it: 14.1.0
       minimatch: 9.0.5
-      typescript: 5.8.3
+      typescript: 5.9.0-beta
       yaml: 2.8.0
 
-  typescript@5.8.3: {}
+  typescript@5.8.3:
+    optional: true
+
+  typescript@5.9.0-beta: {}
 
   uc.micro@2.1.0: {}
 
