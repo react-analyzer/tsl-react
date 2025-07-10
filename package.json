@@ -49,7 +49,7 @@
     "@swc/core": "^1.12.11",
     "@tsconfig/node22": "^22.0.2",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^24.0.10",
+    "@types/node": "^24.0.12",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "ansis": "^4.1.0",
@@ -58,7 +58,7 @@
     "dprint": "^0.50.1",
     "esbuild": "^0.25.6",
     "jiti": "^2.4.2",
-    "lefthook": "^1.12.0",
+    "lefthook": "^1.12.1",
     "markdownlint": "^0.38.0",
     "nx": "21.2.2",
     "publint": "^0.3.12",
@@ -67,7 +67,7 @@
     "tinyexec": "^1.0.1",
     "tinyglobby": "^0.2.14",
     "ts-pattern": "^5.7.1",
-    "tsl": "^1.0.18",
+    "tsl": "^1.0.20",
     "tslib": "^2.8.1",
     "tsup": "^8.5.0",
     "tsx": "^4.20.3",
@@ -78,7 +78,7 @@
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "engines": {
     "node": ">=22.17.0"
   },

@@ -41,13 +41,13 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^24.0.10",
+    "@types/node": "^24.0.12",
     "tsup": "^8.5.0",
     "type-fest": "^4.41.0"
   },
   "peerDependencies": {
     "ts-api-utils": "^2.1.0",
-    "tsl": "^1.0.18",
+    "tsl": "^1.0.20",
     "typescript": "^5.8.3"
   },
   "engines": {

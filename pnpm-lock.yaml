@@ -34,8 +34,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       '@types/node':
-        specifier: ^24.0.10
-        version: 24.0.10
+        specifier: ^24.0.12
+        version: 24.0.12
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
@@ -61,8 +61,8 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
       lefthook:
-        specifier: ^1.12.0
-        version: 1.12.0
+        specifier: ^1.12.1
+        version: 1.12.1
       markdownlint:
         specifier: ^0.38.0
         version: 0.38.0
@@ -88,8 +88,8 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -116,7 +116,7 @@ importers:
         version: 5.8.3
       vitest:
         specifier: ^3.2.4
-        version: 3.2.4(@types/debug@4.1.12)(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
+        version: 3.2.4(@types/debug@4.1.12)(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
 
   .pkgs/configs:
     dependencies:
@@ -127,8 +127,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
 
   .pkgs/tsl-local:
     dependencies:
@@ -151,8 +151,8 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -185,8 +185,8 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -198,8 +198,8 @@ importers:
         specifier: ^22.0.2
         version: 22.0.2
       '@types/node':
-        specifier: ^24.0.10
-        version: 24.0.10
+        specifier: ^24.0.12
+        version: 24.0.12
       tsup:
         specifier: ^8.5.0
         version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
@@ -228,8 +228,8 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -263,8 +263,8 @@ importers:
         specifier: ^22.0.2
         version: 22.0.2
       '@types/node':
-        specifier: ^24.0.10
-        version: 24.0.10
+        specifier: ^24.0.12
+        version: 24.0.12
       tsup:
         specifier: ^8.5.0
         version: 8.5.0(@swc/core@1.12.11)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)(yaml@2.8.0)
@@ -284,8 +284,8 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -315,8 +315,8 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
-        specifier: ^1.0.18
-        version: 1.0.18(typescript@5.8.3)
+        specifier: ^1.0.20
+        version: 1.0.20(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -1073,8 +1073,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@24.0.10':
-    resolution: {integrity: sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==}
+  '@types/node@24.0.12':
+    resolution: {integrity: sha512-LtOrbvDf5ndC9Xi+4QZjVL0woFymF/xSTKZKPgrrl7H7XoeDvnD+E2IclKVDyaK9UM756W/3BXqSU+JEHopA9g==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
@@ -1711,58 +1711,58 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  lefthook-darwin-arm64@1.12.0:
-    resolution: {integrity: sha512-XMwneWj+Ux/6lI+T8ZmXwPkPS9b2n9DgMcjR4kNDTzPClBTNjKngQkh/SOzOKV/w//fkkQCdfCRMvV9f9FLS3A==}
+  lefthook-darwin-arm64@1.12.1:
+    resolution: {integrity: sha512-BMGqDU1JtXc5S7ObHE6l9QaUZXO4GQyMcrqeqz1C+4DbmRqB/e0YP9kKiBnFZ86Rb9IQ85k2bzgV7HG5etjfUQ==}
     cpu: [arm64]
     os: [darwin]
 
-  lefthook-darwin-x64@1.12.0:
-    resolution: {integrity: sha512-juGzUr41z8y8zhLhZhvqN9WeqHPoovFTymGg3gmj0bkrYj2V+dSRtl+nbbz5EZTeK2T32BvrYINQJjV9rmnjwg==}
+  lefthook-darwin-x64@1.12.1:
+    resolution: {integrity: sha512-mUuLK+TumNaSWvuK0R1rUJ5QsGvSv4IZLsDNhc67EwRe31qhgfumeblfENoXdk2xSaM8pakByF73NzrMjAfQpg==}
     cpu: [x64]
     os: [darwin]
 
-  lefthook-freebsd-arm64@1.12.0:
-    resolution: {integrity: sha512-2YUGdslUhzjpHLmXeOX8xhuZkYokotIMjnhN198Vly0aC+kq6ognRnUjBHOSjlIf1i9gAU7sV81yEuofNYv8Mw==}
+  lefthook-freebsd-arm64@1.12.1:
+    resolution: {integrity: sha512-Gm2kTp8w6JCTXAitvf9omvVr5/6d6TKhancmIIJyTvDFXu5pA969jY5BCsrYsMcz9XQYBhIda4UBnJLMtSkKrw==}
     cpu: [arm64]
     os: [freebsd]
 
-  lefthook-freebsd-x64@1.12.0:
-    resolution: {integrity: sha512-zzPu+6oD4oEh+oS0ayChlb+Y6i5momSM8gBcJKNmuze0xdFt3O4Z104ogXznRGh8bFgrPmtJgeLpwemfG/5fKg==}
+  lefthook-freebsd-x64@1.12.1:
+    resolution: {integrity: sha512-a0t5KSFKA2gIZIKa2zBiCkoCObgKxkDXTPrEmhFSDkTgNtlF+9+BTWMXJn0Y9hx+abAZNapf917B+Fo1qrYr7A==}
     cpu: [x64]
     os: [freebsd]
 
-  lefthook-linux-arm64@1.12.0:
-    resolution: {integrity: sha512-oMFkBZS7ax/upTFXfnSrqkiiwPtn1rp6vIEQhjWTxQnNcjd8dbZSlVUcpn0yolSpVAnPSKN+2pbLZEonD24YEw==}
+  lefthook-linux-arm64@1.12.1:
+    resolution: {integrity: sha512-uzC8BDcACzcYI9hsD2/HAdqUSbAZSdLEGuCg+l3r7BEtPXkucEPz3E+dW7MjTIM+2nbz+Oh2VASTx3jUE68/Rg==}
     cpu: [arm64]
     os: [linux]
 
-  lefthook-linux-x64@1.12.0:
-    resolution: {integrity: sha512-IKPJcu14FjvefaXC4VZ9NSxZicVoTGZ86OlqiYvT+1hov850YEyusIEo/J8fEzZzQ2F16tQ24iqzrOLtXpp1gQ==}
+  lefthook-linux-x64@1.12.1:
+    resolution: {integrity: sha512-1hJRZg5kMAtNw+6nJJoguFnXjM/SavNzaEicrbqDM2QA6dzD2DtO0zZ6GDjWpNmUqlix7VEVGDZqdKR6L3ZdRw==}
     cpu: [x64]
     os: [linux]
 
-  lefthook-openbsd-arm64@1.12.0:
-    resolution: {integrity: sha512-pZWid2jTvBgKEHJEKr6bAR9dXXTpA+2XKtxRFSLoI0KXDI9BH8KxH50zO6Y83siB96YygHlsjWbSsObIYC8Tgw==}
+  lefthook-openbsd-arm64@1.12.1:
+    resolution: {integrity: sha512-SWuHbIgrDimL4lUXdpXp0EfwTXnz0ESJf3w2cCJ4zhPwhIUn8jnEnYLXDaeOA21YIWK1hR3G991Ma1DQyap2gw==}
     cpu: [arm64]
     os: [openbsd]
 
-  lefthook-openbsd-x64@1.12.0:
-    resolution: {integrity: sha512-gHHqgcuJHzWThnhUUFxk8lm2pSL0z/xGHgZakmBct5vzItfEmXFmlnKHFbWbam4fvNIWKGFKAVCWH3O7x0IQVA==}
+  lefthook-openbsd-x64@1.12.1:
+    resolution: {integrity: sha512-DuIpSBOI/qBDqsei9vvO8O/D+sz7YJtGOapmN0FqPf5rjkyCOwTVEmyDKlpp4g2aN3qNUpct/zQJbWQGRs5tLg==}
     cpu: [x64]
     os: [openbsd]
 
-  lefthook-windows-arm64@1.12.0:
-    resolution: {integrity: sha512-SXbD5zCCpMSorgr14h4IzgFfBkxJsvso15VTFy1YrIAaM3jhrjlinm/Zk5gBZi82D8J+JbAlbhWC4Z93ombgoA==}
+  lefthook-windows-arm64@1.12.1:
+    resolution: {integrity: sha512-So6jozPLISV6f4lY35aHzkEweFzGZPSD2+vuNEiGnIg+Im9HGaiwp8U/GhhMef4mU4SFCedn+6gHCpA6yd0LAQ==}
     cpu: [arm64]
     os: [win32]
 
-  lefthook-windows-x64@1.12.0:
-    resolution: {integrity: sha512-cUOpmq8qJMhrOTqAXklsSbSaIxABVPBcENOD84N/pyqQpCdR3LAxIcq5cHLLap6ek8zPYwvFeBe1hVQC/X/xvQ==}
+  lefthook-windows-x64@1.12.1:
+    resolution: {integrity: sha512-9bnDuzWHcK1iHsgOBO2eOjVJsVSYbNfoVgimU3w6DLoiWUR9hJu5FflJgHWveOb0Ptznzxe5TE0JPClVf3kMFQ==}
     cpu: [x64]
     os: [win32]
 
-  lefthook@1.12.0:
-    resolution: {integrity: sha512-+lJSdsNcKzxv4TcIcXrd21lBXI7wrVXZ080wiJzz4sHz52KyKVPfALDPMm7+VWBtATpnCtHQe2ZPQwiBmy6VRw==}
+  lefthook@1.12.1:
+    resolution: {integrity: sha512-r+po/Y+P3kGU1RA5grotgLi+sDpdTnV9KVDczIeqj1F8we7cD3ZHH4YKyIcrkORZpqDckipWxq4sKvITKvBzYw==}
     hasBin: true
 
   lilconfig@3.1.3:
@@ -2270,8 +2270,8 @@ packages:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
-  tsl@1.0.18:
-    resolution: {integrity: sha512-Lx74mEVv/aNS5PKnVjT/mEt8imBiLQxW/7qvkUN1fwVGKSleolPxGe6debG3HMkN8kMNtpp//VE6yRCcWeUdOg==}
+  tsl@1.0.20:
+    resolution: {integrity: sha512-E4bKv1xzAh6IkeCtrokMTCDARyyKFTZJNhkio8ipD5pawCwzpYJVGEAGuFxm0MooklUm+3JqV1M0WJiOfv4F3Q==}
     hasBin: true
     peerDependencies:
       typescript: ^5.8.3
@@ -3041,7 +3041,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@24.0.10':
+  '@types/node@24.0.12':
     dependencies:
       undici-types: 7.8.0
 
@@ -3065,13 +3065,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.4(vite@7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0))':
+  '@vitest/mocker@3.2.4(vite@7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0))':
     dependencies:
       '@vitest/spy': 3.2.4
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -3684,48 +3684,48 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  lefthook-darwin-arm64@1.12.0:
+  lefthook-darwin-arm64@1.12.1:
     optional: true
 
-  lefthook-darwin-x64@1.12.0:
+  lefthook-darwin-x64@1.12.1:
     optional: true
 
-  lefthook-freebsd-arm64@1.12.0:
+  lefthook-freebsd-arm64@1.12.1:
     optional: true
 
-  lefthook-freebsd-x64@1.12.0:
+  lefthook-freebsd-x64@1.12.1:
     optional: true
 
-  lefthook-linux-arm64@1.12.0:
+  lefthook-linux-arm64@1.12.1:
     optional: true
 
-  lefthook-linux-x64@1.12.0:
+  lefthook-linux-x64@1.12.1:
     optional: true
 
-  lefthook-openbsd-arm64@1.12.0:
+  lefthook-openbsd-arm64@1.12.1:
     optional: true
 
-  lefthook-openbsd-x64@1.12.0:
+  lefthook-openbsd-x64@1.12.1:
     optional: true
 
-  lefthook-windows-arm64@1.12.0:
+  lefthook-windows-arm64@1.12.1:
     optional: true
 
-  lefthook-windows-x64@1.12.0:
+  lefthook-windows-x64@1.12.1:
     optional: true
 
-  lefthook@1.12.0:
+  lefthook@1.12.1:
     optionalDependencies:
-      lefthook-darwin-arm64: 1.12.0
-      lefthook-darwin-x64: 1.12.0
-      lefthook-freebsd-arm64: 1.12.0
-      lefthook-freebsd-x64: 1.12.0
-      lefthook-linux-arm64: 1.12.0
-      lefthook-linux-x64: 1.12.0
-      lefthook-openbsd-arm64: 1.12.0
-      lefthook-openbsd-x64: 1.12.0
-      lefthook-windows-arm64: 1.12.0
-      lefthook-windows-x64: 1.12.0
+      lefthook-darwin-arm64: 1.12.1
+      lefthook-darwin-x64: 1.12.1
+      lefthook-freebsd-arm64: 1.12.1
+      lefthook-freebsd-x64: 1.12.1
+      lefthook-linux-arm64: 1.12.1
+      lefthook-linux-x64: 1.12.1
+      lefthook-openbsd-arm64: 1.12.1
+      lefthook-openbsd-x64: 1.12.1
+      lefthook-windows-arm64: 1.12.1
+      lefthook-windows-x64: 1.12.1
 
   lilconfig@3.1.3: {}
 
@@ -4354,7 +4354,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsl@1.0.18(typescript@5.8.3):
+  tsl@1.0.20(typescript@5.8.3):
     dependencies:
       esbuild: 0.25.6
       ts-api-utils: 2.1.0(typescript@5.8.3)
@@ -4427,13 +4427,13 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-node@3.2.4(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
+  vite-node@3.2.4(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -4448,7 +4448,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
+  vite@7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.4.6(picomatch@4.0.2)
@@ -4457,17 +4457,17 @@ snapshots:
       rollup: 4.44.2
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.10
+      '@types/node': 24.0.12
       fsevents: 2.3.3
       jiti: 2.4.2
       tsx: 4.20.3
       yaml: 2.8.0
 
-  vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
+  vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0))
+      '@vitest/mocker': 3.2.4(vite@7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
@@ -4485,12 +4485,12 @@ snapshots:
       tinyglobby: 0.2.14
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
-      vite: 7.0.3(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
-      vite-node: 3.2.4(@types/node@24.0.10)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.3(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
+      vite-node: 3.2.4(@types/node@24.0.12)(jiti@2.4.2)(tsx@4.20.3)(yaml@2.8.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/debug': 4.1.12
-      '@types/node': 24.0.10
+      '@types/node': 24.0.12
     transitivePeerDependencies:
       - jiti
       - less

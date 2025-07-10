@@ -42,7 +42,7 @@
     "tsup": "^8.5.0"
   },
   "peerDependencies": {
-    "tsl": "^1.0.18",
+    "tsl": "^1.0.20",
     "typescript": "^5.8.3"
   },
   "engines": {
