@@ -1,6 +1,6 @@
 {
   "name": "tsl-react",
-  "version": "0.0.1-next.1",
+  "version": "0.0.2-next.0",
   "description": "A unified plugin that combines all individual plugins from the react-analyzer monorepo into one.",
   "keywords": [
     "react",
