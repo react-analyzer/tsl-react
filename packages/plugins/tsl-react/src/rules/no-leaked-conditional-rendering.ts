@@ -1,5 +1,5 @@
 import { compare } from "compare-versions";
-import { defineRule, type AST, type ReportDescriptor } from "tsl";
+import { defineRule, type AST, type ReportDescriptor, type Rule } from "tsl";
 import { SyntaxKind } from "typescript";
 
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
@@ -14,6 +14,57 @@ export const messages = {
     `Potential leaked value ${p.value} that might cause unintentionally rendered values or rendering crashes.`,
 } as const;
 
+/**
+ * Prevents problematic leaked values from being rendered.
+ *
+ * Using the && operator to render some element conditionally in JSX can cause unexpected values being rendered, or even crashing the rendering.
+ *
+ * **Examples**
+ *
+ * ```tsx
+ * import React from "react";
+ *
+ * interface MyComponentProps {
+ *   count: number;
+ * }
+ *
+ * function MyComponent({ count }: MyComponentProps) {
+ *   return <div>{count && <span>There are {count} results</span>}</div>;
+ *   //           ^^^^^
+ *   //           - Potential leaked value 'count' that might cause unintentionally rendered values or rendering crashes.
+ * }
+ * ```
+ *
+ * ```tsx
+ * import React from "react";
+ *
+ * interface MyComponentProps {
+ *   items: string[];
+ * }
+ *
+ * function MyComponent({ items }: MyComponentProps) {
+ *   return <div>{items.length && <List items={items} />}</div>;
+ *   //           ^^^^^^^^^^^^
+ *   //           - Potential leaked value 'items.length' that might cause unintentionally rendered values or rendering crashes.
+ * }
+ * ```
+ *
+ * ```tsx
+ * import React from "react";
+ *
+ * interface MyComponentProps {
+ *   items: string[];
+ * }
+ *
+ * function MyComponent({ items }: MyComponentProps) {
+ *   return <div>{items[0] && <List items={items} />}</div>;
+ *   //           ^^^^^^^^
+ *   //           - Potential leaked value 'items[0]' that might cause unintentionally rendered values or rendering crashes.
+ * }
+ * ```
+ *
+ * @since 0.0.0
+ */
 export const noLeakedConditionalRendering = defineRule(() => {
   return {
     name: "@react-analyzer/noLeakedConditionalRendering",

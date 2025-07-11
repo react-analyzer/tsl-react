@@ -1,6 +1,6 @@
-import fs from "fs/promises";
+// import fs from "fs/promises";
 
-await fs.copyFile(
-  "README.md",
-  "packages/plugins/tsl-react/README.md",
-);
+// await fs.copyFile(
+//   "README.md",
+//   "packages/plugins/tsl-react/README.md",
+// );

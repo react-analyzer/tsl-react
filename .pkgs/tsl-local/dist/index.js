@@ -1,10 +1,8 @@
-import { defineRule, createRulesSet } from 'tsl';
 import { isMatching, P } from 'ts-pattern';
+import { defineRule } from 'tsl';
 import { SyntaxKind } from 'typescript';
 
-// package.json
-var name = "@local/tsl-local";
-var version = "0.0.0";
+// src/rules/prefer-eqeq-nullish-comparison.ts
 var isNullOrUndefine = isMatching(P.union(
   SyntaxKind.NullKeyword,
   SyntaxKind.UndefinedKeyword
@@ -40,9 +38,4 @@ var preferEqEqNullishComparison = defineRule(() => ({
   }
 }));
 
-// src/index.ts
-var rules = createRulesSet({
-  preferEqEqNullishComparison
-});
-
-export { name, rules, version };
+export { preferEqEqNullishComparison };

@@ -1,10 +1,10 @@
 import * as tsl from 'tsl';
 
-var name = "@local/tsl-local";
-var version = "0.0.0";
+/**
+ * Prefer using `==` or `!=` for nullish comparison instead of `===` or `!==`.
+ *
+ * @since 0.0.0
+ */
+declare const preferEqEqNullishComparison: (options?: "off" | undefined) => tsl.Rule<unknown>;
 
-declare const rules: tsl.RulesSet<{
-    preferEqEqNullishComparison: (options?: "off" | undefined) => tsl.Rule<unknown>;
-}>;
-
-export { name, rules, version };
+export { preferEqEqNullishComparison };
