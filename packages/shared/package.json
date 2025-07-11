@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/shared",
-  "version": "0.0.2-next.0",
+  "version": "0.0.2-next.1",
   "description": "React Analyzer Shared constants and functions.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {

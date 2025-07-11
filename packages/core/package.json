@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/core",
-  "version": "0.0.2-next.0",
+  "version": "0.0.2-next.1",
   "description": "React Analyzer utility module for static analysis of React core APIs and patterns.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
