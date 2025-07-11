@@ -28,7 +28,6 @@
   ],
   "scripts": {
     "build": "tsup --dts-resolve",
-    "build:docs": "typedoc",
     "lint:publish": "publint",
     "lint:ts": "tsl",
     "publish": "pnpm run build && pnpm run lint:publish"
@@ -41,7 +40,7 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^24.0.12",
+    "@types/node": "^24.0.13",
     "tsup": "^8.5.0",
     "type-fest": "^4.41.0"
   },

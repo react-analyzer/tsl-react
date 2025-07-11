@@ -8,6 +8,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
+  "editor.rulers": [
+    160
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "never",

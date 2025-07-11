@@ -12,6 +12,11 @@ const isEqEqEqOrExEqEq = isMatching(P.union(
   SyntaxKind.ExclamationEqualsEqualsToken,
 ));
 
+/**
+ * Prefer using `==` or `!=` for nullish comparison instead of `===` or `!==`.
+ *
+ * @since 0.0.0
+ */
 export const preferEqEqNullishComparison = defineRule(() => ({
   name: "local/preferEqEqNullishComparison",
   visitor: {

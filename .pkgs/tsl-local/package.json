@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "build:docs": "typedoc",
     "lint:publish": "publint",
     "lint:ts": "tsl"
   },

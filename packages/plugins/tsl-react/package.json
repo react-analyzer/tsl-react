@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "build": "tsup --dts-resolve",
+    "build:docs": "typedoc",
     "lint:publish": "pnpm publint",
     "lint:ts": "tsl",
     "publish": "pnpm run build && pnpm run lint:publish"

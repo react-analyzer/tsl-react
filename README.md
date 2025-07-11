@@ -31,7 +31,7 @@ Then follow the [installation guide](https://github.com/ArnaudBarre/tsl?tab=read
 ```diff
 // tsl.config.ts
 import { core, defineConfig } from "tsl";
-+ import { rules as react } from "tsl-react";
++ import * as react from "tsl-react";
 
 export default defineConfig({
   rules: [
