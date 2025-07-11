@@ -18,6 +18,7 @@ export default defineConfig({
       considerDefaultExhaustiveForUnions: true,
     }),
     core.noConfusingVoidExpression("off"),
+
     local.preferEqEqNullishComparison(),
   ],
 });

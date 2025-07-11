@@ -28,12 +28,14 @@
   ],
   "scripts": {
     "build": "tsup --dts-resolve",
+    "build:docs": "typedoc",
     "lint:publish": "publint",
     "lint:ts": "tsl",
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
     "@react-analyzer/eff": "workspace:*",
+    "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/kit": "workspace:*",
     "ts-pattern": "^5.7.1"
   },

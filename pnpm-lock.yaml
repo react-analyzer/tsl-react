@@ -172,6 +172,9 @@ importers:
 
   packages/core:
     dependencies:
+      '@react-analyzer/ast':
+        specifier: workspace:*
+        version: link:../utilities/ast
       '@react-analyzer/eff':
         specifier: workspace:*
         version: link:../utilities/eff
