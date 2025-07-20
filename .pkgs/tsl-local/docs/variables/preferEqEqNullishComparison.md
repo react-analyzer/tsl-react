@@ -1,6 +1,6 @@
 [**@local/tsl-local**](../README.md)
 
----
+***
 
 [@local/tsl-local](../README.md) / preferEqEqNullishComparison
 
