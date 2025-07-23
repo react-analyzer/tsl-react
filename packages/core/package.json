@@ -34,15 +34,15 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
-    "@react-analyzer/eff": "workspace:*",
     "@react-analyzer/ast": "workspace:*",
+    "@react-analyzer/eff": "workspace:*",
     "@react-analyzer/kit": "workspace:*",
     "ts-pattern": "^5.7.1"
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^24.0.15",
+    "@types/node": "^24.1.0",
     "tsup": "^8.5.0",
     "type-fest": "^4.41.0"
   },
