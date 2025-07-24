@@ -57,9 +57,6 @@ importers:
       esbuild:
         specifier: ^0.25.8
         version: 0.25.8
-      jiti:
-        specifier: ^2.4.2
-        version: 2.4.2
       lefthook:
         specifier: ^1.12.2
         version: 1.12.2
@@ -3633,7 +3630,8 @@ snapshots:
       chalk: 4.1.2
       pretty-format: 30.0.2
 
-  jiti@2.4.2: {}
+  jiti@2.4.2:
+    optional: true
 
   joycon@3.1.1: {}
 
