@@ -46,12 +46,12 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@local/tsl-local": "workspace:*",
-    "@swc/core": "^1.13.2",
+    "@swc/core": "^1.13.3",
     "@tsconfig/node22": "^22.0.2",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^24.1.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
     "ansis": "^4.1.0",
     "cspell": "^9.2.0",
     "dedent": "^1.6.0",
@@ -61,23 +61,23 @@
     "markdownlint": "^0.38.0",
     "nx": "21.3.0",
     "publint": "^0.3.12",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "tinyexec": "^1.0.1",
     "tinyglobby": "^0.2.14",
-    "ts-pattern": "^5.7.1",
-    "tsl": "^1.0.20",
+    "ts-pattern": "^5.8.0",
+    "tsl": "^1.0.21",
     "tslib": "^2.8.1",
     "tsup": "^8.5.0",
     "tsx": "^4.20.3",
     "type-fest": "^4.41.0",
-    "typedoc": "^0.28.7",
-    "typedoc-plugin-markdown": "^4.7.1",
-    "typedoc-plugin-mdn-links": "^5.0.5",
+    "typedoc": "^0.28.8",
+    "typedoc-plugin-markdown": "^4.8.0",
+    "typedoc-plugin-mdn-links": "^5.0.6",
     "typescript": "beta",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.14.0",
   "engines": {
     "node": ">=22.17.0"
   },
@@ -90,14 +90,13 @@
       "nx"
     ],
     "overrides": {
-      "@types/react": "^19.1.8",
-      "@types/react-dom": "^19.1.6",
+      "@types/react": "^19.1.9",
+      "@types/react-dom": "^19.1.7",
       "esbuild": "^0.25.8",
-      "react": "^19.1.0",
-      "react-dom": "^19.1.0",
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1",
       "ts-api-utils": "^2.1.0",
-      "tslib": "^2.8.1",
-      "typescript": "beta"
+      "tslib": "^2.8.1"
     }
   }
 }

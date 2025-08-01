@@ -6,13 +6,7 @@
 
 # Function: getAnalyzerOptions()
 
-> **getAnalyzerOptions**(`context`): [`AnalyzerOptions`](../interfaces/AnalyzerOptions.md)
-
-## Parameters
-
-### context
-
-[`Omit`](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)\<`Context`, `"data"`\>
+> **getAnalyzerOptions**(): [`AnalyzerOptions`](../interfaces/AnalyzerOptions.md)
 
 ## Returns
 

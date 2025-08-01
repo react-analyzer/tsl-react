@@ -69,7 +69,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
   return {
     name: "@react-analyzer/noLeakedConditionalRendering",
     createData(ctx) {
-      const { version } = getAnalyzerOptions(ctx);
+      const { version } = getAnalyzerOptions();
       const state = {
         isWithinJsxExpression: false,
       };

@@ -5,14 +5,13 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@types/react': ^19.1.8
-  '@types/react-dom': ^19.1.6
+  '@types/react': ^19.1.9
+  '@types/react-dom': ^19.1.7
   esbuild: ^0.25.8
-  react: ^19.1.0
-  react-dom: ^19.1.0
+  react: ^19.1.1
+  react-dom: ^19.1.1
   ts-api-utils: ^2.1.0
   tslib: ^2.8.1
-  typescript: beta
 
 importers:
 
@@ -25,8 +24,8 @@ importers:
         specifier: workspace:*
         version: link:.pkgs/tsl-local
       '@swc/core':
-        specifier: ^1.13.2
-        version: 1.13.2
+        specifier: ^1.13.3
+        version: 1.13.3
       '@tsconfig/node22':
         specifier: ^22.0.2
         version: 22.0.2
@@ -37,11 +36,11 @@ importers:
         specifier: ^24.1.0
         version: 24.1.0
       '@types/react':
-        specifier: ^19.1.8
-        version: 19.1.8
+        specifier: ^19.1.9
+        version: 19.1.9
       '@types/react-dom':
-        specifier: ^19.1.6
-        version: 19.1.6(@types/react@19.1.8)
+        specifier: ^19.1.7
+        version: 19.1.7(@types/react@19.1.9)
       ansis:
         specifier: ^4.1.0
         version: 4.1.0
@@ -65,16 +64,16 @@ importers:
         version: 0.38.0
       nx:
         specifier: 21.3.0
-        version: 21.3.0(@swc/core@1.13.2)
+        version: 21.3.0(@swc/core@1.13.3)
       publint:
         specifier: ^0.3.12
         version: 0.3.12
       react:
-        specifier: ^19.1.0
-        version: 19.1.0
+        specifier: ^19.1.1
+        version: 19.1.1
       react-dom:
-        specifier: ^19.1.0
-        version: 19.1.0(react@19.1.0)
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
       tinyexec:
         specifier: ^1.0.1
         version: 1.0.1
@@ -82,17 +81,17 @@ importers:
         specifier: ^0.2.14
         version: 0.2.14
       ts-pattern:
-        specifier: ^5.7.1
-        version: 5.7.1
+        specifier: ^5.8.0
+        version: 5.8.0
       tsl:
-        specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        specifier: ^1.0.21
+        version: 1.0.21(typescript@5.9.0-beta)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
       tsx:
         specifier: ^4.20.3
         version: 4.20.3
@@ -100,14 +99,14 @@ importers:
         specifier: ^4.41.0
         version: 4.41.0
       typedoc:
-        specifier: ^0.28.7
-        version: 0.28.7(typescript@5.9.0-beta)
+        specifier: ^0.28.8
+        version: 0.28.8(typescript@5.9.0-beta)
       typedoc-plugin-markdown:
-        specifier: ^4.7.1
-        version: 4.7.1(typedoc@0.28.7(typescript@5.9.0-beta))
+        specifier: ^4.8.0
+        version: 4.8.0(typedoc@0.28.8(typescript@5.9.0-beta))
       typedoc-plugin-mdn-links:
-        specifier: ^5.0.5
-        version: 5.0.5(typedoc@0.28.7(typescript@5.9.0-beta))
+        specifier: ^5.0.6
+        version: 5.0.6(typedoc@0.28.8(typescript@5.9.0-beta))
       typescript:
         specifier: beta
         version: 5.9.0-beta
@@ -125,7 +124,7 @@ importers:
         version: 2.0.5
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
 
   .pkgs/tsl-local:
     dependencies:
@@ -149,23 +148,23 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
       typescript:
-        specifier: beta
-        version: 5.9.0-beta
+        specifier: ^4.9.5 || ^5.4.5
+        version: 5.9.2
     devDependencies:
       '@local/configs':
         specifier: workspace:*
         version: link:../configs
       '@types/react':
-        specifier: ^19.1.8
-        version: 19.1.8
+        specifier: ^19.1.9
+        version: 19.1.9
       '@types/react-dom':
-        specifier: ^19.1.6
-        version: 19.1.6(@types/react@19.1.8)
+        specifier: ^19.1.7
+        version: 19.1.7(@types/react@19.1.9)
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
 
   packages/core:
     dependencies:
@@ -180,16 +179,16 @@ importers:
         version: link:../utilities/kit
       ts-api-utils:
         specifier: ^2.1.0
-        version: 2.1.0(typescript@5.9.0-beta)
+        version: 2.1.0(typescript@5.9.2)
       ts-pattern:
         specifier: ^5.7.1
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
       typescript:
-        specifier: beta
-        version: 5.9.0-beta
+        specifier: ^5.8.3
+        version: 5.9.2
     devDependencies:
       '@local/configs':
         specifier: workspace:*
@@ -202,7 +201,7 @@ importers:
         version: 24.1.0
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -229,17 +228,17 @@ importers:
         version: 6.1.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
       typescript:
-        specifier: beta
-        version: 5.9.0-beta
+        specifier: ^4.9.5 || ^5.4.5
+        version: 5.9.2
     devDependencies:
       '@local/configs':
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
 
   packages/shared:
     dependencies:
@@ -267,7 +266,7 @@ importers:
         version: 24.1.0
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -285,17 +284,17 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
       typescript:
-        specifier: beta
-        version: 5.9.0-beta
+        specifier: ^5.8.3
+        version: 5.9.2
     devDependencies:
       '@local/configs':
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
 
   packages/utilities/eff:
     devDependencies:
@@ -304,7 +303,7 @@ importers:
         version: link:../../../.pkgs/configs
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
 
   packages/utilities/kit:
     dependencies:
@@ -316,10 +315,10 @@ importers:
         version: 5.7.1
       tsl:
         specifier: ^1.0.20
-        version: 1.0.20(typescript@5.9.0-beta)
+        version: 1.0.20(typescript@5.9.2)
       typescript:
-        specifier: beta
-        version: 5.9.0-beta
+        specifier: ^5.8.3
+        version: 5.9.2
     devDependencies:
       '@local/configs':
         specifier: workspace:*
@@ -329,7 +328,7 @@ importers:
         version: 22.0.2
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -976,68 +975,68 @@ packages:
   '@sinclair/typebox@0.34.38':
     resolution: {integrity: sha512-HpkxMmc2XmZKhvaKIZZThlHmx1L0I/V1hWK1NubtlFnr6ZqdiOpV72TKudZUNQjZNsyDBay72qFEhEvb+bcwcA==}
 
-  '@swc/core-darwin-arm64@1.13.2':
-    resolution: {integrity: sha512-44p7ivuLSGFJ15Vly4ivLJjg3ARo4879LtEBAabcHhSZygpmkP8eyjyWxrH3OxkY1eRZSIJe8yRZPFw4kPXFPw==}
+  '@swc/core-darwin-arm64@1.13.3':
+    resolution: {integrity: sha512-ux0Ws4pSpBTqbDS9GlVP354MekB1DwYlbxXU3VhnDr4GBcCOimpocx62x7cFJkSpEBF8bmX8+/TTCGKh4PbyXw==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@swc/core-darwin-x64@1.13.2':
-    resolution: {integrity: sha512-Lb9EZi7X2XDAVmuUlBm2UvVAgSCbD3qKqDCxSI4jEOddzVOpNCnyZ/xEampdngUIyDDhhJLYU9duC+Mcsv5Y+A==}
+  '@swc/core-darwin-x64@1.13.3':
+    resolution: {integrity: sha512-p0X6yhxmNUOMZrbeZ3ZNsPige8lSlSe1llllXvpCLkKKxN/k5vZt1sULoq6Nj4eQ7KeHQVm81/+AwKZyf/e0TA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
 
-  '@swc/core-linux-arm-gnueabihf@1.13.2':
-    resolution: {integrity: sha512-9TDe/92ee1x57x+0OqL1huG4BeljVx0nWW4QOOxp8CCK67Rpc/HHl2wciJ0Kl9Dxf2NvpNtkPvqj9+BUmM9WVA==}
+  '@swc/core-linux-arm-gnueabihf@1.13.3':
+    resolution: {integrity: sha512-OmDoiexL2fVWvQTCtoh0xHMyEkZweQAlh4dRyvl8ugqIPEVARSYtaj55TBMUJIP44mSUOJ5tytjzhn2KFxFcBA==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
 
-  '@swc/core-linux-arm64-gnu@1.13.2':
-    resolution: {integrity: sha512-KJUSl56DBk7AWMAIEcU83zl5mg3vlQYhLELhjwRFkGFMvghQvdqQ3zFOYa4TexKA7noBZa3C8fb24rI5sw9Exg==}
+  '@swc/core-linux-arm64-gnu@1.13.3':
+    resolution: {integrity: sha512-STfKku3QfnuUj6k3g9ld4vwhtgCGYIFQmsGPPgT9MK/dI3Lwnpe5Gs5t1inoUIoGNP8sIOLlBB4HV4MmBjQuhw==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
 
-  '@swc/core-linux-arm64-musl@1.13.2':
-    resolution: {integrity: sha512-teU27iG1oyWpNh9CzcGQ48ClDRt/RCem7mYO7ehd2FY102UeTws2+OzLESS1TS1tEZipq/5xwx3FzbVgiolCiQ==}
+  '@swc/core-linux-arm64-musl@1.13.3':
+    resolution: {integrity: sha512-bc+CXYlFc1t8pv9yZJGus372ldzOVscBl7encUBlU1m/Sig0+NDJLz6cXXRcFyl6ABNOApWeR4Yl7iUWx6C8og==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
 
-  '@swc/core-linux-x64-gnu@1.13.2':
-    resolution: {integrity: sha512-dRPsyPyqpLD0HMRCRpYALIh4kdOir8pPg4AhNQZLehKowigRd30RcLXGNVZcc31Ua8CiPI4QSgjOIxK+EQe4LQ==}
+  '@swc/core-linux-x64-gnu@1.13.3':
+    resolution: {integrity: sha512-dFXoa0TEhohrKcxn/54YKs1iwNeW6tUkHJgXW33H381SvjKFUV53WR231jh1sWVJETjA3vsAwxKwR23s7UCmUA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
 
-  '@swc/core-linux-x64-musl@1.13.2':
-    resolution: {integrity: sha512-CCxETW+KkYEQDqz1SYC15YIWYheqFC+PJVOW76Maa/8yu8Biw+HTAcblKf2isrlUtK8RvrQN94v3UXkC2NzCEw==}
+  '@swc/core-linux-x64-musl@1.13.3':
+    resolution: {integrity: sha512-ieyjisLB+ldexiE/yD8uomaZuZIbTc8tjquYln9Quh5ykOBY7LpJJYBWvWtm1g3pHv6AXlBI8Jay7Fffb6aLfA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
 
-  '@swc/core-win32-arm64-msvc@1.13.2':
-    resolution: {integrity: sha512-Wv/QTA6PjyRLlmKcN6AmSI4jwSMRl0VTLGs57PHTqYRwwfwd7y4s2fIPJVBNbAlXd795dOEP6d/bGSQSyhOX3A==}
+  '@swc/core-win32-arm64-msvc@1.13.3':
+    resolution: {integrity: sha512-elTQpnaX5vESSbhCEgcwXjpMsnUbqqHfEpB7ewpkAsLzKEXZaK67ihSRYAuAx6ewRQTo7DS5iTT6X5aQD3MzMw==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
 
-  '@swc/core-win32-ia32-msvc@1.13.2':
-    resolution: {integrity: sha512-PuCdtNynEkUNbUXX/wsyUC+t4mamIU5y00lT5vJcAvco3/r16Iaxl5UCzhXYaWZSNVZMzPp9qN8NlSL8M5pPxw==}
+  '@swc/core-win32-ia32-msvc@1.13.3':
+    resolution: {integrity: sha512-nvehQVEOdI1BleJpuUgPLrclJ0TzbEMc+MarXDmmiRFwEUGqj+pnfkTSb7RZyS1puU74IXdK/YhTirHurtbI9w==}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
 
-  '@swc/core-win32-x64-msvc@1.13.2':
-    resolution: {integrity: sha512-qlmMkFZJus8cYuBURx1a3YAG2G7IW44i+FEYV5/32ylKkzGNAr9tDJSA53XNnNXkAB5EXSPsOz7bn5C3JlEtdQ==}
+  '@swc/core-win32-x64-msvc@1.13.3':
+    resolution: {integrity: sha512-A+JSKGkRbPLVV2Kwx8TaDAV0yXIXm/gc8m98hSkVDGlPBBmydgzNdWy3X7HTUBM7IDk7YlWE7w2+RUGjdgpTmg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
 
-  '@swc/core@1.13.2':
-    resolution: {integrity: sha512-YWqn+0IKXDhqVLKoac4v2tV6hJqB/wOh8/Br8zjqeqBkKa77Qb0Kw2i7LOFzjFNZbZaPH6AlMGlBwNrxaauaAg==}
+  '@swc/core@1.13.3':
+    resolution: {integrity: sha512-ZaDETVWnm6FE0fc+c2UE8MHYVS3Fe91o5vkmGfgwGXFbxYvAjKSqxM/j4cRc9T7VZNSJjriXq58XkfCp3Y6f+w==}
     engines: {node: '>=10'}
     peerDependencies:
       '@swc/helpers': '>=0.5.17'
@@ -1084,13 +1083,13 @@ packages:
   '@types/node@24.1.0':
     resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
 
-  '@types/react-dom@19.1.6':
-    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
+  '@types/react-dom@19.1.7':
+    resolution: {integrity: sha512-i5ZzwYpqjmrKenzkoLM2Ibzt6mAsM7pxB6BCIouEVVmgiqaMj1TjaK7hnA36hbW5aZv20kx7Lw6hWzPWg0Rurw==}
     peerDependencies:
-      '@types/react': ^19.1.8
+      '@types/react': ^19.1.9
 
-  '@types/react@19.1.8':
-    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
+  '@types/react@19.1.9':
+    resolution: {integrity: sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -2045,16 +2044,16 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.1.0:
-    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
+  react-dom@19.1.1:
+    resolution: {integrity: sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==}
     peerDependencies:
-      react: ^19.1.0
+      react: ^19.1.1
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
-  react@19.1.0:
-    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
+  react@19.1.1:
+    resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
     engines: {node: '>=0.10.0'}
 
   readable-stream@3.6.2:
@@ -2248,12 +2247,21 @@ packages:
   ts-pattern@5.7.1:
     resolution: {integrity: sha512-EGs8PguQqAAUIcQfK4E9xdXxB6s2GK4sJfT/vcc9V1ELIvC4LH/zXu2t/5fajtv6oiRCxdv7BgtVK3vWgROxag==}
 
+  ts-pattern@5.8.0:
+    resolution: {integrity: sha512-kIjN2qmWiHnhgr5DAkAafF9fwb0T5OhMVSWrm8XEdTFnX6+wfXwYOFjeF86UZ54vduqiR7BfqScFmXSzSaH8oA==}
+
   tsconfig-paths@4.2.0:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
   tsl@1.0.20:
     resolution: {integrity: sha512-E4bKv1xzAh6IkeCtrokMTCDARyyKFTZJNhkio8ipD5pawCwzpYJVGEAGuFxm0MooklUm+3JqV1M0WJiOfv4F3Q==}
+    hasBin: true
+    peerDependencies:
+      typescript: ~5.8.3
+
+  tsl@1.0.21:
+    resolution: {integrity: sha512-YI5eadRz5CDmaki8tSpgBLijIJzUHJSgDGucQzKPNA9O/eEFBFleqtz6OOWfaDv6rQHomSYBZnxhfxSVIzVt1w==}
     hasBin: true
     peerDependencies:
       typescript: ~5.8.3
@@ -2289,19 +2297,19 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
-  typedoc-plugin-markdown@4.7.1:
-    resolution: {integrity: sha512-HN/fHLm2S6MD4HX8txfB4eWvVBzX/mEYy5U5s1KTAdh3E5uX5/lilswqTzZlPTT6fNZInAboAdFGpbAuBKnE4A==}
+  typedoc-plugin-markdown@4.8.0:
+    resolution: {integrity: sha512-BQqXnT9PETe6WEFf8bcsvvGEGQHbwTo/BFyY+RUIsSB05Y0Wn56iF+fK1PY2OKJJIhV4kp4dp7osaP9Bm5a0Zw==}
     engines: {node: '>= 18'}
     peerDependencies:
       typedoc: 0.28.x
 
-  typedoc-plugin-mdn-links@5.0.5:
-    resolution: {integrity: sha512-M6aZtJokVIiDpgVnozmn653t28FU8iiNu6mg0GHifuHv5egG5rRMlm0tscMRMG02+7xK51MfRWS2xvaoSWMEeg==}
+  typedoc-plugin-mdn-links@5.0.6:
+    resolution: {integrity: sha512-HMT80FBtXmsxM26RXjoEARWf6g5cRJwcWJ6GiaMNxXu9VlZHxoin15MpxSZVlw3BrG0YILeAieRTJbrnrJXyvw==}
     peerDependencies:
       typedoc: 0.27.x || 0.28.x
 
-  typedoc@0.28.7:
-    resolution: {integrity: sha512-lpz0Oxl6aidFkmS90VQDQjk/Qf2iw0IUvFqirdONBdj7jPSN9mGXhy66BcGNDxx5ZMyKKiBVAREvPEzT6Uxipw==}
+  typedoc@0.28.8:
+    resolution: {integrity: sha512-16GfLopc8icHfdvqZDqdGBoS2AieIRP2rpf9mU+MgN+gGLyEQvAO0QgOa6NJ5QNmQi0LFrDY9in4F2fUNKgJKA==}
     engines: {node: '>= 18', pnpm: '>= 10'}
     hasBin: true
     peerDependencies:
@@ -2309,6 +2317,11 @@ packages:
 
   typescript@5.9.0-beta:
     resolution: {integrity: sha512-p91qoTdwWKj9YEBYavmGiBn0DF4OBElzw4pW4oPbK4HeCfr/SDz9+yviVWshZXGvGvFCJ3AVQ+J7F1UZXc23QQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2947,51 +2960,51 @@ snapshots:
 
   '@sinclair/typebox@0.34.38': {}
 
-  '@swc/core-darwin-arm64@1.13.2':
+  '@swc/core-darwin-arm64@1.13.3':
     optional: true
 
-  '@swc/core-darwin-x64@1.13.2':
+  '@swc/core-darwin-x64@1.13.3':
     optional: true
 
-  '@swc/core-linux-arm-gnueabihf@1.13.2':
+  '@swc/core-linux-arm-gnueabihf@1.13.3':
     optional: true
 
-  '@swc/core-linux-arm64-gnu@1.13.2':
+  '@swc/core-linux-arm64-gnu@1.13.3':
     optional: true
 
-  '@swc/core-linux-arm64-musl@1.13.2':
+  '@swc/core-linux-arm64-musl@1.13.3':
     optional: true
 
-  '@swc/core-linux-x64-gnu@1.13.2':
+  '@swc/core-linux-x64-gnu@1.13.3':
     optional: true
 
-  '@swc/core-linux-x64-musl@1.13.2':
+  '@swc/core-linux-x64-musl@1.13.3':
     optional: true
 
-  '@swc/core-win32-arm64-msvc@1.13.2':
+  '@swc/core-win32-arm64-msvc@1.13.3':
     optional: true
 
-  '@swc/core-win32-ia32-msvc@1.13.2':
+  '@swc/core-win32-ia32-msvc@1.13.3':
     optional: true
 
-  '@swc/core-win32-x64-msvc@1.13.2':
+  '@swc/core-win32-x64-msvc@1.13.3':
     optional: true
 
-  '@swc/core@1.13.2':
+  '@swc/core@1.13.3':
     dependencies:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.23
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.13.2
-      '@swc/core-darwin-x64': 1.13.2
-      '@swc/core-linux-arm-gnueabihf': 1.13.2
-      '@swc/core-linux-arm64-gnu': 1.13.2
-      '@swc/core-linux-arm64-musl': 1.13.2
-      '@swc/core-linux-x64-gnu': 1.13.2
-      '@swc/core-linux-x64-musl': 1.13.2
-      '@swc/core-win32-arm64-msvc': 1.13.2
-      '@swc/core-win32-ia32-msvc': 1.13.2
-      '@swc/core-win32-x64-msvc': 1.13.2
+      '@swc/core-darwin-arm64': 1.13.3
+      '@swc/core-darwin-x64': 1.13.3
+      '@swc/core-linux-arm-gnueabihf': 1.13.3
+      '@swc/core-linux-arm64-gnu': 1.13.3
+      '@swc/core-linux-arm64-musl': 1.13.3
+      '@swc/core-linux-x64-gnu': 1.13.3
+      '@swc/core-linux-x64-musl': 1.13.3
+      '@swc/core-win32-arm64-msvc': 1.13.3
+      '@swc/core-win32-ia32-msvc': 1.13.3
+      '@swc/core-win32-x64-msvc': 1.13.3
 
   '@swc/counter@0.1.3': {}
 
@@ -3031,11 +3044,11 @@ snapshots:
     dependencies:
       undici-types: 7.8.0
 
-  '@types/react-dom@19.1.6(@types/react@19.1.8)':
+  '@types/react-dom@19.1.7(@types/react@19.1.9)':
     dependencies:
-      '@types/react': 19.1.8
+      '@types/react': 19.1.9
 
-  '@types/react@19.1.8':
+  '@types/react@19.1.9':
     dependencies:
       csstype: 3.1.3
 
@@ -3965,7 +3978,7 @@ snapshots:
     dependencies:
       path-key: 3.1.1
 
-  nx@21.3.0(@swc/core@1.13.2):
+  nx@21.3.0(@swc/core@1.13.3):
     dependencies:
       '@napi-rs/wasm-runtime': 0.2.4
       '@yarnpkg/lockfile': 1.1.0
@@ -4013,7 +4026,7 @@ snapshots:
       '@nx/nx-linux-x64-musl': 21.3.0
       '@nx/nx-win32-arm64-msvc': 21.3.0
       '@nx/nx-win32-x64-msvc': 21.3.0
-      '@swc/core': 1.13.2
+      '@swc/core': 1.13.3
     transitivePeerDependencies:
       - debug
 
@@ -4123,14 +4136,14 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.1.0(react@19.1.0):
+  react-dom@19.1.1(react@19.1.1):
     dependencies:
-      react: 19.1.0
+      react: 19.1.1
       scheduler: 0.26.0
 
   react-is@18.3.1: {}
 
-  react@19.1.0: {}
+  react@19.1.1: {}
 
   readable-stream@3.6.2:
     dependencies:
@@ -4310,9 +4323,15 @@ snapshots:
     dependencies:
       typescript: 5.9.0-beta
 
+  ts-api-utils@2.1.0(typescript@5.9.2):
+    dependencies:
+      typescript: 5.9.2
+
   ts-interface-checker@0.1.13: {}
 
   ts-pattern@5.7.1: {}
+
+  ts-pattern@5.8.0: {}
 
   tsconfig-paths@4.2.0:
     dependencies:
@@ -4320,7 +4339,13 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsl@1.0.20(typescript@5.9.0-beta):
+  tsl@1.0.20(typescript@5.9.2):
+    dependencies:
+      esbuild: 0.25.8
+      ts-api-utils: 2.1.0(typescript@5.9.2)
+      typescript: 5.9.2
+
+  tsl@1.0.21(typescript@5.9.0-beta):
     dependencies:
       esbuild: 0.25.8
       ts-api-utils: 2.1.0(typescript@5.9.0-beta)
@@ -4328,7 +4353,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.5.0(@swc/core@1.13.2)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0):
+  tsup@8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.0-beta)(yaml@2.8.0):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.8)
       cac: 6.7.14
@@ -4348,9 +4373,38 @@ snapshots:
       tinyglobby: 0.2.14
       tree-kill: 1.2.2
     optionalDependencies:
-      '@swc/core': 1.13.2
+      '@swc/core': 1.13.3
       postcss: 8.5.6
       typescript: 5.9.0-beta
+    transitivePeerDependencies:
+      - jiti
+      - supports-color
+      - tsx
+      - yaml
+
+  tsup@8.5.0(@swc/core@1.13.3)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(typescript@5.9.2)(yaml@2.8.0):
+    dependencies:
+      bundle-require: 5.1.0(esbuild@0.25.8)
+      cac: 6.7.14
+      chokidar: 4.0.3
+      consola: 3.4.2
+      debug: 4.4.1
+      esbuild: 0.25.8
+      fix-dts-default-cjs-exports: 1.0.1
+      joycon: 3.1.1
+      picocolors: 1.1.1
+      postcss-load-config: 6.0.1(jiti@2.4.2)(postcss@8.5.6)(tsx@4.20.3)(yaml@2.8.0)
+      resolve-from: 5.0.0
+      rollup: 4.44.2
+      source-map: 0.8.0-beta.0
+      sucrase: 3.35.0
+      tinyexec: 0.3.2
+      tinyglobby: 0.2.14
+      tree-kill: 1.2.2
+    optionalDependencies:
+      '@swc/core': 1.13.3
+      postcss: 8.5.6
+      typescript: 5.9.2
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -4366,15 +4420,15 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typedoc-plugin-markdown@4.7.1(typedoc@0.28.7(typescript@5.9.0-beta)):
+  typedoc-plugin-markdown@4.8.0(typedoc@0.28.8(typescript@5.9.0-beta)):
     dependencies:
-      typedoc: 0.28.7(typescript@5.9.0-beta)
+      typedoc: 0.28.8(typescript@5.9.0-beta)
 
-  typedoc-plugin-mdn-links@5.0.5(typedoc@0.28.7(typescript@5.9.0-beta)):
+  typedoc-plugin-mdn-links@5.0.6(typedoc@0.28.8(typescript@5.9.0-beta)):
     dependencies:
-      typedoc: 0.28.7(typescript@5.9.0-beta)
+      typedoc: 0.28.8(typescript@5.9.0-beta)
 
-  typedoc@0.28.7(typescript@5.9.0-beta):
+  typedoc@0.28.8(typescript@5.9.0-beta):
     dependencies:
       '@gerrit0/mini-shiki': 3.7.0
       lunr: 2.3.9
@@ -4384,6 +4438,8 @@ snapshots:
       yaml: 2.8.0
 
   typescript@5.9.0-beta: {}
+
+  typescript@5.9.2: {}
 
   uc.micro@2.1.0: {}
 
