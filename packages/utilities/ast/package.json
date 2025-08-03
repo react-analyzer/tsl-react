@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/ast",
-  "version": "0.0.2-next.2",
+  "version": "0.0.3-next.0",
   "description": "React Analyzer TSESTree AST utility module.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "@react-analyzer/eff": "workspace:*",
     "string-ts": "^2.2.1",
-    "ts-pattern": "^5.7.1"
+    "ts-pattern": "^5.8.0"
   },
   "devDependencies": {
     "@local/configs": "workspace:*",

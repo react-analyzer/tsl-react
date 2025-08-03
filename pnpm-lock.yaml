@@ -124,7 +124,7 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       tsl:
-        specifier: ^1.0.20
+        specifier: ^1.0.22
         version: 1.0.22(typescript@5.9.2)
 
   .pkgs/tsl-local:
@@ -145,7 +145,7 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       ts-pattern:
-        specifier: ^5.7.1
+        specifier: ^5.8.0
         version: 5.8.0
       tsl:
         specifier: ^1.0.20
@@ -182,7 +182,7 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(typescript@5.9.2)
       ts-pattern:
-        specifier: ^5.7.1
+        specifier: ^5.8.0
         version: 5.8.0
       tsl:
         specifier: ^1.0.20
@@ -253,7 +253,7 @@ importers:
         specifier: ^4.10.1
         version: 4.10.1
       ts-pattern:
-        specifier: ^5.7.1
+        specifier: ^5.8.0
         version: 5.8.0
     devDependencies:
       '@local/configs':
@@ -281,7 +281,7 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       ts-pattern:
-        specifier: ^5.7.1
+        specifier: ^5.8.0
         version: 5.8.0
       tsl:
         specifier: ^1.0.20
@@ -312,7 +312,7 @@ importers:
         specifier: workspace:*
         version: link:../eff
       ts-pattern:
-        specifier: ^5.7.1
+        specifier: ^5.8.0
         version: 5.8.0
       tsl:
         specifier: ^1.0.20
