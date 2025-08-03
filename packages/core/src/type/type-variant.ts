@@ -21,7 +21,7 @@ import {
   isUnknownType,
 } from "./type-is.ts";
 
-export type Variant =
+export type TypeVariant =
   | "any"
   | "bigint"
   | "boolean"
@@ -48,7 +48,7 @@ export type Variant =
  * @returns The variants of the types
  */
 export function getVariantsOfTypes(types: ts.Type[]) {
-  const variants = new Set<Variant>();
+  const variants = new Set<TypeVariant>();
   if (types.some(isUnknownType)) {
     variants.add("unknown");
     return variants;
@@ -73,7 +73,7 @@ export function getVariantsOfTypes(types: ts.Type[]) {
   }
   const strings = types.filter(isStringType);
   if (strings.length > 0) {
-    const evaluated = match<ts.Type[], Variant>(strings)
+    const evaluated = match<ts.Type[], TypeVariant>(strings)
       .when((types) => types.every(isTruthyStringType), () => "truthy string")
       .when((types) => types.every(isFalsyStringType), () => "falsy string")
       .otherwise(() => "string" as const);
@@ -81,7 +81,7 @@ export function getVariantsOfTypes(types: ts.Type[]) {
   }
   const bigints = types.filter(isBigIntType);
   if (bigints.length > 0) {
-    const evaluated = match<ts.Type[], Variant>(bigints)
+    const evaluated = match<ts.Type[], TypeVariant>(bigints)
       .when((types) => types.every(isTruthyBigIntType), () => "truthy bigint")
       .when((types) => types.every(isFalsyBigIntType), () => "falsy bigint")
       .otherwise(() => "bigint");
@@ -89,7 +89,7 @@ export function getVariantsOfTypes(types: ts.Type[]) {
   }
   const numbers = types.filter(isNumberType);
   if (numbers.length > 0) {
-    const evaluated = match<ts.Type[], Variant>(numbers)
+    const evaluated = match<ts.Type[], TypeVariant>(numbers)
       .when((types) => types.every(isTruthyNumberType), () => "truthy number")
       .when((types) => types.every(isFalsyNumberType), () => "falsy number")
       .otherwise(() => "number" as const);

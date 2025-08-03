@@ -88,7 +88,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
         ...compare(version, "18.0.0", "<")
           ? []
           : ["string", "falsy string"] as const,
-      ] as const satisfies RA.Variant[];
+      ] as const satisfies RA.TypeVariant[];
 
       function getReportDescriptor(node: AST.BinaryExpression): ReportDescriptor | unit {
         // If the left node is a logical negation expression, we skip the type check for better performance

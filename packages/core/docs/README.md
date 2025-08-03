@@ -10,7 +10,7 @@
 - [isReactAPICall](@react-analyzer/namespaces/isReactAPICall/README.md)
 - [SemanticEntry](interfaces/SemanticEntry.md)
 - [SemanticNode](interfaces/SemanticNode.md)
-- [Variant](type-aliases/Variant.md)
+- [TypeVariant](type-aliases/TypeVariant.md)
 - [isCaptureOwnerStack](variables/isCaptureOwnerStack.md)
 - [isCaptureOwnerStackCall](variables/isCaptureOwnerStackCall.md)
 - [isChildrenCount](variables/isChildrenCount.md)
