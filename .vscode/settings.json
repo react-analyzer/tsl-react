@@ -8,15 +8,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "editor.rulers": [
-    160
-  ],
+  "dprint.path": "node_modules/.bin/dprint",
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "never",
     "source.formatting": "explicit",
     "source.organizeImports": "never"
   },
+  "editor.rulers": [
+    160
+  ],
   "eslint.enable": false,
   "files.exclude": {
     "*.bundled_*.mjs": true,
@@ -24,7 +25,7 @@
   },
   "mdx.server.enable": true,
   "npm.packageManager": "pnpm",
+  "nxConsole.generateAiAgentRules": true,
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "nxConsole.generateAiAgentRules": true
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
