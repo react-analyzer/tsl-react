@@ -27,7 +27,7 @@
     "./package.json"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "build:docs": "typedoc",
     "lint:publish": "publint",
     "lint:ts": "tsl",
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsup": "^8.5.0"
+    "tsdown": "^0.14.1"
   },
   "engines": {
     "bun": ">=1.2.18",

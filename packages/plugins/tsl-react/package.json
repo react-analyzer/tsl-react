@@ -27,7 +27,7 @@
     "./package.json"
   ],
   "scripts": {
-    "build": "tsup --dts-resolve",
+    "build": "tsdown --dts-resolve",
     "build:docs": "typedoc",
     "lint:publish": "pnpm publint",
     "lint:ts": "tsl",
@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsup": "^8.5.0"
+    "tsdown": "^0.14.1"
   },
   "peerDependencies": {
     "tsl": "^1.0.20",

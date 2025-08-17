@@ -10,7 +10,7 @@ export default {
   outDir: "dist",
   platform: "node",
   sourcemap: false,
-  splitting: false,
+
   target: "node20",
   treeshake: true,
 } satisfies Options;
