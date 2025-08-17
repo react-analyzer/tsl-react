@@ -16,6 +16,7 @@
   "excludes": [
     ".pkgs/**/*.d.ts",
     ".pkgs/**/*.js",
+    ".pkgs/**/docs",
     "**/.next",
     "**/*-lock.json",
     "**/*-lock.yaml",
