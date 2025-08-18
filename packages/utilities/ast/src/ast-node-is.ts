@@ -44,7 +44,9 @@ export const isMemberExpressionStrict = isOneOf([
   SyntaxKind.ElementAccessExpression,
 ]);
 
-export function isLogicalExpression(node: AST.AnyNode): node is AST.BinaryExpression & { operatorToken: { kind: SyntaxKind.AmpersandAmpersandToken } } {
+export function isLogicalExpression(
+  node: AST.AnyNode,
+): node is AST.BinaryExpression & { operatorToken: { kind: SyntaxKind.AmpersandAmpersandToken } } {
   return node.kind === SyntaxKind.BinaryExpression && node.operatorToken.kind === SyntaxKind.AmpersandAmpersandToken;
 }
 

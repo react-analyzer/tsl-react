@@ -1,12 +1,12 @@
 import { compare } from "compare-versions";
-import { defineRule, type AST, type ReportDescriptor, type Rule } from "tsl";
+import { type AST, defineRule, type ReportDescriptor, type Rule } from "tsl";
 import { SyntaxKind } from "typescript";
 
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
+import * as RA from "@react-analyzer/core";
 import { unit } from "@react-analyzer/eff";
 import { Report as RPT } from "@react-analyzer/kit";
 import { getAnalyzerOptions } from "@react-analyzer/shared";
-import * as RA from "@react-analyzer/core";
 
 /** @internal */
 export const messages = {

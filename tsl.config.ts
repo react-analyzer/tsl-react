@@ -1,5 +1,5 @@
-import { core, defineConfig } from "tsl";
 import * as local from "@local/tsl-local";
+import { core, defineConfig } from "tsl";
 
 export default defineConfig({
   rules: [

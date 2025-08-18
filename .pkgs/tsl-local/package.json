@@ -16,7 +16,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "build:docs": "typedoc",
     "lint:publish": "publint",
     "lint:ts": "tsl"

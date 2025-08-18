@@ -1,6 +1,6 @@
 import tsx from "dedent";
 import { ruleTester } from "tsl/ruleTester";
-import { test, expect } from "vitest";
+import { expect, test } from "vitest";
 
 import { messages, noLeakedConditionalRendering } from "./no-leaked-conditional-rendering.ts";
 
