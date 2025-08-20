@@ -1,45 +1,36 @@
-import { isMatching, match, P } from "ts-pattern";
-import { core, defineRule } from "tsl";
+import * as Fn from "effect/Function";
+import * as Option from "effect/Option";
+import { match } from "ts-pattern";
+import { type AST, defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
-const isNullOrUndefine = isMatching(P.union(
-  SyntaxKind.NullKeyword,
-  SyntaxKind.UndefinedKeyword,
-));
-
-const isEqEqEqOrExEqEq = isMatching(P.union(
-  SyntaxKind.EqualsEqualsEqualsToken,
-  SyntaxKind.ExclamationEqualsEqualsToken,
-));
-
-/**
- * Prefer using `==` or `!=` for nullish comparison instead of `===` or `!==`.
- *
- * @since 0.0.0
- */
 export const preferEqEqNullishComparison = defineRule(() => ({
   name: "local/preferEqEqNullishComparison",
   visitor: {
     BinaryExpression(context, node) {
-      if (!isEqEqEqOrExEqEq(node.operatorToken.kind)) return;
-      if (!isNullOrUndefine(node.left.kind) && !isNullOrUndefine(node.right.kind)) return;
-      const newOperatorText = node.operatorToken.kind === SyntaxKind.EqualsEqualsEqualsToken ? "==" : "!=";
-      context.report({
-        message: "Use '==' or '!=' for nullish comparison.",
-        node,
-        suggestions: [
-          {
-            message: `Replace with '${newOperatorText}'`,
-            changes: [
-              {
-                start: node.operatorToken.getStart(),
-                end: node.operatorToken.getEnd(),
-                newText: newOperatorText,
-              },
-            ],
-          },
-        ],
-      });
+      if (!isNullOrUndefined(node.left) && !isNullOrUndefined(node.right)) return;
+      Fn.pipe(
+        match(node.operatorToken.kind)
+          .with(SyntaxKind.EqualsEqualsEqualsToken, () => Option.some("=="))
+          .with(SyntaxKind.ExclamationEqualsEqualsToken, () => Option.some("!="))
+          .otherwise(Option.none),
+        Option.map((operator) => ({
+          message: `Use '${operator}' for nullish comparison.`,
+          node,
+        })),
+        Option.map(context.report),
+      );
     },
   },
 }));
+
+function isNullOrUndefined(node: AST.AnyNode) {
+  switch (node.kind) {
+    case SyntaxKind.NullKeyword:
+      return true;
+    case SyntaxKind.Identifier:
+      return node.escapedText === "undefined";
+    default:
+      return false;
+  }
+}

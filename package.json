@@ -56,6 +56,7 @@
     "cspell": "^9.2.0",
     "dedent": "^1.6.0",
     "dprint": "^0.50.1",
+    "effect": "^3.17.8",
     "lefthook": "^1.12.3",
     "markdownlint": "^0.38.0",
     "nx": "^21.4.0",
@@ -77,7 +78,7 @@
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "engines": {
     "node": ">=22.17.0"
   },
