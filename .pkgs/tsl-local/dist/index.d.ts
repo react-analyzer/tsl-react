@@ -3,7 +3,7 @@ import * as tsl0 from "tsl";
 //#region src/rules/prefer-eqeq-nullish-comparison.d.ts
 
 /**
- * Prefer using `==` or `!=` for nullish comparison instead of `===` or `!==`.
+ * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
  *
  * @since 0.0.0
  */

@@ -158,6 +158,36 @@ function pipe(a, ab, bc, cd, de, ef, fg, gh, hi) {
 }
 
 //#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Equivalence.js
+/**
+* @category constructors
+* @since 2.0.0
+*/
+const make$1 = (isEquivalent) => (self, that) => self === that || isEquivalent(self, that);
+/**
+* Creates a new `Equivalence` for an array of values based on a given `Equivalence` for the elements of the array.
+*
+* @category combinators
+* @since 2.0.0
+*/
+const array$1 = (item) => make$1((self, that) => {
+	if (self.length !== that.length) return false;
+	for (let i = 0; i < self.length; i++) {
+		const isEq = item(self[i], that[i]);
+		if (!isEq) return false;
+	}
+	return true;
+});
+
+//#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/internal/doNotation.js
+/** @internal */
+const bind$1 = (map$1, flatMap$1) => dual(3, (self, name, f) => flatMap$1(self, (a) => map$1(f(a), (b) => ({
+	...a,
+	[name]: b
+}))));
+
+//#endregion
 //#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/GlobalValue.js
 /**
 * The `GlobalValue` module ensures that a single instance of a value is created globally,
@@ -209,6 +239,25 @@ const globalValue = (id, compute) => {
 
 //#endregion
 //#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Predicate.js
+/**
+* A refinement that checks if a value is a `boolean`.
+*
+* @example
+* ```ts
+* import * as assert from "node:assert"
+* import { isBoolean } from "effect/Predicate"
+*
+* assert.strictEqual(isBoolean(true), true)
+* assert.strictEqual(isBoolean(false), true)
+*
+* assert.strictEqual(isBoolean("true"), false)
+* assert.strictEqual(isBoolean(0), false)
+* ```
+*
+* @category guards
+* @since 2.0.0
+*/
+const isBoolean = (input) => typeof input === "boolean";
 /**
 * A refinement that checks if a value is a `Function`.
 *
@@ -439,7 +488,7 @@ const symbol$1 = /* @__PURE__ */ Symbol.for("effect/Hash");
 const hash = (self) => {
 	if (structuralRegionState.enabled === true) return 0;
 	switch (typeof self) {
-		case "number": return number(self);
+		case "number": return number$1(self);
 		case "bigint": return string(self.toString(10));
 		case "boolean": return string(String(self));
 		case "symbol": return string(String(self));
@@ -459,7 +508,7 @@ const hash = (self) => {
 * @category hashing
 */
 const random = (self) => {
-	if (!randomHashCache.has(self)) randomHashCache.set(self, number(Math.floor(Math.random() * Number.MAX_SAFE_INTEGER)));
+	if (!randomHashCache.has(self)) randomHashCache.set(self, number$1(Math.floor(Math.random() * Number.MAX_SAFE_INTEGER)));
 	return randomHashCache.get(self);
 };
 /**
@@ -481,7 +530,7 @@ const isHash = (u) => hasProperty(u, symbol$1);
 * @since 2.0.0
 * @category hashing
 */
-const number = (n) => {
+const number$1 = (n) => {
 	if (n !== n || n === Infinity) return 0;
 	let h = n | 0;
 	if (h !== n) h ^= n * 4294967295;
@@ -501,9 +550,9 @@ const string = (str) => {
 * @since 2.0.0
 * @category hashing
 */
-const structureKeys = (o, keys) => {
+const structureKeys = (o, keys$1) => {
 	let h = 12289;
-	for (let i = 0; i < keys.length; i++) h ^= pipe(string(keys[i]), combine(hash(o[keys[i]])));
+	for (let i = 0; i < keys$1.length; i++) h ^= pipe(string(keys$1[i]), combine(hash(o[keys$1[i]])));
 	return optimize(h);
 };
 /**
@@ -894,6 +943,46 @@ const getLeft$1 = (self) => isRight(self) ? none$1 : some$1(self.left);
 const getRight$1 = (self) => isLeft(self) ? none$1 : some$1(self.right);
 
 //#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/internal/array.js
+/**
+* @since 2.0.0
+*/
+/** @internal */
+const isNonEmptyArray$1 = (self) => self.length > 0;
+
+//#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Order.js
+/**
+* @category constructors
+* @since 2.0.0
+*/
+const make = (compare) => (self, that) => self === that ? 0 : compare(self, that);
+/**
+* @category instances
+* @since 2.0.0
+*/
+const number = /* @__PURE__ */ make((self, that) => self < that ? -1 : 1);
+/**
+* This function creates and returns a new `Order` for an array of values based on a given `Order` for the elements of the array.
+* The returned `Order` compares two arrays by applying the given `Order` to each element in the arrays.
+* If all elements are equal, the arrays are then compared based on their length.
+* It is useful when you need to compare two arrays of the same type and you have a specific way of comparing each element of the array.
+*
+* @category combinators
+* @since 2.0.0
+*/
+const array = (O) => make((self, that) => {
+	const aLen = self.length;
+	const bLen = that.length;
+	const len = Math.min(aLen, bLen);
+	for (let i = 0; i < len; i++) {
+		const o = O(self[i], that[i]);
+		if (o !== 0) return o;
+	}
+	return number(aLen, bLen);
+});
+
+//#endregion
 //#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Option.js
 /**
 * Represents the absence of a value by creating an empty `Option`.
@@ -1118,31 +1207,380 @@ const getLeft = getLeft$1;
 * @since 2.0.0
 */
 const map = /* @__PURE__ */ dual(2, (self, f) => isNone(self) ? none() : some(f(self.value)));
+/**
+* Applies a function to the value of a `Some` and flattens the resulting
+* `Option`. If the input is `None`, it remains `None`.
+*
+* **Details**
+*
+* This function allows you to chain computations that return `Option` values.
+* If the input `Option` is `Some`, the provided function `f` is applied to the
+* contained value, and the resulting `Option` is returned. If the input is
+* `None`, the function is not applied, and the result remains `None`.
+*
+* This utility is particularly useful for sequencing operations that may fail
+* or produce optional results, enabling clean and concise workflows for
+* handling such cases.
+*
+* @example
+* ```ts
+* import { Option } from "effect"
+*
+* interface Address {
+*   readonly city: string
+*   readonly street: Option.Option<string>
+* }
+*
+* interface User {
+*   readonly id: number
+*   readonly username: string
+*   readonly email: Option.Option<string>
+*   readonly address: Option.Option<Address>
+* }
+*
+* const user: User = {
+*   id: 1,
+*   username: "john_doe",
+*   email: Option.some("john.doe@example.com"),
+*   address: Option.some({
+*     city: "New York",
+*     street: Option.some("123 Main St")
+*   })
+* }
+*
+* // Use flatMap to extract the street value
+* const street = user.address.pipe(
+*   Option.flatMap((address) => address.street)
+* )
+*
+* console.log(street)
+* // Output: { _id: 'Option', _tag: 'Some', value: '123 Main St' }
+* ```
+*
+* @category Sequencing
+* @since 2.0.0
+*/
+const flatMap = /* @__PURE__ */ dual(2, (self, f) => isNone(self) ? none() : f(self.value));
+/**
+* Converts an `Option` into an `Array`.
+* If the input is `None`, an empty array is returned.
+* If the input is `Some`, its value is wrapped in a single-element array.
+*
+* @example
+* ```ts
+* import { Option } from "effect"
+*
+* console.log(Option.toArray(Option.some(1)))
+* // Output: [1]
+*
+* console.log(Option.toArray(Option.none()))
+* // Output: []
+* ```
+*
+* @category Conversions
+* @since 2.0.0
+*/
+const toArray = (self) => isNone(self) ? [] : [self.value];
+/**
+* The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
+*
+* Here's how the do simulation works:
+*
+* 1. Start the do simulation using the `Do` value
+* 2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Option` values
+* 3. You can accumulate multiple `bind` statements to define multiple variables within the scope
+* 4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
+* 5. Regular `Option` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
+*
+* @example
+* ```ts
+* import * as assert from "node:assert"
+* import { Option, pipe } from "effect"
+*
+* const result = pipe(
+*   Option.Do,
+*   Option.bind("x", () => Option.some(2)),
+*   Option.bind("y", () => Option.some(3)),
+*   Option.let("sum", ({ x, y }) => x + y),
+*   Option.filter(({ x, y }) => x * y > 5)
+* )
+* assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
+* ```
+*
+* @see {@link Do}
+* @see {@link bindTo}
+* @see {@link let_ let}
+*
+* @category Do notation
+* @since 2.0.0
+*/
+const bind = /* @__PURE__ */ bind$1(map, flatMap);
+/**
+* The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
+*
+* Here's how the do simulation works:
+*
+* 1. Start the do simulation using the `Do` value
+* 2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Option` values
+* 3. You can accumulate multiple `bind` statements to define multiple variables within the scope
+* 4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
+* 5. Regular `Option` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
+*
+* @example
+* ```ts
+* import * as assert from "node:assert"
+* import { Option, pipe } from "effect"
+*
+* const result = pipe(
+*   Option.Do,
+*   Option.bind("x", () => Option.some(2)),
+*   Option.bind("y", () => Option.some(3)),
+*   Option.let("sum", ({ x, y }) => x + y),
+*   Option.filter(({ x, y }) => x * y > 5)
+* )
+* assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
+* ```
+*
+* @see {@link bindTo}
+* @see {@link bind}
+* @see {@link let_ let}
+*
+* @category Do notation
+* @since 2.0.0
+*/
+const Do = /* @__PURE__ */ some({});
+
+//#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Iterable.js
+/**
+* Returns the first element that satisfies the specified
+* predicate, or `None` if no such element exists.
+*
+* @category elements
+* @since 2.0.0
+*/
+const findFirst$1 = /* @__PURE__ */ dual(2, (self, f) => {
+	let i = 0;
+	for (const a of self) {
+		const o = f(a, i);
+		if (isBoolean(o)) {
+			if (o) return some(a);
+		} else if (isSome(o)) return o;
+		i++;
+	}
+	return none();
+});
+
+//#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Record.js
+/**
+* Transforms the values of a record into an `Array` with a custom mapping function.
+*
+* @example
+* ```ts
+* import * as assert from "node:assert"
+* import { collect } from "effect/Record"
+*
+* const x = { a: 1, b: 2, c: 3 }
+* assert.deepStrictEqual(collect(x, (key, n) => [key, n]), [["a", 1], ["b", 2], ["c", 3]])
+* ```
+*
+* @category conversions
+* @since 2.0.0
+*/
+const collect = /* @__PURE__ */ dual(2, (self, f) => {
+	const out = [];
+	for (const key of keys(self)) out.push(f(key, self[key]));
+	return out;
+});
+/**
+* Takes a record and returns an array of tuples containing its keys and values.
+*
+* @example
+* ```ts
+* import * as assert from "node:assert"
+* import { toEntries } from "effect/Record"
+*
+* const x = { a: 1, b: 2, c: 3 }
+* assert.deepStrictEqual(toEntries(x), [["a", 1], ["b", 2], ["c", 3]])
+* ```
+*
+* @category conversions
+* @since 2.0.0
+*/
+const toEntries = /* @__PURE__ */ collect((key, value) => [key, value]);
+/**
+* Retrieve the keys of a given record as an array.
+*
+* @since 2.0.0
+*/
+const keys = (self) => Object.keys(self);
+
+//#endregion
+//#region ../../node_modules/.pnpm/effect@3.17.8/node_modules/effect/dist/esm/Array.js
+/**
+* Takes a record and returns an array of tuples containing its keys and values.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* const result = Array.fromRecord({ a: 1, b: 2, c: 3 })
+* console.log(result) // [["a", 1], ["b", 2], ["c", 3]]
+* ```
+*
+* @category conversions
+* @since 2.0.0
+*/
+const fromRecord = toEntries;
+/**
+* Converts an `Option` to an array.
+*
+* **Example**
+*
+* ```ts
+* import { Array, Option } from "effect"
+*
+* console.log(Array.fromOption(Option.some(1))) // [1]
+* console.log(Array.fromOption(Option.none())) // []
+* ```
+*
+* @category conversions
+* @since 2.0.0
+*/
+const fromOption = toArray;
+/**
+* Determine if `unknown` is an Array.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* console.log(Array.isArray(null)) // false
+* console.log(Array.isArray([1, 2, 3])) // true
+* ```
+*
+* @category guards
+* @since 2.0.0
+*/
+const isArray = Array.isArray;
+/**
+* Determine if an `Array` is non empty narrowing down the type to `NonEmptyArray`.
+*
+* An `Array` is considered to be a `NonEmptyArray` if it contains at least one element.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* console.log(Array.isNonEmptyArray([])) // false
+* console.log(Array.isNonEmptyArray([1, 2, 3])) // true
+* ```
+*
+* @category guards
+* @since 2.0.0
+*/
+const isNonEmptyArray = isNonEmptyArray$1;
+/**
+* Determine if a `ReadonlyArray` is non empty narrowing down the type to `NonEmptyReadonlyArray`.
+*
+* A `ReadonlyArray` is considered to be a `NonEmptyReadonlyArray` if it contains at least one element.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* console.log(Array.isNonEmptyReadonlyArray([])) // false
+* console.log(Array.isNonEmptyReadonlyArray([1, 2, 3])) // true
+* ```
+*
+* @category guards
+* @since 2.0.0
+*/
+const isNonEmptyReadonlyArray = isNonEmptyArray$1;
+/**
+* Returns the first element that satisfies the specified
+* predicate, or `None` if no such element exists.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* const result = Array.findFirst([1, 2, 3, 4, 5], x => x > 3)
+* console.log(result) // Option.some(4)
+* ```
+*
+* @category elements
+* @since 2.0.0
+*/
+const findFirst = findFirst$1;
+/**
+* This function creates and returns a new `Order` for an array of values based on a given `Order` for the elements of the array.
+* The returned `Order` compares two arrays by applying the given `Order` to each element in the arrays.
+* If all elements are equal, the arrays are then compared based on their length.
+* It is useful when you need to compare two arrays of the same type and you have a specific way of comparing each element of the array.
+*
+* @category instances
+* @since 2.0.0
+*/
+const getOrder = array;
+/**
+* Creates an equivalence relation for arrays.
+*
+* **Example**
+*
+* ```ts
+* import { Array } from "effect"
+*
+* const eq = Array.getEquivalence<number>((a, b) => a === b)
+* console.log(eq([1, 2, 3], [1, 2, 3])) // true
+* ```
+*
+* @category instances
+* @since 2.0.0
+*/
+const getEquivalence = array$1;
 
 //#endregion
 //#region src/rules/prefer-eqeq-nullish-comparison.ts
 /**
-* Prefer using `==` or `!=` for nullish comparison instead of `===` or `!==`.
+* Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
 *
 * @since 0.0.0
 */
 const preferEqEqNullishComparison = defineRule(() => ({
 	name: "local/preferEqEqNullishComparison",
 	visitor: { BinaryExpression(context, node) {
-		if (!isNullOrUndefined(node.left) && !isNullOrUndefined(node.right)) return;
-		pipe(match(node.operatorToken.kind).with(SyntaxKind.EqualsEqualsEqualsToken, () => some("==")).with(SyntaxKind.ExclamationEqualsEqualsToken, () => some("!=")).otherwise(none), map((operator) => ({
-			message: `Use '${operator}' for nullish comparison.`,
-			node
-		})), map(context.report));
+		const reportDescriptor = pipe(Do, bind("offendingChild", () => findFirst([node.left, node.right], (n) => {
+			switch (n.kind) {
+				case SyntaxKind.NullKeyword: return true;
+				case SyntaxKind.Identifier: return n.escapedText === "undefined";
+				default: return false;
+			}
+		})), bind("newOperatorText", () => match(node.operatorToken.kind).with(SyntaxKind.EqualsEqualsEqualsToken, () => some("==")).with(SyntaxKind.ExclamationEqualsEqualsToken, () => some("!=")).otherwise(none)), map(({ offendingChild, newOperatorText }) => ({
+			message: `Use '${newOperatorText}' for nullish comparison.`,
+			node,
+			suggestions: [{
+				message: offendingChild === node.left ? `Replace with 'null ${newOperatorText} ${node.right.getText()}'.` : `Replace with '${node.left.getText()} ${newOperatorText} null'.`,
+				changes: [{
+					start: node.operatorToken.getStart(),
+					end: node.operatorToken.getEnd(),
+					newText: newOperatorText
+				}, {
+					start: offendingChild.getStart(),
+					end: offendingChild.getEnd(),
+					newText: "null"
+				}]
+			}]
+		})));
+		map(reportDescriptor, context.report);
 	} }
 }));
-function isNullOrUndefined(node) {
-	switch (node.kind) {
-		case SyntaxKind.NullKeyword: return true;
-		case SyntaxKind.Identifier: return node.escapedText === "undefined";
-		default: return false;
-	}
-}
 
 //#endregion
 export { preferEqEqNullishComparison };
