@@ -5,13 +5,15 @@ import { match } from "ts-pattern";
 import { defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
+import { getStartAndEnd } from "../utils";
+
 /**
  * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
  *
  * @since 0.0.0
  */
-export const preferEqEqNullishComparison = defineRule(() => ({
-  name: "local/preferEqEqNullishComparison",
+export const consistentNullishComparison = defineRule(() => ({
+  name: "local/consistentNullishComparison",
   visitor: {
     BinaryExpression(context, node) {
       const reportDescriptor = Fn.pipe(
@@ -45,13 +47,11 @@ export const preferEqEqNullishComparison = defineRule(() => ({
                 : `Replace with '${node.left.getText()} ${newOperatorText} null'.`,
               changes: [
                 {
-                  start: node.operatorToken.getStart(),
-                  end: node.operatorToken.getEnd(),
+                  ...getStartAndEnd(node.operatorToken),
                   newText: newOperatorText,
                 },
                 {
-                  start: offendingChild.getStart(),
-                  end: offendingChild.getEnd(),
+                  ...getStartAndEnd(offendingChild),
                   newText: "null",
                 },
               ],

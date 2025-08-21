@@ -19,6 +19,6 @@ export default defineConfig({
     }),
     core.noConfusingVoidExpression("off"),
 
-    local.preferEqEqNullishComparison(),
+    local.consistentNullishComparison(),
   ],
 });

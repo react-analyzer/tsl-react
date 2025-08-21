@@ -6,4 +6,4 @@
 
 ## Variables
 
-- [preferEqEqNullishComparison](variables/preferEqEqNullishComparison.md)
+- [consistentNullishComparison](variables/consistentNullishComparison.md)

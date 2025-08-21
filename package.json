@@ -44,10 +44,10 @@
     "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
+    "@effect/language-service": "^0.35.2",
     "@local/configs": "workspace:*",
     "@local/tsl-local": "workspace:*",
-    "@swc/core": "^1.13.3",
-    "@tsconfig/node22": "^22.0.2",
+    "@tsconfig/node24": "^24.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
@@ -58,7 +58,6 @@
     "dprint": "^0.50.1",
     "effect": "^3.17.8",
     "lefthook": "^1.12.3",
-    "markdownlint": "^0.38.0",
     "nx": "^21.4.0",
     "publint": "^0.3.12",
     "react": "^19.1.1",
@@ -80,7 +79,7 @@
   },
   "packageManager": "pnpm@10.15.0",
   "engines": {
-    "node": ">=22.17.0"
+    "node": ">=24.6.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
