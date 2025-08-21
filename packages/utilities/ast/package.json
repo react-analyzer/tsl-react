@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/ast",
-  "version": "0.0.3-next.5",
+  "version": "0.0.3-next.6",
   "description": "React Analyzer TSESTree AST utility module.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
