@@ -1547,14 +1547,23 @@ const getOrder = array;
 const getEquivalence = array$1;
 
 //#endregion
-//#region src/rules/prefer-eqeq-nullish-comparison.ts
+//#region src/utils/ast.ts
+function getStartAndEnd(node) {
+	return {
+		start: node.getStart(),
+		end: node.getEnd()
+	};
+}
+
+//#endregion
+//#region src/rules/consistent-nullish-comparison.ts
 /**
 * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
 *
 * @since 0.0.0
 */
-const preferEqEqNullishComparison = defineRule(() => ({
-	name: "local/preferEqEqNullishComparison",
+const consistentNullishComparison = defineRule(() => ({
+	name: "local/consistentNullishComparison",
 	visitor: { BinaryExpression(context, node) {
 		const reportDescriptor = pipe(Do, bind("offendingChild", () => findFirst([node.left, node.right], (n) => {
 			switch (n.kind) {
@@ -1568,12 +1577,10 @@ const preferEqEqNullishComparison = defineRule(() => ({
 			suggestions: [{
 				message: offendingChild === node.left ? `Replace with 'null ${newOperatorText} ${node.right.getText()}'.` : `Replace with '${node.left.getText()} ${newOperatorText} null'.`,
 				changes: [{
-					start: node.operatorToken.getStart(),
-					end: node.operatorToken.getEnd(),
+					...getStartAndEnd(node.operatorToken),
 					newText: newOperatorText
 				}, {
-					start: offendingChild.getStart(),
-					end: offendingChild.getEnd(),
+					...getStartAndEnd(offendingChild),
 					newText: "null"
 				}]
 			}]
@@ -1583,4 +1590,4 @@ const preferEqEqNullishComparison = defineRule(() => ({
 }));
 
 //#endregion
-export { preferEqEqNullishComparison };
+export { consistentNullishComparison };

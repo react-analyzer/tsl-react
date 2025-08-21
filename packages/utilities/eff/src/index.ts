@@ -124,7 +124,7 @@ export function isArray<T>(data: ArrayLike<unknown> | T): data is NarrowedTo<T, 
  * @returns The input type, narrowed to only objects.
  */
 export function isObject<T>(data: T | object): data is NarrowedTo<T, object> {
-  // tsl-ignore local/preferEqEqNullishComparison
+  // tsl-ignore local/consistentNullishComparison
   return typeof data === "object" && data !== null;
 }
 

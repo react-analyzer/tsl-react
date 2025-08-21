@@ -12,6 +12,9 @@
     "plugins": [
       {
         "name": "tsl/plugin"
+      },
+      {
+        "name": "@effect/language-service"
       }
     ]
   }

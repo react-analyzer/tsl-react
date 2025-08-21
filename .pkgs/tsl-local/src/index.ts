@@ -1,1 +1,1 @@
-export { preferEqEqNullishComparison } from "./rules/prefer-eqeq-nullish-comparison";
+export { consistentNullishComparison } from "./rules/consistent-nullish-comparison";
