@@ -8,7 +8,7 @@
 
 > `const` **DEFAULT\_ANALYZER\_OPTIONS**: `object`
 
-## Type declaration
+## Type Declaration
 
 ### version
 
