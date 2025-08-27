@@ -32,8 +32,8 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@types/react": "^19.1.11",
-    "@types/react-dom": "^19.1.7",
-    "tsdown": "^0.14.1"
+    "@types/react-dom": "^19.1.8",
+    "tsdown": "^0.14.2"
   },
   "peerDependencies": {
     "tsl": "^1.0.20",

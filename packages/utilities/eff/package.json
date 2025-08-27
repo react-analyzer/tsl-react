@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.14.1"
+    "tsdown": "^0.14.2"
   },
   "engines": {
     "bun": ">=1.2.18",
