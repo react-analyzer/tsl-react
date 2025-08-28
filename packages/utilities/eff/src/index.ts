@@ -44,6 +44,28 @@
 //     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+// region Directives
+
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-unnecessary-type-parameters */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/unified-signatures */
+/* eslint-disable jsdoc/check-param-names */
+/* eslint-disable jsdoc/require-param-description */
+/* eslint-disable local/no-shadow-underscore */
+/* eslint-disable local/prefer-eqeq-nullish-comparison */
+/* eslint-disable prefer-rest-params */
+
+// #endregion
+
 // #region Helpers
 
 /**
@@ -124,7 +146,6 @@ export function isArray<T>(data: ArrayLike<unknown> | T): data is NarrowedTo<T, 
  * @returns The input type, narrowed to only objects.
  */
 export function isObject<T>(data: T | object): data is NarrowedTo<T, object> {
-  // tsl-ignore local/consistentNullishComparison
   return typeof data === "object" && data !== null;
 }
 
@@ -150,6 +171,8 @@ export function isTruthy<T>(data: T): data is Exclude<T, "" | 0 | false | null |
  * assert.deepStrictEqual(isFunction(isFunction), true)
  * assert.deepStrictEqual(isFunction("function"), false)
  * ```
+ *
+ * @since 1.0.0
  */
 export const isFunction = (input: unknown): input is Function => typeof input === "function";
 
@@ -164,34 +187,6 @@ export const isFunction = (input: unknown): input is Function => typeof input ==
 export function identity<T>(x: T): T {
   return x;
 }
-
-/**
- * Casts the result to the specified type.
- *
- * @example
- * ```ts
- * import * as assert from "node:assert"
- * import { unsafeCoerce, identity } from "effect/Function"
- *
- * assert.deepStrictEqual(unsafeCoerce, identity)
- * ```
- */
-export const unsafeCoerce: <A, B>(a: A) => B = identity as any;
-
-/**
- * The `absurd` function is a stub for cases where a value of type `never` is encountered in your code,
- * meaning that it should be impossible for this code to be executed.
- *
- * This function is particularly useful when it's necessary to specify that certain cases are impossible.
- */
-export const absurd = <A>(_: never): A => {
-  throw new Error("Called `absurd` function which should be uncallable");
-};
-
-/**
- * Type hole simulation.
- */
-export const hole: <T>() => T = unsafeCoerce(absurd);
 
 // Ported from https://github.com/Effect-TS/effect-smol/blob/main/src/Function.ts
 /**
@@ -258,6 +253,7 @@ export const hole: <T>() => T = unsafeCoerce(absurd);
  *
  * @param arity - The arity of the uncurried function or a predicate that determines if the function is being used in a data-first or data-last style.
  * @param body - The function to be curried.
+ * @since 1.0.0
  */
 export const dual: {
   <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(
@@ -328,6 +324,8 @@ export const dual: {
  *
  * assert.deepStrictEqual(pipe(length, apply("hello")), 5)
  * ```
+ *
+ * @since 1.0.0
  */
 export const apply = <A>(a: A) => <B>(self: (a: A) => B): B => self(a);
 
@@ -378,6 +376,8 @@ export function constFalse() {
  *
  * assert.deepStrictEqual(flip(f)('aaa')(2), -1)
  * ```
+ *
+ * @since 1.0.0
  */
 export const flip = <A extends Array<unknown>, B extends Array<unknown>, C>(
   f: (...a: A) => (...b: B) => C,
@@ -399,11 +399,26 @@ export const flip = <A extends Array<unknown>, B extends Array<unknown>, C>(
  *
  * assert.strictEqual(compose(increment, square)(2), 9);
  * ```
+ *
+ * @since 1.0.0
  */
 export const compose: {
   <B, C>(bc: (b: B) => C): <A>(self: (a: A) => B) => (a: A) => C;
   <A, B, C>(self: (a: A) => B, bc: (b: B) => C): (a: A) => C;
 } = dual(2, <A, B, C>(ab: (a: A) => B, bc: (b: B) => C): (a: A) => C => (a) => bc(ab(a)));
+
+/**
+ * The `absurd` function is a stub for cases where a value of type `never` is encountered in your code,
+ * meaning that it should be impossible for this code to be executed.
+ *
+ * This function is particularly useful when it's necessary to specify that certain cases are impossible.
+ *
+ * @param _ - The value of type `never` that is passed to the function.
+ * @since 1.0.0
+ */
+export const absurd = <A>(_: never): A => {
+  throw new Error("Called `absurd` function which should be uncallable");
+};
 
 /**
  * Creates a   version of this function: instead of `n` arguments, it accepts a single tuple argument.
@@ -418,6 +433,8 @@ export const compose: {
  *
  * assert.deepStrictEqual(sumTupled([1, 2]), 3)
  * ```
+ *
+ * @since 1.0.0
  */
 export const tupled = <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B): (a: A) => B => (a) => f(...a);
 
@@ -434,12 +451,15 @@ export const tupled = <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B): 
  *
  * assert.deepStrictEqual(getFirst(1, 2), 1)
  * ```
+ *
+ * @since 1.0.0
  */
 export const untupled = <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B): (...a: A) => B => (...a) => f(a);
 
 /**
  * @param self - The value to pipe.
  * @param args - The functions to apply.
+ * @since 1.0.0
  */
 export const pipeArguments = <A>(self: A, args: IArguments): unknown => {
   switch (args.length) {
@@ -541,6 +561,7 @@ export const pipeArguments = <A>(self: A, args: IArguments): unknown => {
  *
  * @param a - The value to pipe.
  * @param args
+ * @since 1.0.0
  */
 export function pipe<A>(a: A): A;
 export function pipe<A, B = never>(a: A, ab: (a: A) => B): B;
@@ -1020,6 +1041,8 @@ export function pipe(a: unknown, ...args: Array<any>): unknown {
  *
  * assert.strictEqual(f('aaa'), 6)
  * ```
+ *
+ * @since 1.0.0
  */
 export function flow<A extends ReadonlyArray<unknown>, B = never>(
   ab: (...a: A) => B,
@@ -1185,4 +1208,56 @@ export function flow(
   }
   return;
 }
+// #endregion
+
+// #region Map & Set
+
+/**
+ * Retrieves a value from a Map or WeakMap if the key exists, or computes a new value if it doesn't.
+ * @param map - The Map or WeakMap to get from
+ * @param key - The key to look up in the Map or WeakMap
+ * @param callback - The function to call to generate a new value if the key doesn't exist
+ */
+export function getOrElse<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
+export function getOrElse<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
+export function getOrElse<K extends WeakKey, V>(map: Map<K, V> | WeakMap<K, V>, key: K, callback: () => V): V {
+  if (map.has(key)) {
+    return map.get(key)!;
+  }
+  return callback();
+}
+
+/**
+ * Retrieves a value from a Map or WeakMap if the key exists, or computes and stores a new value if it doesn't.
+ * @param map - The Map or WeakMap to get from or update
+ * @param key - The key to look up in the Map or WeakMap
+ * @param callback - The function to call to generate a new value if the key doesn't exist
+ * @returns The existing value for the key, or the newly computed value
+ */
+export function getOrElseUpdate<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
+export function getOrElseUpdate<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
+export function getOrElseUpdate<K extends WeakKey, V>(map: Map<K, V> | WeakMap<K, V>, key: K, callback: () => V): V {
+  if (map.has(key)) {
+    return map.get(key)!;
+  }
+  const value = callback();
+  map.set(key, value);
+  return value;
+}
+
+/**
+ * Attempts to add a value to a Set, but only if it doesn't already exist.
+ *
+ * @param set - The Set to potentially add to
+ * @param value - The value to add if it doesn't already exist in the Set
+ * @returns true if the value was added, false if it already existed
+ */
+export function tryAddToSet<T>(set: Set<T>, value: T): boolean {
+  if (!set.has(value)) {
+    set.add(value);
+    return true;
+  }
+  return false;
+}
+
 // #endregion
