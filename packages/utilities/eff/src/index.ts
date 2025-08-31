@@ -146,6 +146,7 @@ export function isArray<T>(data: ArrayLike<unknown> | T): data is NarrowedTo<T, 
  * @returns The input type, narrowed to only objects.
  */
 export function isObject<T>(data: T | object): data is NarrowedTo<T, object> {
+  // tsl-ignore local/consistentNullishComparison
   return typeof data === "object" && data !== null;
 }
 
@@ -1220,6 +1221,7 @@ export function flow(
  */
 export function getOrElse<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
 export function getOrElse<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
+// tsl-ignore core/noRedundantTypeConstituents
 export function getOrElse<K extends WeakKey, V>(map: Map<K, V> | WeakMap<K, V>, key: K, callback: () => V): V {
   if (map.has(key)) {
     return map.get(key)!;
@@ -1236,6 +1238,7 @@ export function getOrElse<K extends WeakKey, V>(map: Map<K, V> | WeakMap<K, V>, 
  */
 export function getOrElseUpdate<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
 export function getOrElseUpdate<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
+// tsl-ignore core/noRedundantTypeConstituents
 export function getOrElseUpdate<K extends WeakKey, V>(map: Map<K, V> | WeakMap<K, V>, key: K, callback: () => V): V {
   if (map.has(key)) {
     return map.get(key)!;

@@ -25,7 +25,6 @@
   },
   "mdx.server.enable": true,
   "npm.packageManager": "pnpm",
-  "nxConsole.generateAiAgentRules": false,
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
