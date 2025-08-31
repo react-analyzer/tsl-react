@@ -21,7 +21,7 @@
     "url": "git@github.com:react-analyzer/tsl.git"
   },
   "license": "MIT",
-  "author": "Rel1cx<dokimondex@gmail.com>",
+  "author": "Rel1cx<rel1cx@proton.me>",
   "type": "module",
   "scripts": {
     "build": "pnpm run update:version && pnpm run build:pkgs && pnpm run build:packages && pnpm run build:docs",

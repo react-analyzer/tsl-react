@@ -12,7 +12,7 @@
     "directory": "packages/utilities/ast"
   },
   "license": "MIT",
-  "author": "Rel1cx<dokimondex@gmail.com>",
+  "author": "Rel1cx<rel1cx@proton.me>",
   "sideEffects": false,
   "type": "module",
   "exports": {
