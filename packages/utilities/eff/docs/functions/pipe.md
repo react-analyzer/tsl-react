@@ -93,6 +93,10 @@ The value to pipe.
 
 `A`
 
+### Since
+
+1.0.0
+
 ## Call Signature
 
 > **pipe**\<`A`, `B`\>(`a`, `ab`): `B`
@@ -187,6 +191,10 @@ The value to pipe.
 ### Returns
 
 `B`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -290,6 +298,10 @@ The value to pipe.
 ### Returns
 
 `C`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -401,6 +413,10 @@ The value to pipe.
 ### Returns
 
 `D`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -520,6 +536,10 @@ The value to pipe.
 ### Returns
 
 `E`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -647,6 +667,10 @@ The value to pipe.
 ### Returns
 
 `F`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -782,6 +806,10 @@ The value to pipe.
 ### Returns
 
 `G`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -925,6 +953,10 @@ The value to pipe.
 ### Returns
 
 `H`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1076,6 +1108,10 @@ The value to pipe.
 ### Returns
 
 `I`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1235,6 +1271,10 @@ The value to pipe.
 ### Returns
 
 `J`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1402,6 +1442,10 @@ The value to pipe.
 ### Returns
 
 `K`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1577,6 +1621,10 @@ The value to pipe.
 ### Returns
 
 `L`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1760,6 +1808,10 @@ The value to pipe.
 ### Returns
 
 `M`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -1951,6 +2003,10 @@ The value to pipe.
 ### Returns
 
 `N`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -2150,6 +2206,10 @@ The value to pipe.
 ### Returns
 
 `O`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -2357,6 +2417,10 @@ The value to pipe.
 ### Returns
 
 `P`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -2572,6 +2636,10 @@ The value to pipe.
 ### Returns
 
 `Q`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -2795,6 +2863,10 @@ The value to pipe.
 ### Returns
 
 `R`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -3026,6 +3098,10 @@ The value to pipe.
 ### Returns
 
 `S`
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -3265,3 +3341,7 @@ The value to pipe.
 ### Returns
 
 `T`
+
+### Since
+
+1.0.0

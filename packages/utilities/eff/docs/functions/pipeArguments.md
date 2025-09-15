@@ -31,3 +31,7 @@ The functions to apply.
 ## Returns
 
 `unknown`
+
+## Since
+
+1.0.0

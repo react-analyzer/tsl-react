@@ -114,3 +114,7 @@ const square = (n: number) => n * n;
 
 assert.strictEqual(compose(increment, square)(2), 9);
 ```
+
+## Since
+
+1.0.0

@@ -53,3 +53,7 @@ import { length } from "effect/String"
 
 assert.deepStrictEqual(pipe(length, apply("hello")), 5)
 ```
+
+## Since
+
+1.0.0

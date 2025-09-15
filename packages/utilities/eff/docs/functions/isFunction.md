@@ -31,3 +31,7 @@ import { isFunction } from "effect/Predicate"
 assert.deepStrictEqual(isFunction(isFunction), true)
 assert.deepStrictEqual(isFunction("function"), false)
 ```
+
+## Since
+
+1.0.0

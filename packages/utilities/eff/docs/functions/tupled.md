@@ -52,3 +52,7 @@ const sumTupled = tupled((x: number, y: number): number => x + y)
 
 assert.deepStrictEqual(sumTupled([1, 2]), 3)
 ```
+
+## Since
+
+1.0.0

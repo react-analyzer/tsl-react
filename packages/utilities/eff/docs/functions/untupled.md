@@ -52,3 +52,7 @@ const getFirst = untupled(<A, B>(tuple: [A, B]): A => tuple[0])
 
 assert.deepStrictEqual(getFirst(1, 2), 1)
 ```
+
+## Since
+
+1.0.0

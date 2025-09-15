@@ -5,7 +5,7 @@ import { SyntaxKind } from "typescript";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
 import * as RA from "@react-analyzer/core";
 import { unit } from "@react-analyzer/eff";
-import { Report as RPT } from "@react-analyzer/kit";
+import { report } from "@react-analyzer/kit";
 import { getAnalyzerOptions } from "@react-analyzer/shared";
 
 /** @internal */
@@ -120,7 +120,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
         const { state, getReportDescriptor } = ctx.data;
         if (!state.isWithinJsxExpression) return;
         if (node.operatorToken.kind !== SyntaxKind.AmpersandAmpersandToken) return;
-        RPT.report(ctx, getReportDescriptor(node));
+        report(ctx, getReportDescriptor(node));
       },
     },
   };

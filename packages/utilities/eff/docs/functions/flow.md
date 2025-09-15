@@ -60,6 +60,10 @@ const f = flow(len, double)
 assert.strictEqual(f('aaa'), 6)
 ```
 
+### Since
+
+1.0.0
+
 ## Call Signature
 
 > **flow**\<`A`, `B`, `C`\>(`ab`, `bc`): (...`a`) => `C`
@@ -121,6 +125,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -191,6 +199,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -269,6 +281,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -355,6 +371,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -449,6 +469,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -551,6 +575,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -661,6 +689,10 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0
 
 ## Call Signature
 
@@ -779,3 +811,7 @@ const f = flow(len, double)
 
 assert.strictEqual(f('aaa'), 6)
 ```
+
+### Since
+
+1.0.0

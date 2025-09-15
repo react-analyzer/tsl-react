@@ -25,9 +25,9 @@
   "type": "module",
   "scripts": {
     "build": "pnpm run update:version && pnpm run build:pkgs && pnpm run build:packages && pnpm run build:docs",
-    "build:docs": "pnpm -r --filter \"./packages/*\" run build:docs",
-    "build:packages": "pnpm -r --filter \"./packages/**\" run build",
-    "build:pkgs": "pnpm -r --filter \"./.pkgs/*\" run build",
+    "build:docs": "pnpm -r --stream --filter \"./packages/**\" run build:docs",
+    "build:packages": "pnpm -r --stream --filter \"./packages/**\" run build",
+    "build:pkgs": "pnpm -r --stream --filter \"./.pkgs/*\" run build",
     "format:check": "dprint check",
     "format:write": "dprint fmt",
     "inspect:deps": "pnpm dlx skott -e .ts",

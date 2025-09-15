@@ -132,3 +132,7 @@ The arity of the uncurried function or a predicate that determines if the functi
 ## Param
 
 The function to be curried.
+
+## Since
+
+1.0.0

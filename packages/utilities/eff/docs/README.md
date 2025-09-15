@@ -14,9 +14,7 @@
 
 - [compose](variables/compose.md)
 - [dual](variables/dual.md)
-- [hole](variables/hole.md)
 - [unit](variables/unit.md)
-- [unsafeCoerce](variables/unsafeCoerce.md)
 
 ## Functions
 
@@ -29,6 +27,8 @@
 - [constVoid](functions/constVoid.md)
 - [flip](functions/flip.md)
 - [flow](functions/flow.md)
+- [getOrElse](functions/getOrElse.md)
+- [getOrElseUpdate](functions/getOrElseUpdate.md)
 - [identity](functions/identity.md)
 - [isArray](functions/isArray.md)
 - [isFunction](functions/isFunction.md)
@@ -38,5 +38,6 @@
 - [or](functions/or.md)
 - [pipe](functions/pipe.md)
 - [pipeArguments](functions/pipeArguments.md)
+- [tryAddToSet](functions/tryAddToSet.md)
 - [tupled](functions/tupled.md)
 - [untupled](functions/untupled.md)

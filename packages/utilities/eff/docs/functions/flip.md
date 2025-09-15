@@ -66,3 +66,7 @@ const f = (a: number) => (b: string) => a - b.length
 
 assert.deepStrictEqual(flip(f)('aaa')(2), -1)
 ```
+
+## Since
+
+1.0.0

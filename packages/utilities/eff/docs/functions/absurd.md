@@ -25,6 +25,12 @@ This function is particularly useful when it's necessary to specify that certain
 
 `never`
 
+The value of type `never` that is passed to the function.
+
 ## Returns
 
 `A`
+
+## Since
+
+1.0.0
