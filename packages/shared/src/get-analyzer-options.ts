@@ -1,6 +1,6 @@
 import { identity } from "@react-analyzer/eff";
 import { getTsconfig } from "get-tsconfig";
-import { match, P } from "ts-pattern";
+import { P, match } from "ts-pattern";
 
 import { getCommandLineOptions } from "./get-command-line-options.ts";
 

@@ -1,5 +1,5 @@
 import { compare } from "compare-versions";
-import { type AST, defineRule, type ReportDescriptor, type Rule } from "tsl";
+import { type AST, type ReportDescriptor, type Rule, defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
 import { isLogicalNegationExpression } from "@react-analyzer/ast";

@@ -1,7 +1,7 @@
 import fs from "node:fs";
 
 import ansis from "ansis";
-import { isMatching, match, P } from "ts-pattern";
+import { P, isMatching, match } from "ts-pattern";
 
 import { glob } from "./lib/glob";
 import { ignores } from "./lib/ignores";

@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/kit",
-  "version": "0.0.3-next.9",
+  "version": "0.0.3-next.10",
   "description": "React Analyzer plugin kit for building plugins and rules.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -40,11 +40,11 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
-    "tsdown": "^0.15.0",
-    "type-fest": "^4.41.0"
+    "tsdown": "^0.15.1",
+    "type-fest": "^5.0.0"
   },
   "peerDependencies": {
-    "tsl": "^1.0.22",
+    "tsl": "^1.0.23",
     "typescript": "^5.9.2"
   },
   "engines": {
