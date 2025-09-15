@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/kit",
-  "version": "0.0.3-next.10",
+  "version": "0.0.3-next.11",
   "description": "React Analyzer plugin kit for building plugins and rules.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
