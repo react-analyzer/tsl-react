@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/ast",
-  "version": "0.0.3-next.11",
+  "version": "0.0.3-next.12",
   "description": "React Analyzer TSESTree AST utility module.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.15.1"
+    "tsdown": "^0.15.2"
   },
   "peerDependencies": {
-    "tsl": "^1.0.23",
+    "tsl": "^1.0.24",
     "typescript": "^5.9.2"
   },
   "engines": {
