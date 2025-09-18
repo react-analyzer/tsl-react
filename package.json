@@ -36,7 +36,7 @@
     "lint:publish": "pnpm m run lint:publish",
     "lint:spell": "cspell lint --relative --no-progress \"**\"",
     "lint:ts": "pnpm m run lint:ts",
-    "prepare": "lefthook install && pnpm run build",
+    "prepare": "pnpm run build",
     "sort:package-json": "pnpm m exec sort-package-json -q package.json && dprint fmt",
     "test": "vitest run --logHeapUsage",
     "update:version": "tsx ./scripts/update-version.ts"
@@ -47,7 +47,7 @@
     "@local/tsl-local": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^24.5.1",
+    "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "ansis": "^4.1.0",
@@ -55,8 +55,7 @@
     "dedent": "^1.7.0",
     "dprint": "^0.50.2",
     "effect": "^3.17.13",
-    "lefthook": "^1.13.1",
-    "publint": "^0.3.12",
+    "publint": "^0.3.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sort-package-json": "^3.4.0",
@@ -81,8 +80,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@swc/core",
-      "dprint",
-      "lefthook"
+      "dprint"
     ],
     "overrides": {
       "@types/react": "^19.1.13",
