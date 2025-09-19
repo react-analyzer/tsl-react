@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/shared",
-  "version": "0.0.3-next.12",
+  "version": "0.0.3-next.13",
   "description": "React Analyzer Shared constants and functions.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -44,7 +44,7 @@
     "@tsconfig/node24": "^24.0.1",
     "@types/node": "^24.5.2",
     "tsdown": "^0.15.2",
-    "type-fest": "^5.0.0"
+    "type-fest": "^5.0.1"
   },
   "engines": {
     "bun": ">=1.2.18",

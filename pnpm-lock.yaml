@@ -90,8 +90,8 @@ importers:
         specifier: ^4.20.5
         version: 4.20.5
       type-fest:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^5.0.1
+        version: 5.0.1
       typedoc:
         specifier: ^0.28.13
         version: 0.28.13(typescript@5.9.2)
@@ -197,8 +197,8 @@ importers:
         specifier: ^0.15.2
         version: 0.15.2(publint@0.3.13)(typescript@5.9.2)
       type-fest:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^5.0.1
+        version: 5.0.1
 
   packages/plugins/tsl-react:
     dependencies:
@@ -262,8 +262,8 @@ importers:
         specifier: ^0.15.2
         version: 0.15.2(publint@0.3.13)(typescript@5.9.2)
       type-fest:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^5.0.1
+        version: 5.0.1
 
   packages/utilities/ast:
     dependencies:
@@ -324,8 +324,8 @@ importers:
         specifier: ^0.15.2
         version: 0.15.2(publint@0.3.13)(typescript@5.9.2)
       type-fest:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^5.0.1
+        version: 5.0.1
 
 packages:
 
@@ -1618,8 +1618,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  type-fest@5.0.0:
-    resolution: {integrity: sha512-GeJop7+u7BYlQ6yQCAY1nBQiRSHR+6OdCEtd8Bwp9a3NK3+fWAVjOaPKJDteB9f6cIJ0wt4IfnScjLG450EpXA==}
+  type-fest@5.0.1:
+    resolution: {integrity: sha512-9MpwAI52m8H6ssA542UxSLnSiSD2dsC3/L85g6hVubLSXd82wdI80eZwTWhdOfN67NlA+D+oipAs1MlcTcu3KA==}
     engines: {node: '>=20'}
 
   typedoc-plugin-markdown@4.8.1:
@@ -2895,7 +2895,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  type-fest@5.0.0:
+  type-fest@5.0.1:
     dependencies:
       tagged-tag: 1.0.0
 
