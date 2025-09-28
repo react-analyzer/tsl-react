@@ -4,7 +4,7 @@
 
 - [Installation](#installation)
 - [Enabling rules](#enabling-rules)
-- [Specifying project-aware React configuration](#specifying-project-aware-react-configuration)
+- [Specifying project-aware React configuration](#specifying-project-aware-react-configuration-tbd)
 - [Roadmap](#roadmap)
   - [Port Local](#port-local)
   - [Port Utility](#port-utility)
