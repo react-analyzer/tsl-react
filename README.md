@@ -41,7 +41,7 @@ export default defineConfig({
 });
 ```
 
-## Specifying project-aware React configuration
+## Specifying project-aware React configuration (TBD)
 
 In your `tsconfig.json` or `jsconfig.json` add the following:
 
