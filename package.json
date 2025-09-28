@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/monorepo",
-  "version": "0.0.3-next.13",
+  "version": "0.0.3-next.14",
   "private": true,
   "description": "Monorepo for tsl-react-[x, dom, web-api, naming-convention].",
   "keywords": [
@@ -42,19 +42,19 @@
     "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.40.0",
+    "@effect/language-service": "^0.41.0",
     "@local/configs": "workspace:*",
     "@local/tsl-local": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
-    "@tsconfig/strictest": "^2.0.5",
+    "@tsconfig/strictest": "^2.0.6",
     "@types/node": "^24.5.2",
-    "@types/react": "^19.1.13",
+    "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
     "ansis": "^4.1.0",
     "cspell": "^9.2.1",
     "dedent": "^1.7.0",
     "dprint": "^0.50.2",
-    "effect": "^3.17.13",
+    "effect": "^3.17.14",
     "publint": "^0.3.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -62,13 +62,13 @@
     "tinyexec": "^1.0.1",
     "tinyglobby": "^0.2.15",
     "ts-pattern": "^5.8.0",
-    "tsdown": "^0.15.2",
-    "tsl": "^1.0.24",
+    "tsdown": "^0.15.5",
+    "tsl": "^1.0.25",
     "tslib": "^2.8.1",
-    "tsx": "^4.20.5",
+    "tsx": "^4.20.6",
     "type-fest": "^5.0.1",
     "typedoc": "^0.28.13",
-    "typedoc-plugin-markdown": "^4.8.1",
+    "typedoc-plugin-markdown": "^4.9.0",
     "typedoc-plugin-mdn-links": "^5.0.9",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
@@ -83,7 +83,7 @@
       "dprint"
     ],
     "overrides": {
-      "@types/react": "^19.1.13",
+      "@types/react": "^19.1.15",
       "@types/react-dom": "^19.1.9",
       "react": "^19.1.1",
       "react-dom": "^19.1.1",

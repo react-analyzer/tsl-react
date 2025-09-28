@@ -1,6 +1,6 @@
 {
   "name": "tsl-react",
-  "version": "0.0.3-next.13",
+  "version": "0.0.3-next.14",
   "description": "A unified plugin that combines all individual plugins from the react-analyzer monorepo into one.",
   "keywords": [
     "react",
@@ -43,10 +43,10 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.15.2"
+    "tsdown": "^0.15.5"
   },
   "peerDependencies": {
-    "tsl": "^1.0.24",
+    "tsl": "^1.0.25",
     "typescript": "^4.9.5 || ^5.4.5"
   },
   "engines": {
