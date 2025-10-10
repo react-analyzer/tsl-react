@@ -40,12 +40,12 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
-    "tsdown": "^0.15.5",
+    "tsdown": "^0.15.6",
     "type-fest": "^5.0.1"
   },
   "peerDependencies": {
     "tsl": "^1.0.25",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "bun": ">=1.2.18",
