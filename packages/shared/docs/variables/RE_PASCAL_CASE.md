@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_PASCAL\_CASE
+[@react-analyzer/shared](../README.md) / RE\_PASCAL\_CASE
 
 # Variable: RE\_PASCAL\_CASE
 

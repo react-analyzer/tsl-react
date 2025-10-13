@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_REGEXP\_STR
+[@react-analyzer/shared](../README.md) / RE\_REGEXP\_STR
 
 # Variable: RE\_REGEXP\_STR
 

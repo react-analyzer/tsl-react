@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_JS\_EXT
+[@react-analyzer/shared](../README.md) / RE\_JS\_EXT
 
 # Variable: RE\_JS\_EXT
 

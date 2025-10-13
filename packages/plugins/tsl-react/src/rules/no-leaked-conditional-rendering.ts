@@ -5,8 +5,7 @@ import { SyntaxKind } from "typescript";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
 import * as RA from "@react-analyzer/core";
 import { unit } from "@react-analyzer/eff";
-import { report } from "@react-analyzer/kit";
-import { getAnalyzerOptions } from "@react-analyzer/shared";
+import { getAnalyzerOptions, report } from "@react-analyzer/shared";
 
 /** @internal */
 export const messages = {

@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_JS\_IDENTIFIER
+[@react-analyzer/shared](../README.md) / RE\_JS\_IDENTIFIER
 
 # Variable: RE\_JS\_IDENTIFIER
 

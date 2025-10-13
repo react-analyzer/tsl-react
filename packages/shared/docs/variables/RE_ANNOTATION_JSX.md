@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_ANNOTATION\_JSX
+[@react-analyzer/shared](../README.md) / RE\_ANNOTATION\_JSX
 
 # Variable: RE\_ANNOTATION\_JSX
 

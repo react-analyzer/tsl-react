@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_JAVASCRIPT\_PROTOCOL
+[@react-analyzer/shared](../README.md) / RE\_JAVASCRIPT\_PROTOCOL
 
 # Variable: RE\_JAVASCRIPT\_PROTOCOL
 

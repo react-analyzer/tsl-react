@@ -70,7 +70,6 @@ In your `tsconfig.json` or `jsconfig.json` add the following:
 - [x] `@eslint-react/eff` to `@react-analyzer/eff`
 - [ ] `@eslint-react/ast` to `@react-analyzer/ast`
 - [ ] `@eslint-react/var` to `@react-analyzer/var`
-- [ ] `@eslint-react/kit` to `@react-analyzer/kit`
 
 ### Port Core & Shared
 

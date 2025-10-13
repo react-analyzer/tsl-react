@@ -36,15 +36,14 @@
   "dependencies": {
     "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/eff": "workspace:*",
-    "@react-analyzer/kit": "workspace:*",
     "ts-pattern": "^5.8.0"
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
-    "@types/node": "^24.7.1",
+    "@types/node": "^24.7.2",
     "tsdown": "^0.15.6",
-    "type-fest": "^5.0.1"
+    "type-fest": "^5.1.0"
   },
   "peerDependencies": {
     "ts-api-utils": "^2.1.0",

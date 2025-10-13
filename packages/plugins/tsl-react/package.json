@@ -37,7 +37,6 @@
     "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/core": "workspace:*",
     "@react-analyzer/eff": "workspace:*",
-    "@react-analyzer/kit": "workspace:*",
     "@react-analyzer/shared": "workspace:*",
     "compare-versions": "^6.1.1"
   },

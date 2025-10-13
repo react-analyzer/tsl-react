@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_HTML\_TAG
+[@react-analyzer/shared](../README.md) / RE\_HTML\_TAG
 
 # Variable: RE\_HTML\_TAG
 

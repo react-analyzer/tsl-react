@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / toRegExp
+[@react-analyzer/shared](../README.md) / toRegExp
 
 # Function: toRegExp()
 

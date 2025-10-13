@@ -20,7 +20,7 @@
 
 #### node
 
-`undefined` | `null` | `AnyNode`
+`AnyNode` | `null` | `undefined`
 
 ### Returns
 
@@ -44,7 +44,7 @@
 
 ##### node
 
-`undefined` | `null` | `AnyNode`
+`AnyNode` | `null` | `undefined`
 
 #### Returns
 

@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / report
+[@react-analyzer/shared](../README.md) / report
 
 # Function: report()
 
@@ -16,7 +16,7 @@
 
 ### descriptor
 
-`undefined` | `null` | `ReportDescriptor`
+`ReportDescriptor` | `null` | `undefined`
 
 ## Returns
 

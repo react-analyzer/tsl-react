@@ -4,3 +4,5 @@ export * from "./constants";
 export * from "./get-analyzer-options";
 export * from "./get-command-line-options";
 export * from "./get-react-version";
+export * from "./regexp";
+export * from "./report";

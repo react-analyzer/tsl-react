@@ -1,8 +1,8 @@
-[**@react-analyzer/kit**](../README.md)
+[**@react-analyzer/shared**](../README.md)
 
 ***
 
-[@react-analyzer/kit](../README.md) / RE\_COMPONENT\_NAME\_LOOSE
+[@react-analyzer/shared](../README.md) / RE\_COMPONENT\_NAME\_LOOSE
 
 # Variable: RE\_COMPONENT\_NAME\_LOOSE
 

@@ -1,4 +1,4 @@
-import { RE_REGEXP_STR } from "../constants";
+import { RE_REGEXP_STR } from "./constants";
 
 /**
  * Convert a string to the `RegExp`.
