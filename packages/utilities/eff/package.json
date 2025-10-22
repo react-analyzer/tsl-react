@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/eff",
-  "version": "0.0.4-next.0",
+  "version": "0.0.4-next.1",
   "description": "JavaScript and TypeScript utilities (previously some re-exports of the effect library).",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.15.6"
+    "tsdown": "^0.15.9"
   },
   "engines": {
     "bun": ">=1.2.18",
