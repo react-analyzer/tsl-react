@@ -42,7 +42,7 @@
     "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.47.0",
+    "@effect/language-service": "^0.48.0",
     "@local/configs": "workspace:*",
     "@local/tsl-local": "workspace:*",
     "@tsconfig/node24": "^24.0.1",
@@ -51,7 +51,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "ansis": "^4.2.0",
-    "cspell": "^9.2.1",
+    "cspell": "^9.2.2",
     "dedent": "^1.7.0",
     "dprint": "^0.50.2",
     "effect": "^3.18.4",
@@ -71,7 +71,7 @@
     "typedoc-plugin-markdown": "^4.9.0",
     "typedoc-plugin-mdn-links": "^5.0.10",
     "typescript": "^5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.2"
   },
   "packageManager": "pnpm@10.19.0",
   "engines": {
