@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@tsconfig/node24": "^24.0.1",
-    "@tsconfig/strictest": "^2.0.6",
-    "tsl": "^1.0.25"
+    "@tsconfig/strictest": "^2.0.7",
+    "tsl": "^1.0.26"
   }
 }

@@ -35,11 +35,11 @@
   "dependencies": {
     "@react-analyzer/eff": "workspace:*",
     "string-ts": "^2.2.1",
-    "ts-pattern": "^5.8.0"
+    "ts-pattern": "^5.9.0"
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.15.9"
+    "tsdown": "^0.15.12"
   },
   "peerDependencies": {
     "tsl": "^1.0.25",
