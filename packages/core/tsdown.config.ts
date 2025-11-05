@@ -1,4 +1,4 @@
-import type { InlineConfig } from "tsdown";
+import type { UserConfig } from "tsdown";
 
 export default {
   clean: true,
@@ -13,4 +13,4 @@ export default {
   target: "node24",
   treeshake: true,
   fixedExtension: false,
-} satisfies Options;
+} satisfies UserConfig;
