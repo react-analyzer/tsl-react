@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.15.12"
+    "tsdown": "^0.16.0"
   },
   "peerDependencies": {
     "tsl": "^1.0.25",
