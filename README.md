@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/npm/v/tsl-react?style=flat&colorA=111111&colorB=000000)](https://npmjs.com/package/tsl-react)
 [![Downloads](https://img.shields.io/npm/dt/tsl-react.svg?style=flat&colorA=222222&colorB=000000)](https://npmjs.com/package/tsl-react)
 [![License](https://img.shields.io/npm/l/tsl-react?style=flat&colorA=333333&colorB=000000)](https://github.com/react-analyzer/tsl-react/blob/main/LICENSE)
-[![Build with](https://img.shields.io/badge/built_with-tsdown@0.16.0-000000?style=flat)](https://tsdown.dev)
+[![Build with](https://img.shields.io/badge/built_with-tsdown@0.16.1-000000?style=flat)](https://tsdown.dev)
 
 - [Installation](#installation)
 - [Enabling rules](#enabling-rules)

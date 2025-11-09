@@ -13,4 +13,4 @@ export default {
   target: "node24",
   treeshake: true,
   fixedExtension: false,
-} satisfies InlineConfig;
+} satisfies UserConfig;
