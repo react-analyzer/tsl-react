@@ -93,6 +93,12 @@ In your `tsconfig.json` or `jsconfig.json` add the following:
 - [x] `noLeakedConditionalRendering`: Prevents problematic leaked values from being rendered.
 - [ ] ...
 
+## Disclaimer
+
+This project is not affiliated with Meta Corporation or [facebook/react](https://github.com/facebook/react) project or team, nor is it endorsed or sponsored by them.
+
+This project is and will continue to maintain that 90% of the code is written by humans.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
