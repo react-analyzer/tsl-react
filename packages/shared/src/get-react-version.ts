@@ -1,4 +1,4 @@
-import { identity } from "@react-analyzer/eff";
+import { identity } from "@let/kit";
 import { P, match } from "ts-pattern";
 import { _require } from "./_require";
 

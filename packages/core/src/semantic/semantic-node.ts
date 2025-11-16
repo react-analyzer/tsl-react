@@ -1,4 +1,4 @@
-import type { unit } from "@react-analyzer/eff";
+import type { unit } from "@let/kit";
 import type { AST } from "tsl";
 
 export interface SemanticNode {

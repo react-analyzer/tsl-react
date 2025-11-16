@@ -34,8 +34,8 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
+    "@let/kit": "jsr:^0.0.1",
     "@react-analyzer/ast": "workspace:*",
-    "@react-analyzer/eff": "workspace:*",
     "ts-pattern": "^5.9.0"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { unit } from "@react-analyzer/eff";
+import { unit } from "@let/kit";
 import type { ReportDescriptor } from "tsl";
 
 interface Context {

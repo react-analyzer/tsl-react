@@ -33,7 +33,7 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
-    "@react-analyzer/eff": "workspace:*",
+    "@let/kit": "jsr:^0.0.1",
     "string-ts": "^2.2.1",
     "ts-pattern": "^5.9.0"
   },

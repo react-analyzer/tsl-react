@@ -1,5 +1,5 @@
+import { dual, unit } from "@let/kit";
 import { toStringFormat } from "@react-analyzer/ast";
-import { dual, unit } from "@react-analyzer/eff";
 import type { AST, Context } from "tsl";
 import { SyntaxKind } from "typescript";
 

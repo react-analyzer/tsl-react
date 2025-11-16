@@ -1,4 +1,4 @@
-import { identity } from "@react-analyzer/eff";
+import { identity } from "@let/kit";
 import { getTsconfig } from "get-tsconfig";
 import { P, match } from "ts-pattern";
 

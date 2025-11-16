@@ -34,9 +34,9 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
+    "@let/kit": "jsr:^0.0.1",
     "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/core": "workspace:*",
-    "@react-analyzer/eff": "workspace:*",
     "@react-analyzer/shared": "workspace:*",
     "compare-versions": "^6.1.1"
   },

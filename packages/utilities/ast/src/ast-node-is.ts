@@ -1,4 +1,4 @@
-import { or } from "@react-analyzer/eff";
+import { or } from "@let/kit";
 import type { AST } from "tsl";
 import { SyntaxKind } from "typescript";
 
