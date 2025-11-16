@@ -1,9 +1,7 @@
-**tsl-react**
-
-***
-
 # tsl-react
 
 ## Variables
 
-- [noLeakedConditionalRendering](variables/noLeakedConditionalRendering.md)
+| Variable | Description |
+| ------ | ------ |
+| [noLeakedConditionalRendering](variables/noLeakedConditionalRendering.md) | Prevents problematic leaked values from being rendered. |

@@ -1,4 +1,4 @@
-import type { unit } from "@let/kit";
+import type { unit } from "@let/eff";
 import type { AST } from "tsl";
 
 export interface SemanticNode {

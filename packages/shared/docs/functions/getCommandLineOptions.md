@@ -1,17 +1,21 @@
-[**@react-analyzer/shared**](../README.md)
-
-***
-
 [@react-analyzer/shared](../README.md) / getCommandLineOptions
 
 # Function: getCommandLineOptions()
 
-> **getCommandLineOptions**(): `object`
+```ts
+function getCommandLineOptions(): {
+  project?: string;
+};
+```
 
 ## Returns
 
-`object`
+```ts
+{
+  project?: string;
+}
+```
 
-### project?
-
-> `optional` **project**: `string`
+| Name | Type |
+| ------ | ------ |
+| `project?` | `string` |

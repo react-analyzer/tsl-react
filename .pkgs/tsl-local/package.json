@@ -22,7 +22,7 @@
     "lint:ts": "tsl"
   },
   "dependencies": {
-    "@let/kit": "jsr:^0.0.1",
+    "@let/eff": "jsr:^0.0.0",
     "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/shared": "workspace:*",
     "string-ts": "^2.2.1",

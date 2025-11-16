@@ -1,4 +1,4 @@
-import { dual, unit } from "@let/kit";
+import { dual, unit } from "@let/eff";
 import { toStringFormat } from "@react-analyzer/ast";
 import type { AST, Context } from "tsl";
 import { SyntaxKind } from "typescript";

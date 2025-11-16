@@ -1,4 +1,4 @@
-import { identity } from "@let/kit";
+import { identity } from "@let/eff";
 import { getTsconfig } from "get-tsconfig";
 import { P, match } from "ts-pattern";
 

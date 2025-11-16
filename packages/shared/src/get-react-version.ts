@@ -1,4 +1,4 @@
-import { identity } from "@let/kit";
+import { identity } from "@let/eff";
 import { P, match } from "ts-pattern";
 import { _require } from "./_require";
 

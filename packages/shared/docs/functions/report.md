@@ -1,22 +1,17 @@
-[**@react-analyzer/shared**](../README.md)
-
-***
-
 [@react-analyzer/shared](../README.md) / report
 
 # Function: report()
 
-> **report**(`ctx`, `descriptor`): `void`
+```ts
+function report(ctx: Context, descriptor: ReportDescriptor | null | undefined): void;
+```
 
 ## Parameters
 
-### ctx
-
-`Context`
-
-### descriptor
-
-`ReportDescriptor` | `null` | `undefined`
+| Parameter | Type |
+| ------ | ------ |
+| `ctx` | `Context` |
+| `descriptor` | `ReportDescriptor` \| `null` \| `undefined` |
 
 ## Returns
 

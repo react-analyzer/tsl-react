@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isEnumType
 
 # Function: isEnumType()
 
-> **isEnumType**(`type`): `boolean`
+```ts
+function isEnumType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

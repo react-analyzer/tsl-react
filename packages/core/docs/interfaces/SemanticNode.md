@@ -1,49 +1,15 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / SemanticNode
 
 # Interface: SemanticNode
 
 ## Properties
 
-### flag
-
-> **flag**: `bigint`
-
-***
-
-### hint
-
-> **hint**: `bigint`
-
-***
-
-### id
-
-> **id**: `Identifier` \| `Identifier`[] \| `undefined`
-
-***
-
-### key
-
-> **key**: `string`
-
-***
-
-### kind
-
-> **kind**: `string`
-
-***
-
-### name
-
-> **name**: `string` \| `undefined`
-
-***
-
-### node
-
-> **node**: `AnyNode`
+| Property | Type |
+| ------ | ------ |
+| <a id="flag"></a> `flag` | `bigint` |
+| <a id="hint"></a> `hint` | `bigint` |
+| <a id="id"></a> `id` | `Identifier` \| `Identifier`[] \| `undefined` |
+| <a id="key"></a> `key` | `string` |
+| <a id="kind"></a> `kind` | `string` |
+| <a id="name"></a> `name` | `string` \| `undefined` |
+| <a id="node"></a> `node` | `AnyNode` |

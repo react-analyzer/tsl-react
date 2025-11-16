@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isBigIntType
 
 # Function: isBigIntType()
 
-> **isBigIntType**(`type`): `boolean`
+```ts
+function isBigIntType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

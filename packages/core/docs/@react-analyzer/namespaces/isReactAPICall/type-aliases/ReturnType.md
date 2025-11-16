@@ -1,26 +1,26 @@
-[**@react-analyzer/core**](../../../../README.md)
-
-***
-
 [@react-analyzer/core](../../../../README.md) / [isReactAPICall](../README.md) / ReturnType
 
 # Type Alias: ReturnType()
 
-> **ReturnType** = \{(`context`, `node`): `node is CallExpression`; (`context`): (`node`) => `node is CallExpression`; \}
+```ts
+type ReturnType = {
+  (context: Context, node: AnyNode | null | undefined): node is CallExpression;
+  (context: Context): (node: AnyNode | null | undefined) => node is CallExpression;
+};
+```
 
 ## Call Signature
 
-> (`context`, `node`): `node is CallExpression`
+```ts
+(context: Context, node: AnyNode | null | undefined): node is CallExpression;
+```
 
 ### Parameters
 
-#### context
-
-`Context`
-
-#### node
-
-`AnyNode` | `null` | `undefined`
+| Parameter | Type |
+| ------ | ------ |
+| `context` | `Context` |
+| `node` | `AnyNode` \| `null` \| `undefined` |
 
 ### Returns
 
@@ -28,23 +28,27 @@
 
 ## Call Signature
 
-> (`context`): (`node`) => `node is CallExpression`
+```ts
+(context: Context): (node: AnyNode | null | undefined) => node is CallExpression;
+```
 
 ### Parameters
 
-#### context
-
-`Context`
+| Parameter | Type |
+| ------ | ------ |
+| `context` | `Context` |
 
 ### Returns
 
-> (`node`): `node is CallExpression`
+```ts
+(node: AnyNode | null | undefined): node is CallExpression;
+```
 
 #### Parameters
 
-##### node
-
-`AnyNode` | `null` | `undefined`
+| Parameter | Type |
+| ------ | ------ |
+| `node` | `AnyNode` \| `null` \| `undefined` |
 
 #### Returns
 

@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isObjectType
 
 # Function: isObjectType()
 
-> **isObjectType**(`type`): `boolean`
+```ts
+function isObjectType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

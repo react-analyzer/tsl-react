@@ -1,12 +1,10 @@
-[**tsl-react**](../README.md)
-
-***
-
 [tsl-react](../README.md) / noLeakedConditionalRendering
 
 # Variable: noLeakedConditionalRendering()
 
-> `const` **noLeakedConditionalRendering**: (`options?`) => `Rule`\<`unknown`\>
+```ts
+const noLeakedConditionalRendering: (options?: "off") => Rule<unknown>;
+```
 
 Prevents problematic leaked values from being rendered.
 
@@ -58,9 +56,9 @@ function MyComponent({ items }: MyComponentProps) {
 
 ## Parameters
 
-### options?
-
-`"off"`
+| Parameter | Type |
+| ------ | ------ |
+| `options?` | `"off"` |
 
 ## Returns
 

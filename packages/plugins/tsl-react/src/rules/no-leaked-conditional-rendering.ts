@@ -2,7 +2,7 @@ import { compare } from "compare-versions";
 import { type AST, type ReportDescriptor, type Rule, defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
-import { unit } from "@let/kit";
+import { unit } from "@let/eff";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
 import { type TypeVariant, getVariantsOfTypes } from "@react-analyzer/core";
 import { getAnalyzerOptions, report } from "@react-analyzer/shared";

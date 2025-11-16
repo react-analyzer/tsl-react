@@ -1,20 +1,18 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isFalseLiteralType
 
 # Function: isFalseLiteralType()
 
-> **isFalseLiteralType**(`type`): `type is FalseLiteralType`
+```ts
+function isFalseLiteralType(type: Type): type is FalseLiteralType;
+```
 
 Determines whether the given type is a boolean literal type for "false".
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

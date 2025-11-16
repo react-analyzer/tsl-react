@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isFalsyStringType
 
 # Function: isFalsyStringType()
 
-> **isFalsyStringType**(`type`): `boolean`
+```ts
+function isFalsyStringType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

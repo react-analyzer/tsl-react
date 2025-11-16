@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isFalsyNumberType
 
 # Function: isFalsyNumberType()
 
-> **isFalsyNumberType**(`type`): `boolean`
+```ts
+function isFalsyNumberType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

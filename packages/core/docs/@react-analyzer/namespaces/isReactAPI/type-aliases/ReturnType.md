@@ -1,26 +1,26 @@
-[**@react-analyzer/core**](../../../../README.md)
-
-***
-
 [@react-analyzer/core](../../../../README.md) / [isReactAPI](../README.md) / ReturnType
 
 # Type Alias: ReturnType()
 
-> **ReturnType** = \{(`context`, `node`): `node is MemberExpression`; (`context`): (`node`) => `node is MemberExpression`; \}
+```ts
+type ReturnType = {
+  (context: Context, node: AnyNode | null | undefined): node is MemberExpression;
+  (context: Context): (node: AnyNode | null | undefined) => node is MemberExpression;
+};
+```
 
 ## Call Signature
 
-> (`context`, `node`): `node is MemberExpression`
+```ts
+(context: Context, node: AnyNode | null | undefined): node is MemberExpression;
+```
 
 ### Parameters
 
-#### context
-
-`Context`
-
-#### node
-
-`AnyNode` | `null` | `undefined`
+| Parameter | Type |
+| ------ | ------ |
+| `context` | `Context` |
+| `node` | `AnyNode` \| `null` \| `undefined` |
 
 ### Returns
 
@@ -28,23 +28,27 @@
 
 ## Call Signature
 
-> (`context`): (`node`) => `node is MemberExpression`
+```ts
+(context: Context): (node: AnyNode | null | undefined) => node is MemberExpression;
+```
 
 ### Parameters
 
-#### context
-
-`Context`
+| Parameter | Type |
+| ------ | ------ |
+| `context` | `Context` |
 
 ### Returns
 
-> (`node`): `node is MemberExpression`
+```ts
+(node: AnyNode | null | undefined): node is MemberExpression;
+```
 
 #### Parameters
 
-##### node
-
-`AnyNode` | `null` | `undefined`
+| Parameter | Type |
+| ------ | ------ |
+| `node` | `AnyNode` \| `null` \| `undefined` |
 
 #### Returns
 

@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isReactAPI
 
 # Function: isReactAPI()
 
-> **isReactAPI**(`api`): [`ReturnType`](../@react-analyzer/namespaces/isReactAPI/type-aliases/ReturnType.md)
+```ts
+function isReactAPI(api: string): ReturnType;
+```
 
 ## Parameters
 
-### api
-
-`string`
+| Parameter | Type |
+| ------ | ------ |
+| `api` | `string` |
 
 ## Returns
 

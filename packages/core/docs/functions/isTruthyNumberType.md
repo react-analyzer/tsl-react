@@ -1,18 +1,16 @@
-[**@react-analyzer/core**](../README.md)
-
-***
-
 [@react-analyzer/core](../README.md) / isTruthyNumberType
 
 # Function: isTruthyNumberType()
 
-> **isTruthyNumberType**(`type`): `boolean`
+```ts
+function isTruthyNumberType(type: Type): boolean;
+```
 
 ## Parameters
 
-### type
-
-`Type`
+| Parameter | Type |
+| ------ | ------ |
+| `type` | `Type` |
 
 ## Returns
 

@@ -1,12 +1,10 @@
-[**@react-analyzer/shared**](../README.md)
-
-***
-
 [@react-analyzer/shared](../README.md) / getAnalyzerOptions
 
 # Function: getAnalyzerOptions()
 
-> **getAnalyzerOptions**(): [`AnalyzerOptions`](../interfaces/AnalyzerOptions.md)
+```ts
+function getAnalyzerOptions(): AnalyzerOptions;
+```
 
 ## Returns
 
