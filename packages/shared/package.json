@@ -42,7 +42,7 @@
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.2",
     "@types/node": "^24.10.1",
-    "tsdown": "^0.16.4",
+    "tsdown": "^0.16.5",
     "type-fest": "^5.2.0"
   },
   "engines": {

@@ -42,12 +42,12 @@
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.2",
     "@types/node": "^24.10.1",
-    "tsdown": "^0.16.4",
+    "tsdown": "^0.16.5",
     "type-fest": "^5.2.0"
   },
   "peerDependencies": {
     "ts-api-utils": "^2.1.0",
-    "tsl": "^1.0.26",
+    "tsl": "^1.0.27",
     "typescript": "^5.9.3"
   },
   "engines": {
