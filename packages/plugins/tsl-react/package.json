@@ -1,6 +1,6 @@
 {
   "name": "tsl-react",
-  "version": "0.0.4-next.6",
+  "version": "0.0.4-next.8",
   "description": "A unified plugin that combines all individual plugins from the react-analyzer monorepo into one.",
   "keywords": [
     "react",
@@ -34,7 +34,7 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
-    "@let/eff": "jsr:^0.0.0",
+    "@let/eff": "jsr:^0.1.2",
     "@react-analyzer/ast": "workspace:*",
     "@react-analyzer/core": "workspace:*",
     "@react-analyzer/shared": "workspace:*",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.16.5"
+    "tsdown": "^0.17.0-beta.1"
   },
   "peerDependencies": {
     "tsl": "^1.0.27",
