@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/monorepo",
-  "version": "0.0.4-next.13",
+  "version": "0.0.4-beta.13",
   "private": true,
   "description": "Monorepo for tsl-react-[x, dom, web-api, naming-convention].",
   "keywords": [
