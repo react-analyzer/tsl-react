@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/core",
-  "version": "0.0.4-next.12",
+  "version": "0.0.4-next.13",
   "description": "React Analyzer utility module for static analysis of React core APIs and patterns.",
   "homepage": "https://github.com/Rel1cx/react-analyzer",
   "bugs": {
@@ -42,7 +42,7 @@
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.3",
     "@types/node": "^25.0.3",
-    "tsdown": "^0.18.0",
+    "tsdown": "^0.18.1",
     "type-fest": "^5.3.1"
   },
   "peerDependencies": {
