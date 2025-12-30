@@ -3,10 +3,8 @@
 # Function: isFalseLiteralType()
 
 ```ts
-function isFalseLiteralType(type: Type): type is FalseLiteralType;
+function isFalseLiteralType(type: Type): boolean;
 ```
-
-Determines whether the given type is a boolean literal type for "false".
 
 ## Parameters
 
@@ -16,14 +14,4 @@ Determines whether the given type is a boolean literal type for "false".
 
 ## Returns
 
-`type is FalseLiteralType`
-
-## Example
-
-```ts
-declare const type: ts.Type;
-
-if (isFalseLiteralType(type)) {
-  // ...
-}
-```
+`boolean`

@@ -1,14 +1,29 @@
 # @react-analyzer/core
 
-## Other
+## Namespaces
 
-| Name | Description |
+| Namespace | Description |
 | ------ | ------ |
 | [isReactAPI](@react-analyzer/namespaces/isReactAPI/README.md) | - |
 | [isReactAPICall](@react-analyzer/namespaces/isReactAPICall/README.md) | - |
+
+## Interfaces
+
+| Interface | Description |
+| ------ | ------ |
 | [SemanticEntry](interfaces/SemanticEntry.md) | - |
 | [SemanticNode](interfaces/SemanticNode.md) | - |
+
+## Type Aliases
+
+| Type Alias | Description |
+| ------ | ------ |
 | [TypeVariant](type-aliases/TypeVariant.md) | - |
+
+## Variables
+
+| Variable | Description |
+| ------ | ------ |
 | [isCaptureOwnerStack](variables/isCaptureOwnerStack.md) | - |
 | [isCaptureOwnerStackCall](variables/isCaptureOwnerStackCall.md) | - |
 | [isChildrenCount](variables/isChildrenCount.md) | - |
@@ -35,11 +50,18 @@
 | [isLazyCall](variables/isLazyCall.md) | - |
 | [isMemo](variables/isMemo.md) | - |
 | [isMemoCall](variables/isMemoCall.md) | - |
+
+## Functions
+
+| Function | Description |
+| ------ | ------ |
 | [getVariantsOfTypes](functions/getVariantsOfTypes.md) | Ported from https://github.com/typescript-eslint/typescript-eslint/blob/eb736bbfc22554694400e6a4f97051d845d32e0b/packages/eslint-plugin/src/rules/strict-boolean-expressions.ts#L826 with some enhancements Get the variants of an array of types. |
 | [isAnyType](functions/isAnyType.md) | - |
 | [isBigIntType](functions/isBigIntType.md) | - |
+| [isBooleanLiteralType](functions/isBooleanLiteralType.md) | - |
 | [isBooleanType](functions/isBooleanType.md) | - |
 | [isEnumType](functions/isEnumType.md) | - |
+| [isFalseLiteralType](functions/isFalseLiteralType.md) | - |
 | [isFalsyBigIntType](functions/isFalsyBigIntType.md) | - |
 | [isFalsyNumberType](functions/isFalsyNumberType.md) | - |
 | [isFalsyStringType](functions/isFalsyStringType.md) | - |
@@ -50,14 +72,8 @@
 | [isReactAPI](functions/isReactAPI.md) | - |
 | [isReactAPICall](functions/isReactAPICall.md) | - |
 | [isStringType](functions/isStringType.md) | - |
+| [isTrueLiteralType](functions/isTrueLiteralType.md) | - |
 | [isTruthyBigIntType](functions/isTruthyBigIntType.md) | - |
 | [isTruthyNumberType](functions/isTruthyNumberType.md) | - |
 | [isTruthyStringType](functions/isTruthyStringType.md) | - |
 | [isUnknownType](functions/isUnknownType.md) | - |
-
-## Types - Type Guards
-
-| Function | Description |
-| ------ | ------ |
-| [isFalseLiteralType](functions/isFalseLiteralType.md) | Determines whether the given type is a boolean literal type for "false". |
-| [isTrueLiteralType](functions/isTrueLiteralType.md) | Determines whether the given type is a boolean literal type for "true". |
