@@ -14,12 +14,6 @@
 | [SemanticEntry](interfaces/SemanticEntry.md) | - |
 | [SemanticNode](interfaces/SemanticNode.md) | - |
 
-## Type Aliases
-
-| Type Alias | Description |
-| ------ | ------ |
-| [TypeVariant](type-aliases/TypeVariant.md) | - |
-
 ## Variables
 
 | Variable | Description |
@@ -55,25 +49,5 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getVariantsOfTypes](functions/getVariantsOfTypes.md) | Ported from https://github.com/typescript-eslint/typescript-eslint/blob/eb736bbfc22554694400e6a4f97051d845d32e0b/packages/eslint-plugin/src/rules/strict-boolean-expressions.ts#L826 with some enhancements Get the variants of an array of types. |
-| [isAnyType](functions/isAnyType.md) | - |
-| [isBigIntType](functions/isBigIntType.md) | - |
-| [isBooleanLiteralType](functions/isBooleanLiteralType.md) | - |
-| [isBooleanType](functions/isBooleanType.md) | - |
-| [isEnumType](functions/isEnumType.md) | - |
-| [isFalseLiteralType](functions/isFalseLiteralType.md) | - |
-| [isFalsyBigIntType](functions/isFalsyBigIntType.md) | - |
-| [isFalsyNumberType](functions/isFalsyNumberType.md) | - |
-| [isFalsyStringType](functions/isFalsyStringType.md) | - |
-| [isNeverType](functions/isNeverType.md) | - |
-| [isNullishType](functions/isNullishType.md) | - |
-| [isNumberType](functions/isNumberType.md) | - |
-| [isObjectType](functions/isObjectType.md) | - |
 | [isReactAPI](functions/isReactAPI.md) | - |
 | [isReactAPICall](functions/isReactAPICall.md) | - |
-| [isStringType](functions/isStringType.md) | - |
-| [isTrueLiteralType](functions/isTrueLiteralType.md) | - |
-| [isTruthyBigIntType](functions/isTruthyBigIntType.md) | - |
-| [isTruthyNumberType](functions/isTruthyNumberType.md) | - |
-| [isTruthyStringType](functions/isTruthyStringType.md) | - |
-| [isUnknownType](functions/isUnknownType.md) | - |

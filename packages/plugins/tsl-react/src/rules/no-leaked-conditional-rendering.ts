@@ -1,11 +1,11 @@
-import { compare } from "compare-versions";
-import { type AST, type ReportDescriptor, type Rule, defineRule } from "tsl";
-import { SyntaxKind } from "typescript";
-
 import { unit } from "@let/eff";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
-import { type TypeVariant, getVariantsOfTypes } from "@react-analyzer/core";
 import { getAnalyzerOptions, report } from "@react-analyzer/shared";
+import { compare } from "compare-versions";
+import { type AST, type ReportDescriptor, defineRule } from "tsl";
+import { SyntaxKind } from "typescript";
+
+import { type TypeVariant, getTypeVariants } from "../utils";
 
 /** @internal */
 export const messages = {
@@ -93,7 +93,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
         // If the left node is a logical negation expression, we skip the type check for better performance
         if (isLogicalNegationExpression(node.left)) return unit;
         const leftType = ctx.utils.getConstrainedTypeAtLocation(node.left);
-        const leftTypeVariants = getVariantsOfTypes(ctx.utils.unionConstituents(leftType));
+        const leftTypeVariants = getTypeVariants(ctx.utils.unionConstituents(leftType));
         const areAllLeftTypeVariantsAllowed = Array
           .from(leftTypeVariants.values())
           .every((type) => allowedVariants.some((allowed) => allowed === type));
