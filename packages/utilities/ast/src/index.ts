@@ -1,2 +1,2 @@
-export * from "./ast-node-format";
-export * from "./ast-node-is";
+export * from "./is";
+export * from "./misc";

@@ -2,14 +2,14 @@ import { identity } from "@let/eff";
 import { getTsconfig } from "get-tsconfig";
 import { P, match } from "ts-pattern";
 
-import { getCommandLineOptions } from "./get-command-line-options.ts";
+import { getCommandLineOptions } from "./command-line-options.ts";
 
 export interface AnalyzerOptions {
   version: string;
 }
 
 export const DEFAULT_ANALYZER_OPTIONS = {
-  version: "19.1.0",
+  version: "19.2.0",
 } as const satisfies AnalyzerOptions;
 
 // TODO: Port the rest of the options from https://github.com/Rel1cx/eslint-react/blob/2.0.0-beta/packages/shared/src/settings.ts

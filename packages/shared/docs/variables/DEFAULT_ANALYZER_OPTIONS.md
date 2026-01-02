@@ -4,7 +4,7 @@
 
 ```ts
 const DEFAULT_ANALYZER_OPTIONS: {
-  version: "19.1.0";
+  version: "19.2.0";
 };
 ```
 
@@ -12,4 +12,4 @@ const DEFAULT_ANALYZER_OPTIONS: {
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| <a id="version"></a> `version` | `"19.1.0"` | `"19.1.0"` |
+| <a id="version"></a> `version` | `"19.2.0"` | `"19.2.0"` |

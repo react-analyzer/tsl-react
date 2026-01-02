@@ -1,8 +1,5 @@
-import { delimiterCase, replace, toLowerCase } from "string-ts";
-
 import type { AST } from "tsl";
 import { SyntaxKind } from "typescript";
-import { isJSX } from "./ast-node-is.ts";
 
 /**
  * @internal
