@@ -46,7 +46,7 @@ export default defineConfig({
 
 ## Specifying project-aware React configuration (TBD)
 
-In your `tsconfig.json` or `jsconfig.json` add the following:
+In your `tsconfig.json` or `jsconfig.json`, add the following:
 
 ```diff
 {
@@ -95,9 +95,9 @@ In your `tsconfig.json` or `jsconfig.json` add the following:
 
 ## Disclaimer
 
-This project is not affiliated with Meta Corporation or [facebook/react](https://github.com/facebook/react) project or team, nor is it endorsed or sponsored by them.
+This project is not affiliated with Meta Corporation or the [facebook/react](https://github.com/facebook/react) project or team, nor is it endorsed or sponsored by them.
 
-This project is and will continue to maintain that 90% of the code is written by humans.
+This project is, and will remain, 90% of its code written by humans.
 
 ## License
 
@@ -107,7 +107,7 @@ This project is licensed under the [MIT License](./LICENSE).
 
 We extend our gratitude to:
 
-- **[ArnaudBarre/tsl](https://github.com/ArnaudBarre/tsl)** for the core and AST type rewrite, which significantly streamlined custom rules development within TypeScript Language Service Plugin.
+- **[ArnaudBarre/tsl](https://github.com/ArnaudBarre/tsl)** for the core and AST type rewrite, which significantly streamlined custom rule development within the TypeScript Language Service Plugin.
 - **[johnsoncodehk/tsslint](https://github.com/johnsoncodehk/tsslint)** for their early explorations of exposing the TypeScript Language Server diagnostic interface.
-- **[typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)** for providing the foundation where these custom rules were initially developed and tested.
-- **[Effect-TS/language-service](https://github.com/Effect-TS/language-service)** for inspiring the creation of [`typescriptreact-language-service`](https://github.com/react-analyzer/tsl/commit/01ab1d8d954d555bff65246c61af8c1028be78f1#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5) (now [`tsl-react`](https://github.com/react-analyzer/tsl)).
+- **[typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)** for providing the foundation where these custom rules were initially developed and tested.
+- **[Effect-TS/language-service](https://github.com/Effect-TS/language-service)** for inspiring the creation of [`typescriptreact-language-service`](https://github.com/react-analyzer/tsl/commit/01ab1d8d954d555bff65246c61af8c1028be78f1#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5) (now [`tsl-react`](https://github.com/react-analyzer/tsl)).
