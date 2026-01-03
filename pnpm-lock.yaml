@@ -77,11 +77,14 @@ importers:
         specifier: ^5.9.0
         version: 5.9.0
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
       tsl:
         specifier: ^1.0.28
         version: 1.0.28(typescript@5.9.3)
+      tsl-module:
+        specifier: ^0.1.5
+        version: 0.1.5(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -153,8 +156,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.7)
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
 
   packages/core:
     dependencies:
@@ -184,8 +187,8 @@ importers:
         specifier: ^25.0.3
         version: 25.0.3
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
       type-fest:
         specifier: ^5.3.1
         version: 5.3.1
@@ -218,8 +221,8 @@ importers:
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
 
   packages/shared:
     dependencies:
@@ -243,8 +246,8 @@ importers:
         specifier: ^25.0.3
         version: 25.0.3
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
       type-fest:
         specifier: ^5.3.1
         version: 5.3.1
@@ -271,8 +274,8 @@ importers:
         specifier: workspace:*
         version: link:../../../.pkgs/configs
       tsdown:
-        specifier: ^0.19.0-beta.1
-        version: 0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3)
+        specifier: ^0.19.0-beta.2
+        version: 0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3)
 
 packages:
 
@@ -1648,8 +1651,8 @@ packages:
   ts-pattern@5.9.0:
     resolution: {integrity: sha512-6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==}
 
-  tsdown@0.19.0-beta.1:
-    resolution: {integrity: sha512-NiQi0yPrltr9PyjKZD29BEkjqg6FYsbLkJmEYC/X/+jm+rsFb62YBHEqPEtNzlv6hdyLVSqJH3i1qMp4VeYH6w==}
+  tsdown@0.19.0-beta.2:
+    resolution: {integrity: sha512-hIn4nKz9YY5rUEiD/JPFIX0SI733ktgEESyn9o/iS1fnfryhxe7/FfJ0KuM2enxOKHqpAdHU/DiC0DPzBC5CVg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -1672,6 +1675,13 @@ packages:
         optional: true
       unplugin-unused:
         optional: true
+
+  tsl-module@0.1.5:
+    resolution: {integrity: sha512-I261afk7cE1Bgv5aU0wKpS4k/0mVGjL5cQiPPFy00srhBwfwz2cNxBtJBqNK5sWuqCKPffQh3D9JJ9IscIMfEw==}
+    engines: {bun: '>=1.2.18', node: '>=24.6.0'}
+    peerDependencies:
+      tsl: ^1.0.28
+      typescript: ^5.9.3
 
   tsl@1.0.28:
     resolution: {integrity: sha512-zinipy9ZK5yjMzYyN2YaH05it29eCZmk23JOafhC0+9fAVl2pB6N4IKn9x2583peYbplJ6ltw3ORng7ubf5Hsg==}
@@ -3002,7 +3012,7 @@ snapshots:
 
   ts-pattern@5.9.0: {}
 
-  tsdown@0.19.0-beta.1(publint@0.3.16)(typescript@5.9.3):
+  tsdown@0.19.0-beta.2(publint@0.3.16)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -3029,6 +3039,13 @@ snapshots:
       - oxc-resolver
       - synckit
       - vue-tsc
+
+  tsl-module@0.1.5(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
+    dependencies:
+      '@let/eff': '@jsr/let__eff@0.1.2'
+      ts-pattern: 5.9.0
+      tsl: 1.0.28(typescript@5.9.3)
+      typescript: 5.9.3
 
   tsl@1.0.28(typescript@5.9.3):
     dependencies:

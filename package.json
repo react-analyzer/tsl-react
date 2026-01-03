@@ -12,13 +12,13 @@
     "tsl-react-web-api",
     "tsl-react-naming-convention"
   ],
-  "homepage": "https://github.com/react-analyzer/tsl",
+  "homepage": "https://github.com/react-analyzer/tsl-react",
   "bugs": {
-    "url": "https://github.com/react-analyzer/tsl/issues"
+    "url": "https://github.com/react-analyzer/tsl-react/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-analyzer/tsl.git"
+    "url": "git@github.com:react-analyzer/tsl-react.git"
   },
   "license": "MIT",
   "author": "Rel1cx<rel1cx@proton.me>",
@@ -35,7 +35,7 @@
     "lint:deps": "pnpm dlx skott -m file-tree -e .ts -s",
     "lint:publish": "pnpm m run lint:publish",
     "lint:spell": "cspell lint --relative --no-progress \"**\"",
-    "lint:ts": "pnpm m run lint:ts",
+    "lint:ts": "pnpm tsl && pnpm m run lint:ts",
     "prepare": "pnpm run build",
     "sort:package-json": "pnpm m exec sort-package-json -q package.json && dprint fmt",
     "test": "vitest run --logHeapUsage",
@@ -62,8 +62,9 @@
     "tinyexec": "^1.0.2",
     "tinyglobby": "^0.2.15",
     "ts-pattern": "^5.9.0",
-    "tsdown": "^0.19.0-beta.1",
+    "tsdown": "^0.19.0-beta.2",
     "tsl": "^1.0.28",
+    "tsl-module": "^0.1.5",
     "tslib": "^2.8.1",
     "tsx": "^4.21.0",
     "type-fest": "^5.3.1",
