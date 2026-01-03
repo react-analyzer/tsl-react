@@ -12,7 +12,7 @@ export default defineConfig({
       allowNullableNumber: false,
       allowNullableObject: false,
       allowNullableString: false,
-      allowNumber: false,
+      allowNumber: true,
       allowString: false,
     }),
     core.switchExhaustivenessCheck({
