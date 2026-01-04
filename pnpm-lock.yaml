@@ -17,8 +17,8 @@ importers:
   .:
     devDependencies:
       '@effect/language-service':
-        specifier: ^0.63.2
-        version: 0.63.2
+        specifier: ^0.64.0
+        version: 0.64.0
       '@local/configs':
         specifier: workspace:*
         version: link:.pkgs/configs
@@ -83,8 +83,8 @@ importers:
         specifier: ^1.0.28
         version: 1.0.28(typescript@5.9.3)
       tsl-module:
-        specifier: ^0.1.9
-        version: 0.1.9(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^0.1.10
+        version: 0.1.10(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -577,8 +577,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@effect/language-service@0.63.2':
-    resolution: {integrity: sha512-/y33gKaZiG+kWKbs2kogmUAItFta5VVzBChdNCqzQ0E9SFfBf7TapwtN5OgTMNJMcyv41R4zaTGVM4Iqtv7hZQ==}
+  '@effect/language-service@0.64.0':
+    resolution: {integrity: sha512-Ch6s0aAcrdaOWKmsXw0ys/MvYzz2DD5wf6qALnuyb8Tq1LO8livCUf2ax2cIWzPuEitRyvmIFb0byxKAYi1kcw==}
     hasBin: true
 
   '@emnapi/core@1.7.1':
@@ -1676,8 +1676,8 @@ packages:
       unplugin-unused:
         optional: true
 
-  tsl-module@0.1.9:
-    resolution: {integrity: sha512-vva6T6myieAf0dY+7qg8gZWIJeCqOXyYawwRzXaC+MCuARYQ4p2IEU1fzM5rqYGiuhyXfUMwIPTzGymZp+JUyg==}
+  tsl-module@0.1.10:
+    resolution: {integrity: sha512-xKj5XA+UI5KndPixxQ86k6F+n1QwlbNLaAuLfP5+81P9A+Ln5NJ5S9cFPv+UpzavS4m88hOSRHpOHEjn5OYM2A==}
     engines: {bun: '>=1.2.18', node: '>=24.6.0'}
     peerDependencies:
       tsl: ^1.0.28
@@ -2107,7 +2107,7 @@ snapshots:
   '@dprint/win32-x64@0.51.1':
     optional: true
 
-  '@effect/language-service@0.63.2': {}
+  '@effect/language-service@0.64.0': {}
 
   '@emnapi/core@1.7.1':
     dependencies:
@@ -3040,7 +3040,7 @@ snapshots:
       - synckit
       - vue-tsc
 
-  tsl-module@0.1.9(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
+  tsl-module@0.1.10(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       '@let/eff': '@jsr/let__eff@0.1.2'
       ts-pattern: 5.9.0
