@@ -2,15 +2,6 @@ import { match } from "ts-pattern";
 import { defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
-//#region src/utils/ast.ts
-function getStartAndEnd(node) {
-	return {
-		start: node.getStart(),
-		end: node.getEnd()
-	};
-}
-
-//#endregion
 //#region src/rules/consistent-nullish-comparison.ts
 /**
 * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
@@ -36,10 +27,10 @@ const consistentNullishComparison = defineRule(() => ({
 			suggestions: [{
 				message: offendingChild === node.left ? `Replace with 'null ${newOperatorText} ${node.right.getText()}'.` : `Replace with '${node.left.getText()} ${newOperatorText} null'.`,
 				changes: [{
-					...getStartAndEnd(node.operatorToken),
+					node: node.operatorToken,
 					newText: newOperatorText
 				}, {
-					...getStartAndEnd(offendingChild),
+					node: offendingChild,
 					newText: "null"
 				}]
 			}]

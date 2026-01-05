@@ -2,8 +2,6 @@ import { match } from "ts-pattern";
 import { defineRule } from "tsl";
 import { SyntaxKind } from "typescript";
 
-import { getStartAndEnd } from "../utils";
-
 /**
  * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
  *
@@ -39,11 +37,11 @@ export const consistentNullishComparison = defineRule(() => ({
               : `Replace with '${node.left.getText()} ${newOperatorText} null'.`,
             changes: [
               {
-                ...getStartAndEnd(node.operatorToken),
+                node: node.operatorToken,
                 newText: newOperatorText,
               },
               {
-                ...getStartAndEnd(offendingChild),
+                node: offendingChild,
                 newText: "null",
               },
             ],
