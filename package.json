@@ -39,7 +39,7 @@
     "prepare": "pnpm run build",
     "sort:package-json": "pnpm m exec sort-package-json -q package.json && dprint fmt",
     "test": "vitest run --logHeapUsage",
-    "update:version": "unrun ./scripts/update-version.ts"
+    "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
     "@effect/language-service": "^0.64.1",
@@ -66,12 +66,12 @@
     "tsl": "^1.0.28",
     "tsl-module": "^0.2.4",
     "tslib": "^2.8.1",
+    "tsx": "latest",
     "type-fest": "^5.3.1",
     "typedoc": "^0.28.15",
     "typedoc-plugin-markdown": "^4.9.0",
     "typedoc-plugin-mdn-links": "^5.0.10",
     "typescript": "^5.9.3",
-    "unrun": "latest",
     "vitest": "^4.0.16"
   },
   "packageManager": "pnpm@10.28.0",
