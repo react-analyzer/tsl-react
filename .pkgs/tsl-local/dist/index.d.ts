@@ -1,7 +1,6 @@
 import * as tsl0 from "tsl";
 
 //#region src/rules/consistent-nullish-comparison.d.ts
-
 /**
  * Rule to enforce the use of `== null` or `!= null` for nullish comparisons.
  *
