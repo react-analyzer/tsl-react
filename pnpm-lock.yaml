@@ -17,8 +17,8 @@ importers:
   .:
     devDependencies:
       '@effect/language-service':
-        specifier: ^0.71.1
-        version: 0.71.1
+        specifier: ^0.71.2
+        version: 0.71.2
       '@local/configs':
         specifier: workspace:*
         version: link:.pkgs/configs
@@ -577,8 +577,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@effect/language-service@0.71.1':
-    resolution: {integrity: sha512-H4dodHdwkymirPMPm4Z8ogiFvbMnxnO6HHASS5XeptrqRZ8AdA9MLkFxLU6nAn9QbL0I4V26U50lFOju7Z2riA==}
+  '@effect/language-service@0.71.2':
+    resolution: {integrity: sha512-l5MaMxopOMjzSwEmQdIq5KeKqaLVLwkFdWeplCZw58O1kV1TYQIaG6uZ1nb5XvMtldLcfLu+44mdpiaW484fHg==}
     hasBin: true
 
   '@emnapi/core@1.7.1':
@@ -2112,7 +2112,7 @@ snapshots:
   '@dprint/win32-x64@0.51.1':
     optional: true
 
-  '@effect/language-service@0.71.1': {}
+  '@effect/language-service@0.71.2': {}
 
   '@emnapi/core@1.7.1':
     dependencies:

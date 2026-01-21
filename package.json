@@ -42,7 +42,7 @@
     "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.71.1",
+    "@effect/language-service": "^0.71.2",
     "@local/configs": "workspace:*",
     "@local/tsl-local": "workspace:*",
     "@tsconfig/node24": "^24.0.4",

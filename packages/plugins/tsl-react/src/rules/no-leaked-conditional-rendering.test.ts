@@ -30,6 +30,7 @@ test("noLeakedConditionalRendering", () => {
       tsx`const left = 42n; const a = <div>{left && <span>hello</span>}</div>;`,
       tsx`const left = { foo: "bar" }; const a = <div>{left && <span>hello</span>}</div>;`,
       tsx`const left = ""; const a = <div>{left && <span>hello</span>}</div>;`, // This is valid in React 18+
+      tsx`type MyEnum = "A" | "B"; const left: MyEnum = "A"; const a = <div>{left && <span>hello</span>}</div>;`,
     ],
     invalid: [
       {
@@ -109,6 +110,16 @@ test("noLeakedConditionalRendering", () => {
       },
       {
         code: tsx`const left = 0n; const a = <div>{left && <span>hello</span>}</div>;`,
+        errors: [
+          {
+            message: messages.noLeakedConditionalRendering({ value: "left" }),
+            line: 1,
+          },
+        ],
+      },
+      {
+        code:
+          tsx`enum MyEnum { A = 0, B = 1 } const left = MyEnum.A; const a = <div>{left && <span>hello</span>}</div>;`,
         errors: [
           {
             message: messages.noLeakedConditionalRendering({ value: "left" }),

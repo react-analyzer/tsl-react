@@ -76,6 +76,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
       // Allowed left node type variants
       const allowedVariants = [
         "any",
+        "enum",
         "boolean",
         "nullish",
         "object",
