@@ -1,6 +1,6 @@
 import { consistentNullishComparison } from "@local/tsl-local";
 import { core, defineConfig } from "tsl";
-import { noDuplicateExports, noDuplicateImports } from "tsl-module";
+import { noDuplicateExports, noDuplicateImports } from "tsl-dx";
 
 export default defineConfig({
   rules: [
