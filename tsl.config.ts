@@ -1,6 +1,5 @@
-import { consistentNullishComparison } from "@local/tsl-local";
 import { core, defineConfig } from "tsl";
-import { noDuplicateExports, noDuplicateImports } from "tsl-dx";
+import { noDuplicateExports, noDuplicateImports, nullishComparison } from "tsl-dx";
 
 export default defineConfig({
   rules: [
@@ -19,8 +18,8 @@ export default defineConfig({
       considerDefaultExhaustiveForUnions: true,
     }),
     core.noConfusingVoidExpression("off"),
+    nullishComparison(),
     noDuplicateImports(),
     noDuplicateExports(),
-    consistentNullishComparison(),
   ],
 });

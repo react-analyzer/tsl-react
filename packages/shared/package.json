@@ -12,7 +12,7 @@
     "directory": "packages/shared"
   },
   "license": "MIT",
-  "author": "Rel1cx<rel1cx@proton.me>",
+  "author": "Rel1cx",
   "sideEffects": false,
   "type": "module",
   "exports": {
@@ -35,15 +35,15 @@
   },
   "dependencies": {
     "@let/eff": "jsr:^0.1.2",
-    "get-tsconfig": "^4.13.0",
+    "get-tsconfig": "^4.13.1",
     "ts-pattern": "^5.9.0"
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^25.0.9",
-    "tsdown": "^0.20.0-beta.4",
-    "type-fest": "^5.4.1"
+    "@types/node": "^25.2.0",
+    "tsdown": "^0.20.1",
+    "type-fest": "^5.4.3"
   },
   "engines": {
     "bun": ">=1.2.18",

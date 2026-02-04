@@ -12,7 +12,7 @@
     "directory": "packages/utilities/ast"
   },
   "license": "MIT",
-  "author": "Rel1cx<rel1cx@proton.me>",
+  "author": "Rel1cx",
   "sideEffects": false,
   "type": "module",
   "exports": {
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@local/configs": "workspace:*",
-    "tsdown": "^0.20.0-beta.4"
+    "tsdown": "^0.20.1"
   },
   "peerDependencies": {
     "tsl": "^1.0.28",
