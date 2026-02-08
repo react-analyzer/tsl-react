@@ -6,10 +6,10 @@
 
 | Property | Type |
 | ------ | ------ |
-| <a id="flag"></a> `flag` | `bigint` |
-| <a id="hint"></a> `hint` | `bigint` |
-| <a id="id"></a> `id` | `Identifier` \| `Identifier`[] \| `undefined` |
-| <a id="key"></a> `key` | `string` |
-| <a id="kind"></a> `kind` | `string` |
-| <a id="name"></a> `name` | `string` \| `undefined` |
-| <a id="node"></a> `node` | `AnyNode` |
+| <a id="property-flag"></a> `flag` | `bigint` |
+| <a id="property-hint"></a> `hint` | `bigint` |
+| <a id="property-id"></a> `id` | `Identifier` \| `Identifier`[] \| `undefined` |
+| <a id="property-key"></a> `key` | `string` |
+| <a id="property-kind"></a> `kind` | `string` |
+| <a id="property-name"></a> `name` | `string` \| `undefined` |
+| <a id="property-node"></a> `node` | `AnyNode` |

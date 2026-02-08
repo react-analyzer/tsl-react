@@ -6,4 +6,4 @@
 
 | Property | Type |
 | ------ | ------ |
-| <a id="version"></a> `version` | `string` |
+| <a id="property-version"></a> `version` | `string` |

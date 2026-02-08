@@ -12,4 +12,4 @@ const DEFAULT_ANALYZER_OPTIONS: {
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| <a id="version"></a> `version` | `"19.2.0"` | `"19.2.0"` |
+| <a id="property-version"></a> `version` | `"19.2.0"` | `"19.2.0"` |

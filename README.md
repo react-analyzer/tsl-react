@@ -66,7 +66,6 @@ In your `tsconfig.json` or `jsconfig.json`, add the following:
 ### Port Local
 
 - [x] `.pkgs/configs` to `.pkgs/configs`
-- [x] `.pkgs/eslint-plugin-local` to `.pkgs/tsl-local`
 
 ### Port Utility
 
