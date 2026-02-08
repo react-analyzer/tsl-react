@@ -1,4 +1,4 @@
-import { unit } from "@let/eff";
+import { unit } from "@local/eff";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
 import { getAnalyzerOptions, report } from "@react-analyzer/shared";
 import { compare } from "compare-versions";

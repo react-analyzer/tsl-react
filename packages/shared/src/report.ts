@@ -1,4 +1,4 @@
-import { unit } from "@let/eff";
+import { unit } from "@local/eff";
 import type { ReportDescriptor } from "tsl";
 
 interface Context {

@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@local/configs/typedoc.base.json"
+  ],
+  "entryPoints": [
+    "src/index.ts"
+  ],
+  "out": "docs"
+}

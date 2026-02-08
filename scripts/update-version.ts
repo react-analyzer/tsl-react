@@ -9,6 +9,8 @@ import { version } from "./lib/version";
 
 const GLOB_PACKAGE_JSON = [
   "package.json",
+  ".pkgs/*/package.json",
+  ".pkgs/*/*/package.json",
   "packages/*/package.json",
   "packages/*/*/package.json",
 ];

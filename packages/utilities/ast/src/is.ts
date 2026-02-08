@@ -1,4 +1,4 @@
-import { or } from "@let/eff";
+import { or } from "@local/eff";
 import type { AST } from "tsl";
 import { SyntaxKind } from "typescript";
 

@@ -34,7 +34,7 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "dependencies": {
-    "@let/eff": "jsr:^0.1.2",
+    "@local/eff": "workspace:*",
     "get-tsconfig": "^4.13.6",
     "ts-pattern": "^5.9.0"
   },

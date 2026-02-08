@@ -119,11 +119,17 @@ importers:
         specifier: ^1.0.28
         version: 1.0.28(typescript@5.9.3)
 
+  .pkgs/eff:
+    devDependencies:
+      tsl:
+        specifier: ^1.0.28
+        version: 1.0.28(typescript@5.9.3)
+
   packages/core:
     dependencies:
-      '@let/eff':
-        specifier: jsr:^0.1.2
-        version: '@jsr/let__eff@0.1.2'
+      '@local/eff':
+        specifier: workspace:*
+        version: link:../../.pkgs/eff
       '@react-analyzer/ast':
         specifier: workspace:*
         version: link:../utilities/ast
@@ -155,9 +161,9 @@ importers:
 
   packages/plugins/tsl-react:
     dependencies:
-      '@let/eff':
-        specifier: jsr:^0.1.2
-        version: '@jsr/let__eff@0.1.2'
+      '@local/eff':
+        specifier: workspace:*
+        version: link:../../../.pkgs/eff
       '@react-analyzer/ast':
         specifier: workspace:*
         version: link:../../utilities/ast
@@ -170,6 +176,9 @@ importers:
       compare-versions:
         specifier: ^6.1.1
         version: 6.1.1
+      ts-pattern:
+        specifier: ^5.9.0
+        version: 5.9.0
       tsl:
         specifier: ^1.0.28
         version: 1.0.28(typescript@5.9.3)
@@ -186,9 +195,9 @@ importers:
 
   packages/shared:
     dependencies:
-      '@let/eff':
-        specifier: jsr:^0.1.2
-        version: '@jsr/let__eff@0.1.2'
+      '@local/eff':
+        specifier: workspace:*
+        version: link:../../.pkgs/eff
       get-tsconfig:
         specifier: ^4.13.6
         version: 4.13.6
@@ -214,9 +223,9 @@ importers:
 
   packages/utilities/ast:
     dependencies:
-      '@let/eff':
-        specifier: jsr:^0.1.2
-        version: '@jsr/let__eff@0.1.2'
+      '@local/eff':
+        specifier: workspace:*
+        version: link:../../../.pkgs/eff
       string-ts:
         specifier: ^2.3.1
         version: 2.3.1
@@ -896,9 +905,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@jsr/let__eff@0.1.2':
-    resolution: {integrity: sha512-OFMEAxFr2Nx8hbhJYr+pLWvKOWn72o1pamAYUqWgcqCPOrhPmJ5QTPxQqoCY1BJj9xwjJR/P2Gzu6gQ7HxNqbg==, tarball: https://npm.jsr.io/~/11/@jsr/let__eff/0.1.2.tgz}
 
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
@@ -2313,8 +2319,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@jsr/let__eff@0.1.2': {}
 
   '@napi-rs/wasm-runtime@1.1.1':
     dependencies:

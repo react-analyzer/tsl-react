@@ -1,4 +1,4 @@
-import { identity } from "@let/eff";
+import { identity } from "@local/eff";
 import module from "node:module";
 import path from "node:path";
 import { P, match } from "ts-pattern";

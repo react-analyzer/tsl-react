@@ -1,0 +1,35 @@
+{
+  "name": "@local/eff",
+  "version": "0.0.9",
+  "description": "JavaScript and TypeScript utilities.",
+  "homepage": "https://github.com/Rel1cx/dx",
+  "bugs": {
+    "url": "https://github.com/Rel1cx/dx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rel1cx/dx.git"
+  },
+  "license": "MIT",
+  "author": "Rel1cx<let@ik.me>",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "build:docs": "typedoc",
+    "lint:publish": "publint",
+    "lint:ts": "tsl",
+    "publish": "pnpm run build && pnpm run lint:publish"
+  },
+  "devDependencies": {
+    "tsl": "^1.0.28"
+  }
+}
