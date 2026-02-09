@@ -1,6 +1,6 @@
 {
   "name": "@local/configs",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
   "description": "Local config bases for use in the workspace",
   "sideEffects": false,
