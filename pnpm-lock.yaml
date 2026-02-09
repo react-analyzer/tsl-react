@@ -80,8 +80,8 @@ importers:
         specifier: ^1.0.28
         version: 1.0.28(typescript@5.9.3)
       tsl-dx:
-        specifier: ^0.5.2
-        version: 0.5.2(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^0.5.3
+        version: 0.5.3(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -109,6 +109,9 @@ importers:
 
   .pkgs/configs:
     dependencies:
+      '@effect/language-service':
+        specifier: ^0.73.0
+        version: 0.73.0
       '@tsconfig/node24':
         specifier: ^24.0.4
         version: 24.0.4
@@ -1685,8 +1688,8 @@ packages:
       unplugin-unused:
         optional: true
 
-  tsl-dx@0.5.2:
-    resolution: {integrity: sha512-/C2hKRez5CuQWhDqVVOEp9EIgEj1cOCNpvKTBi0YkPBXYJfMIYF9QDy+ga7hz/9mlluIq9+57OevHDExGoVP2Q==}
+  tsl-dx@0.5.3:
+    resolution: {integrity: sha512-4Yr3CL7jfl1SXz404PfRy37ARRSmkQku+w5OV3UgNL5LHMrjXuF/WnlfXVfGF+L49olKoXhquPhGf/j88UvhKQ==}
     peerDependencies:
       tsl: ^1.0.28
       typescript: ^5.9.3
@@ -3066,7 +3069,7 @@ snapshots:
       - synckit
       - vue-tsc
 
-  tsl-dx@0.5.2(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
+  tsl-dx@0.5.3(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       ts-pattern: 5.9.0
       tsl: 1.0.28(typescript@5.9.3)

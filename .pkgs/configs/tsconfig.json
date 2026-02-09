@@ -22,7 +22,7 @@
     "exactOptionalPropertyTypes": true,
     "composite": false,
     "stripInternal": false,
-    "noEmit": false,
+    "noEmit": true,
     "declaration": true
   },
   "exclude": [

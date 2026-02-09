@@ -63,7 +63,7 @@
     "ts-pattern": "^5.9.0",
     "tsdown": "^0.20.3",
     "tsl": "^1.0.28",
-    "tsl-dx": "^0.5.2",
+    "tsl-dx": "^0.5.3",
     "tslib": "^2.8.1",
     "tsx": "latest",
     "type-fest": "^5.4.4",
@@ -73,7 +73,7 @@
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   },
-  "packageManager": "pnpm@10.29.1",
+  "packageManager": "pnpm@10.29.2",
   "engines": {
     "node": ">=24.6.0"
   },

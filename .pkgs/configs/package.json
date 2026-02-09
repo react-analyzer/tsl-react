@@ -6,6 +6,7 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
+    "./tsl.config.ts": "./tsl.config.ts",
     "./tsconfig.base.json": "./tsconfig.base.json",
     "./typedoc.base.json": "./typedoc.base.json"
   },
@@ -13,6 +14,7 @@
     "lint:publish": "publint"
   },
   "dependencies": {
+    "@effect/language-service": "^0.73.0",
     "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8",
     "tsl": "^1.0.28"
