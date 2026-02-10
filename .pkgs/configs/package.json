@@ -14,9 +14,9 @@
     "lint:publish": "publint"
   },
   "dependencies": {
-    "@effect/language-service": "^0.73.0",
+    "@effect/language-service": "^0.73.1",
     "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8",
-    "tsl": "^1.0.28"
+    "tsl": "^1.0.29"
   }
 }

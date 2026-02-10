@@ -2,7 +2,7 @@ import { core, defineConfig } from "tsl";
 import {
   noDuplicateExports,
   noDuplicateImports,
-  noMultilineTemplateExpressionsWithoutAutoDedent,
+  noMultilineTemplateExpressionWithoutAutoDedent,
   nullish,
 } from "tsl-dx";
 
@@ -26,6 +26,12 @@ export default defineConfig({
     nullish(),
     noDuplicateImports(),
     noDuplicateExports(),
-    noMultilineTemplateExpressionsWithoutAutoDedent(),
+<<<<<<< HEAD
+    noMultilineTemplateExpressionWithoutAutoDedent(),
+=======
+    noMultilineTemplateExpressionWithoutAutoDedent({
+      dedentTagNames: ["tsx"],
+    }),
+>>>>>>> a68db1d (Update dependencies and improve JSDoc documentation)
   ],
 });

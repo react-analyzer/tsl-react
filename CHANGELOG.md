@@ -13,4 +13,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Simplify root `tsl.config.ts` to re-export from `@local/configs`
   - Update all package configs to use shared `tsl.config.ts`
   - Remove inline rule configurations in favor of centralized config
-

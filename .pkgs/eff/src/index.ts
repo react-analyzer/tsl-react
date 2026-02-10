@@ -58,6 +58,10 @@ export type unit = undefined;
  */
 export const unit = undefined;
 
+/**
+ * Simplifies a complex type intersection into a flat object type for better readability
+ * in IDE tooltips and error messages.
+ */
 export type Pretty<T> =
   & {
     [P in keyof T]: T[P];
@@ -83,7 +87,7 @@ export type NarrowedTo<T, Base> = Extract<T, Base> extends never ? Base
  * A function that takes a guard function as predicate and returns a guard that negates it.
  *
  * @param predicate - The guard function to negate.
- * @returns Function A guard function.
+ * @returns A guard function that negates the given predicate.
  */
 export function not<T, S extends T>(predicate: (data: T) => data is S): (data: T) => data is Exclude<T, S>;
 export function not<T>(predicate: (data: T) => boolean): (data: T) => boolean;
@@ -96,7 +100,7 @@ export function not<T>(predicate: (data: T) => boolean) {
  *
  * @param a - The first guard function.
  * @param b - The second guard function.
- * @returns Function A guard function.
+ * @returns A guard function that checks if either predicate is true.
  */
 export function or<T, S extends T, U extends T>(
   a: (data: T) => data is S,
@@ -113,7 +117,7 @@ export function or(a: (data: unknown) => boolean, b: (data: unknown) => boolean)
  * A function that checks if the passed parameter is an Array and narrows its type accordingly.
  *
  * @param data - The variable to check.
- * @returns True if the passed input is an Array, false otherwise. s
+ * @returns True if the passed input is an Array, false otherwise.
  */
 export function isArray<T>(data: ArrayLike<unknown> | T): data is NarrowedTo<T, ReadonlyArray<unknown>> {
   return Array.isArray(data);
@@ -143,6 +147,7 @@ export function isTruthy<T>(data: T): data is Exclude<T, "" | 0 | false | null |
  * Tests if a value is a `function`.
  *
  * @param input - The value to test.
+ * @returns `true` if the input is a function, `false` otherwise.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -162,7 +167,9 @@ export const isFunction = (input: unknown): input is Function => typeof input ==
 
 /**
  * Returns its argument.
+ *
  * @param x - The value to return.
+ * @returns The input value unchanged.
  */
 export function identity<T>(x: T): T {
   return x;
@@ -296,6 +303,7 @@ export const dual: {
  * Apply a function to a given value.
  *
  * @param a - The value to apply.
+ * @returns A function that takes a function and applies it to the given value.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -311,7 +319,9 @@ export const apply = <A>(a: A) => <B>(self: (a: A) => B): B => self(a);
 
 /**
  * Returns a function that always returns the same value.
+ *
  * @param x - The value to return.
+ * @returns A function that always returns the given value.
  */
 export function constant<T>(x: T): () => T {
   return () => x;
@@ -319,11 +329,15 @@ export function constant<T>(x: T): () => T {
 
 /**
  * Do nothing and return `void`.
+ *
+ * @returns void
  */
 export function constVoid(): void {}
 
 /**
  * Do nothing and return `null`.
+ *
+ * @returns null
  */
 export function constNull(): null {
   return null;
@@ -331,6 +345,8 @@ export function constNull(): null {
 
 /**
  * Do nothing and return `true`.
+ *
+ * @returns true
  */
 export function constTrue(): true {
   return true;
@@ -338,6 +354,8 @@ export function constTrue(): true {
 
 /**
  * Do nothing and return `false`.
+ *
+ * @returns false
  */
 export function constFalse(): false {
   return false;
@@ -347,6 +365,7 @@ export function constFalse(): false {
  * Reverses the order of arguments for a curried function.
  *
  * @param f - The function to flip.
+ * @returns A new function with the argument order reversed.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -369,6 +388,9 @@ export const flip = <A extends Array<unknown>, B extends Array<unknown>, C>(
  * Composes two functions, `ab` and `bc` into a single function that takes in an argument `a` of type `A` and returns a result of type `C`.
  * The result is obtained by first applying the `ab` function to `a` and then applying the `bc` function to the result of `ab`.
  *
+ * @param self - The first function to apply (or the composed function in data-last style).
+ * @param bc - The second function to apply.
+ * @returns A composed function that applies both functions in sequence.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -394,6 +416,7 @@ export const compose: {
  * This function is particularly useful when it's necessary to specify that certain cases are impossible.
  *
  * @param _ - The value of type `never` that is passed to the function.
+ * @returns Never returns — always throws an error.
  * @since 1.0.0
  */
 export const absurd = <A>(_: never): A => {
@@ -401,9 +424,10 @@ export const absurd = <A>(_: never): A => {
 };
 
 /**
- * Creates a   version of this function: instead of `n` arguments, it accepts a single tuple argument.
+ * Creates a tupled version of this function: instead of `n` arguments, it accepts a single tuple argument.
  *
  * @param f - The function to be converted.
+ * @returns A new function that accepts a single tuple argument.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -422,6 +446,7 @@ export const tupled = <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B): 
  * Inverse function of `tupled`.
  *
  * @param f - The function to be converted.
+ * @returns A new function that accepts spread arguments instead of a tuple.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -437,8 +462,12 @@ export const tupled = <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B): 
 export const untupled = <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B): (...a: A) => B => (...a) => f(a);
 
 /**
+ * Applies a pipeline of functions to a value, passing the result of each function
+ * to the next one in sequence.
+ *
  * @param self - The value to pipe.
  * @param args - The functions to apply.
+ * @returns The result of applying all functions in sequence.
  * @since 1.0.0
  */
 export const pipeArguments = <A>(self: A, args: IArguments): unknown => {
@@ -540,7 +569,8 @@ export const pipeArguments = <A>(self: A, args: IArguments): unknown => {
  * ```
  *
  * @param a - The value to pipe.
- * @param args
+ * @param args - The functions to apply in sequence.
+ * @returns The result of applying all functions in sequence to the initial value.
  * @since 1.0.0
  */
 export function pipe<A>(a: A): A;
@@ -1001,14 +1031,15 @@ export function pipe(a: unknown, ...args: Array<any>): unknown {
  * See also [`pipe`](#pipe).
  *
  * @param ab - The first function to apply.
- * @param bc
- * @param cd
- * @param de
- * @param ef
- * @param fg
- * @param gh
- * @param hi
- * @param ij
+ * @param bc - The second function to apply.
+ * @param cd - The third function to apply.
+ * @param de - The fourth function to apply.
+ * @param ef - The fifth function to apply.
+ * @param fg - The sixth function to apply.
+ * @param gh - The seventh function to apply.
+ * @param hi - The eighth function to apply.
+ * @param ij - The ninth function to apply.
+ * @returns A composed function that applies all given functions in sequence.
  * @example
  * ```ts
  * import * as assert from "node:assert"
@@ -1194,9 +1225,11 @@ export function flow(
 
 /**
  * Retrieves a value from a Map or WeakMap if the key exists, or computes a new value if it doesn't.
- * @param map - The Map or WeakMap to get from
- * @param key - The key to look up in the Map or WeakMap
- * @param callback - The function to call to generate a new value if the key doesn't exist
+ *
+ * @param map - The Map or WeakMap to get from.
+ * @param key - The key to look up in the Map or WeakMap.
+ * @param callback - The function to call to generate a new value if the key doesn't exist.
+ * @returns The existing value for the key, or the computed fallback value.
  */
 export function getOrElse<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
 export function getOrElse<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
@@ -1209,10 +1242,11 @@ export function getOrElse<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, call
 
 /**
  * Retrieves a value from a Map or WeakMap if the key exists, or computes and stores a new value if it doesn't.
- * @param map - The Map or WeakMap to get from or update
- * @param key - The key to look up in the Map or WeakMap
- * @param callback - The function to call to generate a new value if the key doesn't exist
- * @returns The existing value for the key, or the newly computed value
+ *
+ * @param map - The Map or WeakMap to get from or update.
+ * @param key - The key to look up in the Map or WeakMap.
+ * @param callback - The function to call to generate a new value if the key doesn't exist.
+ * @returns The existing value for the key, or the newly computed value.
  */
 export function getOrElseUpdate<K extends WeakKey, V>(map: WeakMap<K, V>, key: K, callback: () => V): V;
 export function getOrElseUpdate<K, V>(map: Map<K, V>, key: K, callback: () => V): V;
@@ -1228,9 +1262,9 @@ export function getOrElseUpdate<K extends WeakKey, V>(map: WeakMap<K, V>, key: K
 /**
  * Attempts to add a value to a Set, but only if it doesn't already exist.
  *
- * @param set - The Set to potentially add to
- * @param value - The value to add if it doesn't already exist in the Set
- * @returns true if the value was added, false if it already existed
+ * @param set - The Set to potentially add to.
+ * @param value - The value to add if it doesn't already exist in the Set.
+ * @returns `true` if the value was added, `false` if it already existed.
  */
 export function tryAddToSet<T>(set: Set<T>, value: T): boolean {
   if (!set.has(value)) {

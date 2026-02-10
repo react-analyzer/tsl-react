@@ -41,7 +41,7 @@
   "devDependencies": {
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^25.2.2",
+    "@types/node": "^25.2.3",
     "tsdown": "^0.20.3",
     "type-fest": "^5.4.4"
   },

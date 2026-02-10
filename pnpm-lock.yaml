@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@types/react': ^19.2.13
+  '@types/react': ^19.2.14
   '@types/react-dom': ^19.2.3
   react: ^19.2.4
   react-dom: ^19.2.4
@@ -17,8 +17,8 @@ importers:
   .:
     devDependencies:
       '@effect/language-service':
-        specifier: ^0.73.0
-        version: 0.73.0
+        specifier: ^0.73.1
+        version: 0.73.1
       '@local/configs':
         specifier: workspace:*
         version: link:.pkgs/configs
@@ -29,14 +29,14 @@ importers:
         specifier: ^2.0.8
         version: 2.0.8
       '@types/node':
-        specifier: ^25.2.2
-        version: 25.2.2
+        specifier: ^25.2.3
+        version: 25.2.3
       '@types/react':
-        specifier: ^19.2.13
-        version: 19.2.13
+        specifier: ^19.2.14
+        version: 19.2.14
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.13)
+        version: 19.2.3(@types/react@19.2.14)
       ansis:
         specifier: ^4.2.0
         version: 4.2.0
@@ -77,11 +77,11 @@ importers:
         specifier: ^0.20.3
         version: 0.20.3(publint@0.3.17)(typescript@5.9.3)
       tsl:
-        specifier: ^1.0.28
-        version: 1.0.28(typescript@5.9.3)
+        specifier: ^1.0.29
+        version: 1.0.29(typescript@5.9.3)
       tsl-dx:
-        specifier: ^0.5.3
-        version: 0.5.3(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^0.7.0
+        version: 0.7.0(tsl@1.0.29(typescript@5.9.3))(typescript@5.9.3)
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -105,13 +105,13 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^4.0.18
-        version: 4.0.18(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2)
+        version: 4.0.18(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2)
 
   .pkgs/configs:
     dependencies:
       '@effect/language-service':
-        specifier: ^0.73.0
-        version: 0.73.0
+        specifier: ^0.73.1
+        version: 0.73.1
       '@tsconfig/node24':
         specifier: ^24.0.4
         version: 24.0.4
@@ -119,14 +119,14 @@ importers:
         specifier: ^2.0.8
         version: 2.0.8
       tsl:
-        specifier: ^1.0.28
-        version: 1.0.28(typescript@5.9.3)
+        specifier: ^1.0.29
+        version: 1.0.29(typescript@5.9.3)
 
   .pkgs/eff:
     devDependencies:
       tsl:
-        specifier: ^1.0.28
-        version: 1.0.28(typescript@5.9.3)
+        specifier: ^1.0.29
+        version: 1.0.29(typescript@5.9.3)
 
   packages/core:
     dependencies:
@@ -153,8 +153,8 @@ importers:
         specifier: ^24.0.4
         version: 24.0.4
       '@types/node':
-        specifier: ^25.2.2
-        version: 25.2.2
+        specifier: ^25.2.3
+        version: 25.2.3
       tsdown:
         specifier: ^0.20.3
         version: 0.20.3(publint@0.3.17)(typescript@5.9.3)
@@ -215,8 +215,8 @@ importers:
         specifier: ^24.0.4
         version: 24.0.4
       '@types/node':
-        specifier: ^25.2.2
-        version: 25.2.2
+        specifier: ^25.2.3
+        version: 25.2.3
       tsdown:
         specifier: ^0.20.3
         version: 0.20.3(publint@0.3.17)(typescript@5.9.3)
@@ -568,8 +568,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@effect/language-service@0.73.0':
-    resolution: {integrity: sha512-/SGoq50VDm/XwQI6d0cReYcLjwfdqwZv7uEJp92+ssx5vLCsm+QvHf4Ul6l6PYVzorsgAp/b6fhAwI2VSkqcJQ==}
+  '@effect/language-service@0.73.1':
+    resolution: {integrity: sha512-FbOKzXmP1QM6/YMvDFZGTZ0Gk0AjKqRSY48dpAN0zUdVzq5xV/Us/6vZ5FcdmG6GjgSWP2rpESy59OMvfPeylw==}
     hasBin: true
 
   '@emnapi/core@1.7.1':
@@ -1169,16 +1169,16 @@ packages:
   '@types/jsesc@2.5.1':
     resolution: {integrity: sha512-9VN+6yxLOPLOav+7PwjZbxiID2bVaeq0ED4qSQmdQTdjnXJSaCVKTR58t15oqH1H5t8Ng2ZX1SabJVoN9Q34bw==}
 
-  '@types/node@25.2.2':
-    resolution: {integrity: sha512-BkmoP5/FhRYek5izySdkOneRyXYN35I860MFAGupTdebyE66uZaR+bXLHq8k4DirE5DwQi3NuhvRU1jqTVwUrQ==}
+  '@types/node@25.2.3':
+    resolution: {integrity: sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
-      '@types/react': ^19.2.13
+      '@types/react': ^19.2.14
 
-  '@types/react@19.2.13':
-    resolution: {integrity: sha512-KkiJeU6VbYbUOp5ITMIc7kBfqlYkKA5KhEHVrGMmUUMt7NeaZg65ojdPk+FtNrBAOXNVM5QM72jnADjM+XVRAQ==}
+  '@types/react@19.2.14':
+    resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1688,14 +1688,20 @@ packages:
       unplugin-unused:
         optional: true
 
-  tsl-dx@0.5.3:
-    resolution: {integrity: sha512-4Yr3CL7jfl1SXz404PfRy37ARRSmkQku+w5OV3UgNL5LHMrjXuF/WnlfXVfGF+L49olKoXhquPhGf/j88UvhKQ==}
+  tsl-dx@0.7.0:
+    resolution: {integrity: sha512-yxgV0RKDwnNfGRv3ja/gp+tpHSIaOmrpGNNBTa7vAHw3OTN5OSg1IlNnQpOwVEle4b6XO2zQjtKKypJWNlRflw==}
     peerDependencies:
       tsl: ^1.0.28
       typescript: ^5.9.3
 
   tsl@1.0.28:
     resolution: {integrity: sha512-zinipy9ZK5yjMzYyN2YaH05it29eCZmk23JOafhC0+9fAVl2pB6N4IKn9x2583peYbplJ6ltw3ORng7ubf5Hsg==}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.9.3
+
+  tsl@1.0.29:
+    resolution: {integrity: sha512-MwEfB1QiR95zz07MP4MiXYXUPjaQFFfgWeAeNIdtoZYbIx+YV0zib1BlF9ynLLOFOJFLIy3M8Y/yN+Ro4Y9tLA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.9.3
@@ -2127,7 +2133,7 @@ snapshots:
   '@dprint/win32-x64@0.51.1':
     optional: true
 
-  '@effect/language-service@0.73.0': {}
+  '@effect/language-service@0.73.1': {}
 
   '@emnapi/core@1.7.1':
     dependencies:
@@ -2493,15 +2499,15 @@ snapshots:
 
   '@types/jsesc@2.5.1': {}
 
-  '@types/node@25.2.2':
+  '@types/node@25.2.3':
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.13)':
+  '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
-      '@types/react': 19.2.13
+      '@types/react': 19.2.14
 
-  '@types/react@19.2.13':
+  '@types/react@19.2.14':
     dependencies:
       csstype: 3.2.3
 
@@ -2516,13 +2522,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.18(vite@7.2.2(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2))':
+  '@vitest/mocker@4.0.18(vite@7.2.2(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
       '@vitest/spy': 4.0.18
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.2(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2)
+      vite: 7.2.2(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2)
 
   '@vitest/pretty-format@4.0.18':
     dependencies:
@@ -3069,15 +3075,21 @@ snapshots:
       - synckit
       - vue-tsc
 
-  tsl-dx@0.5.3(tsl@1.0.28(typescript@5.9.3))(typescript@5.9.3):
+  tsl-dx@0.7.0(tsl@1.0.29(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       ts-pattern: 5.9.0
-      tsl: 1.0.28(typescript@5.9.3)
+      tsl: 1.0.29(typescript@5.9.3)
       typescript: 5.9.3
 
   tsl@1.0.28(typescript@5.9.3):
     dependencies:
       esbuild: 0.25.12
+      ts-api-utils: 2.3.0(typescript@5.9.3)
+      typescript: 5.9.3
+
+  tsl@1.0.29(typescript@5.9.3):
+    dependencies:
+      esbuild: 0.27.0
       ts-api-utils: 2.3.0(typescript@5.9.3)
       typescript: 5.9.3
 
@@ -3126,7 +3138,7 @@ snapshots:
     dependencies:
       rolldown: 1.0.0-rc.3
 
-  vite@7.2.2(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2):
+  vite@7.2.2(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3135,15 +3147,15 @@ snapshots:
       rollup: 4.53.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 25.2.2
+      '@types/node': 25.2.3
       fsevents: 2.3.3
       tsx: 4.21.0
       yaml: 2.8.2
 
-  vitest@4.0.18(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2):
+  vitest@4.0.18(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2):
     dependencies:
       '@vitest/expect': 4.0.18
-      '@vitest/mocker': 4.0.18(vite@7.2.2(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2))
+      '@vitest/mocker': 4.0.18(vite@7.2.2(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2))
       '@vitest/pretty-format': 4.0.18
       '@vitest/runner': 4.0.18
       '@vitest/snapshot': 4.0.18
@@ -3160,10 +3172,10 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.2(@types/node@25.2.2)(tsx@4.21.0)(yaml@2.8.2)
+      vite: 7.2.2(@types/node@25.2.3)(tsx@4.21.0)(yaml@2.8.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 25.2.2
+      '@types/node': 25.2.3
     transitivePeerDependencies:
       - jiti
       - less

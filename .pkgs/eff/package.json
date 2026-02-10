@@ -30,6 +30,6 @@
     "publish": "pnpm run build && pnpm run lint:publish"
   },
   "devDependencies": {
-    "tsl": "^1.0.28"
+    "tsl": "^1.0.29"
   }
 }
