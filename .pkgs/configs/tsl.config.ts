@@ -26,12 +26,8 @@ export default defineConfig({
     nullish(),
     noDuplicateImports(),
     noDuplicateExports(),
-<<<<<<< HEAD
-    noMultilineTemplateExpressionWithoutAutoDedent(),
-=======
     noMultilineTemplateExpressionWithoutAutoDedent({
       dedentTagNames: ["tsx"],
     }),
->>>>>>> a68db1d (Update dependencies and improve JSDoc documentation)
   ],
 });

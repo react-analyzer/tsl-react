@@ -42,7 +42,7 @@
     "tsdown": "^0.20.3"
   },
   "peerDependencies": {
-    "tsl": "^1.0.28",
+    "tsl": "^1.0.29",
     "typescript": "^5.9.3"
   },
   "engines": {
