@@ -1,4 +1,3 @@
-import { unit } from "@local/eff";
 import { isLogicalNegationExpression } from "@react-analyzer/ast";
 import { getAnalyzerOptions, report } from "@react-analyzer/shared";
 import { compare } from "compare-versions";
@@ -90,9 +89,9 @@ export const noLeakedConditionalRendering = defineRule(() => {
           : ["string", "falsy string"] as const,
       ] as const satisfies TypeVariant[];
 
-      function getReportDescriptor(node: AST.BinaryExpression): ReportDescriptor | unit {
+      function getReportDescriptor(node: AST.BinaryExpression): ReportDescriptor | null {
         // If the left node is a logical negation expression, we skip the type check for better performance
-        if (isLogicalNegationExpression(node.left)) return unit;
+        if (isLogicalNegationExpression(node.left)) return null;
         const leftType = ctx.utils.getConstrainedTypeAtLocation(node.left);
         const leftTypeVariants = getTypeVariants(ctx.utils.unionConstituents(leftType));
         const areAllLeftTypeVariantsAllowed = Array
@@ -104,7 +103,7 @@ export const noLeakedConditionalRendering = defineRule(() => {
             message: messages.noLeakedConditionalRendering({ value: node.left.getText() }),
           };
         }
-        return unit;
+        return null;
       }
 
       return { state, version, allowedVariants, getReportDescriptor } as const;

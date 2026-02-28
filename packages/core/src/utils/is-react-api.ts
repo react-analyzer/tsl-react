@@ -1,19 +1,19 @@
-import { dual, unit } from "@local/eff";
+import { dual } from "@local/eff";
 import { toStringFormat } from "@react-analyzer/ast";
 import type { AST, Context } from "tsl";
 import { SyntaxKind } from "typescript";
 
 export declare namespace isReactAPI {
   type ReturnType = {
-    (context: Context, node: unit | null | AST.AnyNode): node is AST.MemberExpression;
+    (context: Context, node: null | AST.AnyNode): node is AST.MemberExpression;
     (
       context: Context,
-    ): (node: unit | null | AST.AnyNode) => node is AST.MemberExpression;
+    ): (node: null | AST.AnyNode) => node is AST.MemberExpression;
   };
 }
 
 export function isReactAPI(api: string): isReactAPI.ReturnType {
-  const func = (context: Context, node: unit | null | AST.AnyNode): node is AST.MemberExpression => {
+  const func = (context: Context, node: null | AST.AnyNode): node is AST.MemberExpression => {
     if (node == null) return false;
     const name = toStringFormat(node);
     if (name === api) return true;
@@ -25,13 +25,13 @@ export function isReactAPI(api: string): isReactAPI.ReturnType {
 
 export declare namespace isReactAPICall {
   type ReturnType = {
-    (context: Context, node: unit | null | AST.AnyNode): node is AST.CallExpression;
-    (context: Context): (node: unit | null | AST.AnyNode) => node is AST.CallExpression;
+    (context: Context, node: null | AST.AnyNode): node is AST.CallExpression;
+    (context: Context): (node: null | AST.AnyNode) => node is AST.CallExpression;
   };
 }
 
 export function isReactAPICall(api: string): isReactAPICall.ReturnType {
-  const func = (context: Context, node: unit | null | AST.AnyNode): node is AST.CallExpression => {
+  const func = (context: Context, node: null | AST.AnyNode): node is AST.CallExpression => {
     if (node == null) return false;
     if (node.kind !== SyntaxKind.CallExpression) return false;
     return isReactAPI(api)(context, node.expression);

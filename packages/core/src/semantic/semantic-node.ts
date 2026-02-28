@@ -1,15 +1,14 @@
-import type { unit } from "@local/eff";
 import type { AST } from "tsl";
 
 export interface SemanticNode {
   id:
-    | unit
+    | null
     | AST.Identifier
     | AST.Identifier[];
   key: string;
   kind: string;
   name:
-    | unit
+    | null
     | string;
   node: AST.AnyNode;
   flag: bigint;

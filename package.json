@@ -1,6 +1,6 @@
 {
   "name": "@react-analyzer/monorepo",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "description": "Monorepo for tsl-react-[x, dom, web-api, naming-convention].",
   "keywords": [
@@ -42,11 +42,11 @@
     "update:version": "tsx ./scripts/update-version.ts"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.76.0",
+    "@effect/language-service": "^0.77.0",
     "@local/configs": "workspace:*",
     "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8",
-    "@types/node": "^25.3.1",
+    "@types/node": "^25.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "ansis": "^4.2.0",
@@ -61,9 +61,9 @@
     "tinyexec": "^1.0.2",
     "tinyglobby": "^0.2.15",
     "ts-pattern": "^5.9.0",
-    "tsdown": "^0.21.0-beta.1",
+    "tsdown": "^0.21.0-beta.2",
     "tsl": "^1.0.29",
-    "tsl-dx": "^0.8.0",
+    "tsl-dx": "^0.9.0",
     "tslib": "^2.8.1",
     "tsx": "latest",
     "type-fest": "^5.4.4",
@@ -73,7 +73,7 @@
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   },
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.30.3",
   "engines": {
     "node": ">=24.6.0"
   },

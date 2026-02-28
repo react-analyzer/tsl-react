@@ -3,7 +3,7 @@
 # Function: report()
 
 ```ts
-function report(ctx: Context, descriptor: ReportDescriptor | null | undefined): void;
+function report(ctx: Context, descriptor: ReportDescriptor | null): void;
 ```
 
 ## Parameters
@@ -11,7 +11,7 @@ function report(ctx: Context, descriptor: ReportDescriptor | null | undefined): 
 | Parameter | Type |
 | ------ | ------ |
 | `ctx` | `Context` |
-| `descriptor` | `ReportDescriptor` \| `null` \| `undefined` |
+| `descriptor` | `ReportDescriptor` \| `null` |
 
 ## Returns
 
